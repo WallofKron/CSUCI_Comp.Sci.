@@ -1,0 +1,3 @@
+I am programming on a mac and was not able to start up in Ubuntu from the flash drive. “disk not readable”. 
+
+Task 3 program works as designed in Xcode. All directions work as programmed. But however, when I use terminal I get a seg fault when I try to -f with a filename given. Only in terminal though. Spent 4-5 hours trying to figure it out. No avail. Seems like a very stupid error.

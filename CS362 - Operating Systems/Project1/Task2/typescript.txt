@@ -1,0 +1,27 @@
+Script started on Thu 17 Nov 2016 08:02:24 PM PST
+]0;cistudent@NetworkingLab: ~/Desktop/Project1/Task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Desktop/Project1/Task2[00m$ ls
+[0m[01;32mhellofs[0m  hellofs-ubuntu.c  [01;34mtmp[0m  typescript
+]0;cistudent@NetworkingLab: ~/Desktop/Project1/Task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Desktop/Project1/Task2[00m$ rm -r tmp
+]0;cistudent@NetworkingLab: ~/Desktop/Project1/Task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Desktop/Project1/Task2[00m$ ls
+[0m[01;32mhellofs[0m  hellofs-ubuntu.c  typescript
+]0;cistudent@NetworkingLab: ~/Desktop/Project1/Task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Desktop/Project1/Task2[00m$ rm hellofs
+]0;cistudent@NetworkingLab: ~/Desktop/Project1/Task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Desktop/Project1/Task2[00m$ ls
+hellofs-ubuntu.c  typescript
+]0;cistudent@NetworkingLab: ~/Desktop/Project1/Task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Desktop/Project1/Task2[00m$ lsrm hellofsls[Krm -r tmpls[Kexittouch task3.hcd Desktop/Project1/Task3/ls[Ktouch task3.c[2Pcd Desktop/[7Pexitsudo umount tmp[8Pls tmp/[K./hellofs tmp/[5Pmkdir tmpgcc -Wall hellofs-ubuntu.c `pkg-config fuse --cflags --libbs` -o hellofs[A]0;cistudent@NetworkingLab: ~/Desktop/Project1/Task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Desktop/Project1/Task2[00m$ ls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -Wall hellofs-ubuntu.c `pkg-config fuse --cflags --libbs` -o hellofs
+]0;cistudent@NetworkingLab: ~/Desktop/Project1/Task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Desktop/Project1/Task2[00m$ ls
+[0m[01;32mhellofs[0m  hellofs-ubuntu.c  typescript
+]0;cistudent@NetworkingLab: ~/Desktop/Project1/Task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Desktop/Project1/Task2[00m$ mkdir tmp
+]0;cistudent@NetworkingLab: ~/Desktop/Project1/Task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Desktop/Project1/Task2[00m$ ./hellofs tmp/
+]0;cistudent@NetworkingLab: ~/Desktop/Project1/Task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Desktop/Project1/Task2[00m$ ls
+[0m[01;32mhellofs[0m  hellofs-ubuntu.c  [01;34mtmp[0m  typescript
+]0;cistudent@NetworkingLab: ~/Desktop/Project1/Task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Desktop/Project1/Task2[00m$ ls tmp/
+fourth  hello  second  third
+]0;cistudent@NetworkingLab: ~/Desktop/Project1/Task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Desktop/Project1/Task2[00m$ cat tmp/fourth
+cat: tmp/fourth: No such file or directory
+]0;cistudent@NetworkingLab: ~/Desktop/Project1/Task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Desktop/Project1/Task2[00m$ done
+bash: syntax error near unexpected token `done'
+]0;cistudent@NetworkingLab: ~/Desktop/Project1/Task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Desktop/Project1/Task2[00m$ exit
+exit
+
+Script done on Thu 17 Nov 2016 08:04:47 PM PST

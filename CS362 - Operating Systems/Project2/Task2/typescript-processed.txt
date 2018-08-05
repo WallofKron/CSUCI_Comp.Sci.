@@ -1,0 +1,485 @@
+Script started on Sun 11 Dec 2016 09:41:25 PM PST
+cistudent@NetworkingLab:~/Desktop/CS362/Project2/Task2$ ls
+disk.c	disk.h	timer  timer_posix.c  typescript
+cistudent@NetworkingLab:~/Desktop/CS362/Project2/Task2$ rm timer
+cistudent@NetworkingLab:~/Desktop/CS362/Project2/Task2$ ls
+disk.c	disk.h	timer_posix.c  typescript
+cistudent@NetworkingLab:~/Desktop/CS362/Project2/Task2$ gcc disk.c -lrt -o disk
+cistudent@NetworkingLab:~/Desktop/CS362/Project2/Task2$ ./disksk.c -lrt -o disk
+
+
+MENU:
+1). Log->Phys
+2). Phys->Log
+3). Read
+4). Write
+5). Random Disk Events
+6). EXIT
+
+Enter a Menu Choice: 5
+
+
+
+Caught timer signal: 14 !!
+Write Success
+Random LOGIC Address - 12
+CORRESPONDING PHYSICAL ADDRESS - HEAD: 0      CYL: 0	  SECT: 13
+number of blocks written - 3
+strnlen - 17
+String Written - lV90JUyzXrKvuBWny
+Time Performed - 21:42:2
+
+
+
+Caught timer signal: 14 !!
+From LogAddress: 24, we read:
+Read Success
+Random LOGIC Address - 24
+CORRESPONDING PHYSICAL ADDRESS - HEAD: 0      CYL: 0	  SECT: 25
+number of blocks Read - 5
+strnlen - 8
+Time Performed - 21:42:3
+
+
+
+Caught timer signal: 14 !!
+From LogAddress: 2, we read:
+Read Success
+Random LOGIC Address - 2
+CORRESPONDING PHYSICAL ADDRESS - HEAD: 0      CYL: 0	  SECT: 3
+number of blocks Read - 4
+strnlen - 7
+Time Performed - 21:42:4
+
+
+
+Caught timer signal: 14 !!
+From LogAddress: 25, we read:
+Read Success
+Random LOGIC Address - 25
+CORRESPONDING PHYSICAL ADDRESS - HEAD: 0      CYL: 0	  SECT: 26
+number of blocks Read - 4
+strnlen - 9
+Time Performed - 21:42:5
+
+
+
+Caught timer signal: 14 !!
+Write Success
+Random LOGIC Address - 23
+CORRESPONDING PHYSICAL ADDRESS - HEAD: 0      CYL: 0	  SECT: 24
+number of blocks written - 1
+strnlen - 31
+String Written - P8WTSStwHwkCphGzKkKqAOwK5MLJNiq
+Time Performed - 21:42:6
+
+
+
+Caught timer signal: 14 !!
+Write Success
+Random LOGIC Address - 29
+CORRESPONDING PHYSICAL ADDRESS - HEAD: 0      CYL: 0	  SECT: 30
+number of blocks written - 5
+strnlen - 9
+String Written - qHFN7toIo
+Time Performed - 21:42:7
+
+
+
+Caught timer signal: 14 !!
+Write Success
+Random LOGIC Address - 0
+CORRESPONDING PHYSICAL ADDRESS - HEAD: 0      CYL: 0	  SECT: 1
+number of blocks written - 2
+strnlen - 26
+String Written - XdpJsHIaWl3rGH687M62LhG1f5
+Time Performed - 21:42:8
+
+
+
+Caught timer signal: 14 !!
+Write Success
+Random LOGIC Address - 4
+CORRESPONDING PHYSICAL ADDRESS - HEAD: 0      CYL: 0	  SECT: 5
+number of blocks written - 3
+strnlen - 16
+String Written - DhmA2C85Ize83n8p
+Time Performed - 21:42:9
+
+
+
+Caught timer signal: 14 !!
+Write Success
+Random LOGIC Address - 15
+CORRESPONDING PHYSICAL ADDRESS - HEAD: 0      CYL: 0	  SECT: 16
+number of blocks written - 2
+strnlen - 20
+String Written - tW6YnGq22z4TFHa5HCcN
+Time Performed - 21:42:10
+
+
+
+Caught timer signal: 14 !!
+Write Success
+Random LOGIC Address - 9
+CORRESPONDING PHYSICAL ADDRESS - HEAD: 0      CYL: 0	  SECT: 10
+number of blocks written - 4
+strnlen - 28
+String Written - 52asKH6Qtaf7b6uWPMuoxLtXi9WU
+Time Performed - 21:42:11
+
+
+
+Caught timer signal: 14 !!
+Write Success
+Random LOGIC Address - 20
+CORRESPONDING PHYSICAL ADDRESS - HEAD: 0      CYL: 0	  SECT: 21
+number of blocks written - 1
+strnlen - 28
+String Written - rrDS8kpR3LsXxry79SUnHPcrkPiK
+Time Performed - 21:42:12
+
+
+
+Caught timer signal: 14 !!
+Write Success
+Random LOGIC Address - 15
+CORRESPONDING PHYSICAL ADDRESS - HEAD: 0      CYL: 0	  SECT: 16
+number of blocks written - 3
+strnlen - 9
+String Written - WYBMLJIk9
+Time Performed - 21:42:13
+
+
+
+Caught timer signal: 14 !!
+Write Success
+Random LOGIC Address - 23
+CORRESPONDING PHYSICAL ADDRESS - HEAD: 0      CYL: 0	  SECT: 24
+number of blocks written - 4
+strnlen - 36
+String Written - njYDbHi5Y91P49FtPLg3zgqgzSaiXBj8K7zJ
+Time Performed - 21:42:14
+
+
+
+Caught timer signal: 14 !!
+From LogAddress: 11, we read: tXi9WU
+Read Success
+Random LOGIC Address - 11
+CORRESPONDING PHYSICAL ADDRESS - HEAD: 0      CYL: 0	  SECT: 12
+number of blocks Read - 5
+strnlen - 34
+Time Performed - 21:42:15
+
+
+
+Caught timer signal: 14 !!
+From LogAddress: 20, we read: rrDS8kpR3Ls
+Read Success
+Random LOGIC Address - 20
+CORRESPONDING PHYSICAL ADDRESS - HEAD: 0      CYL: 0	  SECT: 21
+number of blocks Read - 5
+strnlen - 24
+Time Performed - 21:42:16
+
+
+
+Caught timer signal: 14 !!
+Write Success
+Random LOGIC Address - 13
+CORRESPONDING PHYSICAL ADDRESS - HEAD: 0      CYL: 0	  SECT: 14
+number of blocks written - 2
+strnlen - 35
+String Written - RXSjCIpGlpLTYLaRGA0DSESgQZCPM4BtRhB
+Time Performed - 21:42:17
+
+
+
+Caught timer signal: 14 !!
+Write Success
+Random LOGIC Address - 4
+CORRESPONDING PHYSICAL ADDRESS - HEAD: 0      CYL: 0	  SECT: 5
+number of blocks written - 1
+strnlen - 32
+String Written - 1ZqjPcs8GyI1VCd0CHq9OKYm1pJ64MkT
+Time Performed - 21:42:18
+
+
+
+Caught timer signal: 14 !!
+Write Success
+Random LOGIC Address - 7
+CORRESPONDING PHYSICAL ADDRESS - HEAD: 0      CYL: 0	  SECT: 8
+number of blocks written - 3
+strnlen - 2
+String Written - Qf
+Time Performed - 21:42:19
+
+
+
+Caught timer signal: 14 !!
+From LogAddress: 23, we read: njYDbHi5Y91P49FtPLg3zg
+Read Success
+Random LOGIC Address - 23
+CORRESPONDING PHYSICAL ADDRESS - HEAD: 0      CYL: 0	  SECT: 24
+number of blocks Read - 2
+strnlen - 34
+Time Performed - 21:42:20
+
+
+
+Caught timer signal: 14 !!
+From LogAddress: 17, we read:
+Read Success
+Random LOGIC Address - 17
+CORRESPONDING PHYSICAL ADDRESS - HEAD: 0      CYL: 0	  SECT: 18
+number of blocks Read - 2
+strnlen - 17
+Time Performed - 21:42:21
+
+
+
+Caught timer signal: 14 !!
+Write Success
+Random LOGIC Address - 23
+CORRESPONDING PHYSICAL ADDRESS - HEAD: 0      CYL: 0	  SECT: 24
+number of blocks written - 4
+strnlen - 27
+String Written - S21HhmhYcj3t49C5fP8ebbg2coj
+Time Performed - 21:42:22
+
+
+
+Caught timer signal: 14 !!
+From LogAddress: 5, we read: 83n8p
+Read Success
+Random LOGIC Address - 5
+CORRESPONDING PHYSICAL ADDRESS - HEAD: 0      CYL: 0	  SECT: 6
+number of blocks Read - 5
+strnlen - 14
+Time Performed - 21:42:23
+
+
+
+Caught timer signal: 14 !!
+Write Success
+Random LOGIC Address - 2
+CORRESPONDING PHYSICAL ADDRESS - HEAD: 0      CYL: 0	  SECT: 3
+number of blocks written - 3
+strnlen - 25
+String Written - IeApvRfrohK4rH3Oip9akA1H4
+Time Performed - 21:42:24
+
+
+
+Caught timer signal: 14 !!
+From LogAddress: 2, we read: IeApvRfrohK4rH3Oip9akA1H4jPcs8GyI83n8p
+Read Success
+Random LOGIC Address - 2
+CORRESPONDING PHYSICAL ADDRESS - HEAD: 0      CYL: 0	  SECT: 3
+number of blocks Read - 5
+strnlen - 23
+Time Performed - 21:42:25
+
+
+
+Caught timer signal: 14 !!
+From LogAddress: 29, we read: qHFN7toIo
+Read Success
+Random LOGIC Address - 29
+CORRESPONDING PHYSICAL ADDRESS - HEAD: 0      CYL: 0	  SECT: 30
+number of blocks Read - 3
+strnlen - 7
+Time Performed - 21:42:26
+
+
+
+Caught timer signal: 14 !!
+From LogAddress: 26, we read: 7zJ
+Read Success
+Random LOGIC Address - 26
+CORRESPONDING PHYSICAL ADDRESS - HEAD: 0      CYL: 0	  SECT: 27
+number of blocks Read - 1
+strnlen - 9
+Time Performed - 21:42:27
+
+
+
+Caught timer signal: 14 !!
+From LogAddress: 6, we read:
+Read Success
+Random LOGIC Address - 6
+CORRESPONDING PHYSICAL ADDRESS - HEAD: 0      CYL: 0	  SECT: 7
+number of blocks Read - 2
+strnlen - 37
+Time Performed - 21:42:28
+
+
+
+Caught timer signal: 14 !!
+From LogAddress: 25, we read: g2cojiXBj8K7zJ
+Read Success
+Random LOGIC Address - 25
+CORRESPONDING PHYSICAL ADDRESS - HEAD: 0      CYL: 0	  SECT: 26
+number of blocks Read - 2
+strnlen - 14
+Time Performed - 21:42:29
+
+
+
+Caught timer signal: 14 !!
+From LogAddress: 0, we read: XdpJsHIaWl3
+Read Success
+Random LOGIC Address - 0
+CORRESPONDING PHYSICAL ADDRESS - HEAD: 0      CYL: 0	  SECT: 1
+number of blocks Read - 1
+strnlen - 32
+Time Performed - 21:42:30
+
+
+
+Caught timer signal: 14 !!
+Write Success
+Random LOGIC Address - 0
+CORRESPONDING PHYSICAL ADDRESS - HEAD: 0      CYL: 0	  SECT: 1
+number of blocks written - 3
+strnlen - 27
+String Written - 7XQmyvRoRjifkYQy15GFK00cbcA
+Time Performed - 21:42:31
+
+
+
+Caught timer signal: 14 !!
+From LogAddress: 26, we read: 7zJ
+Read Success
+Random LOGIC Address - 26
+CORRESPONDING PHYSICAL ADDRESS - HEAD: 0      CYL: 0	  SECT: 27
+number of blocks Read - 2
+strnlen - 27
+Time Performed - 21:42:32
+
+
+
+Caught timer signal: 14 !!
+Write Success
+Random LOGIC Address - 25
+CORRESPONDING PHYSICAL ADDRESS - HEAD: 0      CYL: 0	  SECT: 26
+number of blocks written - 1
+strnlen - 23
+String Written - nImU1TabOIIrFz9gYSK8O6L
+Time Performed - 21:42:33
+
+
+
+Caught timer signal: 14 !!
+Write Success
+Random LOGIC Address - 16
+CORRESPONDING PHYSICAL ADDRESS - HEAD: 0      CYL: 0	  SECT: 17
+number of blocks written - 4
+strnlen - 10
+String Written - b4B7SW08rE
+Time Performed - 21:42:34
+
+
+
+Caught timer signal: 14 !!
+Write Success
+Random LOGIC Address - 12
+CORRESPONDING PHYSICAL ADDRESS - HEAD: 0      CYL: 0	  SECT: 13
+number of blocks written - 3
+strnlen - 10
+String Written - w7NuA6WB3B
+Time Performed - 21:42:35
+
+
+
+Caught timer signal: 14 !!
+From LogAddress: 6, we read:
+Read Success
+Random LOGIC Address - 6
+CORRESPONDING PHYSICAL ADDRESS - HEAD: 0      CYL: 0	  SECT: 7
+number of blocks Read - 1
+strnlen - 10
+Time Performed - 21:42:36
+
+
+
+Caught timer signal: 14 !!
+Write Success
+Random LOGIC Address - 13
+CORRESPONDING PHYSICAL ADDRESS - HEAD: 0      CYL: 0	  SECT: 14
+number of blocks written - 3
+strnlen - 3
+String Written - 8ow
+Time Performed - 21:42:37
+
+
+
+Caught timer signal: 14 !!
+Write Success
+Random LOGIC Address - 2
+CORRESPONDING PHYSICAL ADDRESS - HEAD: 0      CYL: 0	  SECT: 3
+number of blocks written - 2
+strnlen - 25
+String Written - vLzkgjoswPem07wVpiCfK9w7p
+Time Performed - 21:42:38
+
+
+
+Caught timer signal: 14 !!
+Write Success
+Random LOGIC Address - 16
+CORRESPONDING PHYSICAL ADDRESS - HEAD: 0      CYL: 0	  SECT: 17
+number of blocks written - 4
+strnlen - 1
+String Written - J
+Time Performed - 21:42:39
+
+
+
+Caught timer signal: 14 !!
+From LogAddress: 29, we read: qHFN7toIo
+Read Success
+Random LOGIC Address - 29
+CORRESPONDING PHYSICAL ADDRESS - HEAD: 0      CYL: 0	  SECT: 30
+number of blocks Read - 2
+strnlen - 21
+Time Performed - 21:42:40
+
+
+
+Caught timer signal: 14 !!
+Write Success
+Random LOGIC Address - 10
+CORRESPONDING PHYSICAL ADDRESS - HEAD: 0      CYL: 0	  SECT: 11
+number of blocks written - 2
+strnlen - 19
+String Written - uI02BZZvmudMq0x6VlZ
+Time Performed - 21:42:41
+
+
+
+Caught timer signal: 14 !!
+Write Success
+Random LOGIC Address - 16
+CORRESPONDING PHYSICAL ADDRESS - HEAD: 0      CYL: 0	  SECT: 17
+number of blocks written - 3
+strnlen - 6
+String Written - mKoIil
+Time Performed - 21:42:42
+
+
+MENU:
+1). Log->Phys
+2). Phys->Log
+3). Read
+4). Write
+5). Random Disk Events
+6). EXIT
+
+Enter a Menu Choice: 6
+cistudent@NetworkingLab:~/Desktop/CS362/Project2/Task2$ exit
+exit
+
+Script done on Sun 11 Dec 2016 09:42:56 PM PST

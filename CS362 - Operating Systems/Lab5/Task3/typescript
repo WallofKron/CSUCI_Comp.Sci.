@@ -1,0 +1,258 @@
+Script started on Tue Oct  4 02:07:46 2016
+[?1034hbash-3.2$ exit./job <inputRR.txt[C[C[C[C[C[C[C[C[C[Cexit[K[Kexit./job <inputRR.txt[C[C[C[C[C[C[C[C[C[Cgcc jobscheduler.c -o job[C[C[C[C[C[C[C[C[C[C[7P./job <inputRR.txt[C[C[C[C[C[C[C[C[C[Cgcc jobscheduler.c -o job[C[C[C[C[C[C[C[C[C[C[7P./job <inputRR.txt[C[C[C[C[C[C[C[C[C[Cexit[K[Kls
+inputFCFS.txt	inputSJF.txt	job		jobscheduler.c	typescript
+inputRR.txt	inputSRTF.txt	job.dSYM	jobscheduler.h
+bash-3.2$ gcc -g jobscheduler.c -o job
+bash-3.2$ ./job < input.[KSJF.tst[K[Kxt > SJFoutput.xt[K[Ktt[Kxt
+bash-3.2$ ./job < inputSJF.txt > SJFoutput.txt[C[1P[1P[1P[1@R[1@R[C[C[C[C[C[C[C[C[C[1PFoutput.txt[1PFoutput.txt[C[1Poutput.txtRoutput.txtRoutput.txt
+bash-3.2$ ./job < inputRR.txt > RRoutput.txt[1Poutput.txt[1Poutput.txtFoutput.txtCoutput.txtFoutput.txtSoutput.txt[1P[1P[1@F[1@C[1@S[1P[1@F[1@S
+bash-3.2$ ls
+FCFSoutput.txt	inputFCFS.txt	inputSRTF.txt	jobscheduler.c
+RRoutput.txt	inputRR.txt	job		jobscheduler.h
+SJFoutput.txt	inputSJF.txt	job.dSYM	typescript
+bash-3.2$ ls./job < inputFCFS.txt > FCFSoutput.txt[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+T0: Process 1 Arrived!
+CPU: P1(15)
+<Queue>: 
+
+T2: Process 2 Arrived!
+CPU: P1(13)
+<Queue>: P2(6), 
+
+T5: Process 3 Arrived!
+CPU: P1(10)
+<Queue>: P2(6), P3(2), 
+
+T10: Process 4 Arrived!
+CPU: P1(5)
+<Queue>: P2(6), P3(2), P4(5), 
+
+T15: Process 1 Finished!
+CPU: P2(6)
+<Queue>: P3(2), P4(5), 
+
+T18: Process 5 Arrived!
+CPU: P2(3)
+<Queue>: P3(2), P4(5), P5(7), 
+
+T21: Process 2 Finished!
+CPU: P3(2)
+<Queue>: P4(5), P5(7), 
+
+T23: Process 3 Finished!
+CPU: P4(5)
+<Queue>: P5(7), 
+
+T23: Process 6 Arrived!
+CPU: P4(5)
+<Queue>: P5(7), P6(4), 
+
+T27: Process 7 Arrived!
+CPU: P4(1)
+<Queue>: P5(7), P6(4), P7(11), 
+
+T28: Process 4 Finished!
+CPU: P5(7)
+<Queue>: P6(4), P7(11), 
+
+T35: Process 5 Finished!
+CPU: P6(4)
+<Queue>: P7(11), 
+
+T36: Process 8 Arrived!
+CPU: P6(3)
+<Queue>: P7(11), P8(9), 
+
+T39: Process 6 Finished!
+CPU: P7(11)
+<Queue>: P8(9), 
+
+T40: Process 9 Arrived!
+CPU: P7(10)
+<Queue>: P8(9), P9(3), 
+
+T42: Process 10 Arrived!
+CPU: P7(8)
+<Queue>: P8(9), P9(3), P10(6), 
+
+T50: Process 7 Finished!
+CPU: P8(9)
+<Queue>: P9(3), P10(6), 
+
+T59: Process 8 Finished!
+CPU: P9(3)
+<Queue>: P10(6), 
+
+T62: Process 9 Finished!
+CPU: P10(6)
+<Queue>: 
+
+Average Waiting Time: 10.000000
+bash-3.2$ ./job < inputFCFS.txt[1P.txt[1P.txt[1P.txt[1P.txtR.txtR.txt
+T0: Process 1 Arrived!
+CPU: P1(15)
+<Queue>: 
+
+T2: Process 2 Arrived!
+CPU: P1(13)
+<Queue>: P2(6), 
+
+T5: Process 3 Arrived!
+CPU: P1(10)
+<Queue>: P2(6), P3(2), 
+
+T10: Quanta expired!
+CPU: P2(6)
+<Queue>: P3(2), P1(5), 
+
+T10: Process 4 Arrived!
+CPU: P2(6)
+<Queue>: P3(2), P1(5), P4(5), 
+
+T16: Process 2 Finished!
+CPU: P3(2)
+<Queue>: P1(5), P4(5), 
+
+T18: Process 3 Finished!
+CPU: P1(5)
+<Queue>: P4(5), 
+
+T18: Process 5 Arrived!
+CPU: P1(5)
+<Queue>: P4(5), P5(7), 
+
+T23: Process 1 Finished!
+CPU: P4(5)
+<Queue>: P5(7), 
+
+T23: Process 6 Arrived!
+CPU: P4(5)
+<Queue>: P5(7), P6(4), 
+
+T27: Process 7 Arrived!
+CPU: P4(1)
+<Queue>: P5(7), P6(4), P7(11), 
+
+T28: Process 4 Finished!
+CPU: P5(7)
+<Queue>: P6(4), P7(11), 
+
+T35: Process 5 Finished!
+CPU: P6(4)
+<Queue>: P7(11), 
+
+T36: Process 8 Arrived!
+CPU: P6(3)
+<Queue>: P7(11), P8(9), 
+
+T39: Process 6 Finished!
+CPU: P7(11)
+<Queue>: P8(9), 
+
+T40: Process 9 Arrived!
+CPU: P7(10)
+<Queue>: P8(9), P9(3), 
+
+T42: Process 10 Arrived!
+CPU: P7(8)
+<Queue>: P8(9), P9(3), P10(6), 
+
+T49: Quanta expired!
+CPU: P8(9)
+<Queue>: P9(3), P10(6), P7(1), 
+
+T58: Process 8 Finished!
+CPU: P9(3)
+<Queue>: P10(6), P7(1), 
+
+T61: Process 9 Finished!
+CPU: P10(6)
+<Queue>: P7(1), 
+
+T67: Process 10 Finished!
+CPU: P7(1)
+<Queue>: 
+
+Average Waiting Time: 12.000000
+bash-3.2$ ./job < inputRR.txt[1P.txt[1P.txtS.txtJ.txtF.txt
+T0: Process 1 Arrived!
+CPU: P1(15)
+<Queue>: 
+
+T2: Process 2 Arrived!
+CPU: P1(13)
+<Queue>: P2(6), 
+
+T5: Process 3 Arrived!
+CPU: P1(10)
+<Queue>: P2(6), P3(2), 
+
+T10: Process 4 Arrived!
+CPU: P1(5)
+<Queue>: P2(6), P3(2), P4(5), 
+
+T15: Process 1 Finished!
+CPU: P3(2)
+<Queue>: P2(6), P4(5), 
+
+T17: Process 3 Finished!
+CPU: P4(5)
+<Queue>: P2(6), 
+
+T18: Process 5 Arrived!
+CPU: P4(4)
+<Queue>: P2(6), P5(7), 
+
+T22: Process 4 Finished!
+CPU: P2(6)
+<Queue>: P5(7), 
+
+T23: Process 6 Arrived!
+CPU: P2(5)
+<Queue>: P5(7), P6(4), 
+
+T27: Process 7 Arrived!
+CPU: P2(1)
+<Queue>: P5(7), P6(4), P7(11), 
+
+T28: Process 2 Finished!
+CPU: P6(4)
+<Queue>: P5(7), P7(11), 
+
+T32: Process 6 Finished!
+CPU: P5(7)
+<Queue>: P7(11), 
+
+T36: Process 8 Arrived!
+CPU: P5(3)
+<Queue>: P7(11), P8(9), 
+
+T39: Process 5 Finished!
+CPU: P8(9)
+<Queue>: P7(11), 
+
+T40: Process 9 Arrived!
+CPU: P8(8)
+<Queue>: P7(11), P9(3), 
+
+T42: Process 10 Arrived!
+CPU: P8(6)
+<Queue>: P7(11), P9(3), P10(6), 
+
+T48: Process 8 Finished!
+CPU: P9(3)
+<Queue>: P7(11), P10(6), 
+
+T51: Process 9 Finished!
+CPU: P10(6)
+<Queue>: P7(11), 
+
+T57: Process 10 Finished!
+CPU: P7(11)
+<Queue>: 
+
+Average Waiting Time: 9.000000
+bash-3.2$ exit
+exit
+
+Script done on Tue Oct  4 02:10:12 2016

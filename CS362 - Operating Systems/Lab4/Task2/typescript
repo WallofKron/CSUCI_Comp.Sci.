@@ -1,0 +1,75 @@
+Script started on Sun Sep 25 13:54:54 2016
+[?1034hbash-3.2$ exit./matrix < input.txt[C[C[C[C[C[C[C[C[C[Cgcc Matrix.c -o matrix[C[C[C[C[C[C[C[C[C[C[14P./matrixgcc Matrix.c -o matrix[C[C[C[C[C[C[C[C[C[C[14P./matrixgcc Matrix.c -o matrix[C[C[C[C[C[C[C[C[C[C[14P./matrixgcc Matrix.c -o matrix[C[C[C[C[C[C[C[C[C[C[2P./matrix < input.txt[C[C[C[C[C[C[C[C[C[Cexit[K[Kls
+Matrix.c	input.txt	matrix.dSYM	typescript
+Matrix.h	matrix		output.txt
+bash-3.2$ rm output.txt 
+bash-3.2$ rm mart[K[Ktrix
+bash-3.2$ ls
+Matrix.c	Matrix.h	input.txt	matrix.dSYM	typescript
+bash-3.2$ mat[K[K[Krm matrix.D[KdSYM
+rm: matrix.dSYM: is a directory
+bash-3.2$ oops
+bash: oops: command not found
+bash-3.2$ ls
+Matrix.c	Matrix.h	input.txt	matrix.dSYM	typescript
+bash-3.2$ lsoopsrm matrix.dSYM[C[C[C[C[C[C[C[C[C[Cls[Krm matrixoutput.txt [C[C[C[C[C[C[C[C[C[Cls[Kexit./matrix < input.txt[C[C[C[C[C[C[C[C[C[Cgcc Matrix.c -o matrix[1@-[1@g[1@ 
+bash-3.2$ ./matrix
+Please Input File Name:  input.txt
+Thread created successfully
+Thread created successfully
+Thread created successfully
+Thread created successfully
+Thread created successfully
+Thread created successfully
+Thread created successfully
+Thread created successfully
+Thread created successfully
+Matrix A
+ ______
+| 1 4 |
+| 2 5 |
+| 3 6 |
+
+Matrix B
+ ______
+| 8 7 6 |
+| 5 4 3 |
+
+Matrix C
+ ______
+| 28 23 18 |
+| 41 34 27 |
+| 54 45 36 |
+
+bash-3.2$ ./matrixgcc -g Matrix.c -o matrix[C[C[C[C[C[C[C[C[C[C./matrix[K input.xt[K[Ktxt
+Thread created successfully
+Thread created successfully
+Thread created successfully
+Thread created successfully
+Thread created successfully
+Thread created successfully
+Thread created successfully
+Thread created successfully
+Thread created successfully
+Matrix A
+ ______
+| 1 4 |
+| 2 5 |
+| 3 6 |
+
+Matrix B
+ ______
+| 8 7 6 |
+| 5 4 3 |
+
+Matrix C
+ ______
+| 28 23 18 |
+| 41 34 27 |
+| 54 45 36 |
+
+bash-3.2$ ./matrix input.txt[K[K[K[K[K[K[K[K[Kblah.xt[K[Ktxt
+File Open Failedbash-3.2$ ex[K[Kexit
+exit
+
+Script done on Sun Sep 25 13:57:00 2016

@@ -1,0 +1,3 @@
+The program does what it is intended to do. It seems a relatively simple execution, but the more difficult part was using GDB and tracing the program to understand all of what is going on under the covers. My implementation only calls for using a for loop and if statements to check whether that borrowing is a safe operation. If it’s not, and it doesn’t put the program into a safe state, dont perform the operation. 
+
+One could take that implementation and scale it up further to run a sequence of borrowing followed by releasing/checking to see if at any point the program goes out of a safe state. Like we did in class. But that implementation seems outside of this lab description.

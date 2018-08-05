@@ -1,0 +1,1 @@
+I had a very specific problem using xcode to compile the task1. It took 4.5 hours to figure it out. I ran out of time, and I set up (slightly)the table-driven part of the second task. I understand how to use a 2-d array to build the table outside of c, import it, and implement it using the very simple rules of the task 1. I just simply ran out of time to implement it. 

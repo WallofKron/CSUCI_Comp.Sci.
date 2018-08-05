@@ -1,0 +1,1 @@
+I ran out of time. I understand how the file table works and I was working on setting up the skeleton but simply don’t have any more time to work on it. The file table implementation is very similar to the nodes of the previous task. Just another level of complexity.

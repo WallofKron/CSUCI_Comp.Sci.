@@ -1,0 +1,404 @@
+Script started on Mon Feb 15 11:51:35 2016
+[?1034hbash-3.2$ ls
+RobertFlorenceLab3Tasl1-ci_schedule.xml	task2
+ciML.xml				typescript
+task1
+bash-3.2$ $ xmllint --noout --schema schema.xsd file.xmlRe.xml[1Pe.xml[1Pe.xml[1Pe.xml[C[1P.xml[1P.xmlR.xmlo.xmlb.xmle.xmlr.xmlt.xmlF.xmll.xmlo.xmlr.xmle.xmln.xmlc.xmle.xmlL.xmla.xmlb.xml3.xmlT.xmla.xmls.xmlk.xml[1P.xmll.xml1.xml-.xmlc.xmli.xml_.xmls.xml [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cc.xmll[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ch.xml[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ce.xml[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cd.xmlu.xml[Cl.xml[C[Ce.xml[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ca.xsd RobertFlorenceLab3Tasl1-ci_schedul[1Pe.xml[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ca.xsd RobertFlorenceLab3Tasl1-ci_schedule[1P.xml[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ca.xsd RobertFlorenceLab3Tasl1-ci_schedule.[1Pxml[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ca.xsd RobertFlorenceLab3Tasl1-ci_schedule.x[1Pml[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ca.xsd RobertFlorenceLab3Tasl1-ci_schedule.xm[1Pl[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.xsd RobertFlorenceLab3Tasl1-ci_schedule.xml[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cc.xsd RobertFlorenceLab3Tasl1-ci_schedule.xml[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ci.xsd RobertFlorenceLab3Tasl1-ci_schedule.xml[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CM.xsd RobertFlorenceLab3Tasl1-ci_schedule.xml[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CL.xsd RobertFlorenceLab3Tasl1-ci_schedule.xml[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C
+bash: $: command not found
+bash-3.2$ xmkk[K[Kllint
+Usage : xmllint [options] XMLfiles ...
+	Parse the XML files and output the result of the parsing
+	--version : display the version of the XML library used
+	--debug : dump a debug tree of the in-memory document
+	--shell : run a navigating shell
+	--debugent : debug the entities defined in the document
+	--copy : used to test the internal copy implementation
+	--recover : output what was parsable on broken XML documents
+	--huge : remove any internal arbitrary parser limits
+	--noent : substitute entity references by their value
+	--noenc : ignore any encoding specified inside the document
+	--noout : don't output the result tree
+	--path 'paths': provide a set of paths for resources
+	--load-trace : print trace of all external entities loaded
+	--nonet : refuse to fetch DTDs or entities over network
+	--nocompact : do not generate compact text nodes
+	--htmlout : output results as HTML
+	--nowrap : do not put HTML doc wrapper
+	--valid : validate the document in addition to std well-formed check
+	--postvalid : do a posteriori validation, i.e after parsing
+	--dtdvalid URL : do a posteriori validation against a given DTD
+	--dtdvalidfpi FPI : same but name the DTD with a Public Identifier
+	--timing : print some timings
+	--output file or -o file: save to a given file
+	--repeat : repeat 100 times, for timing or profiling
+	--insert : ad-hoc test for valid insertions
+	--compress : turn on gzip compression of output
+	--html : use the HTML parser
+	--xmlout : force to use the XML serializer when using --html
+	--nodefdtd : do not default HTML doctype
+	--push : use the push mode of the parser
+	--pushsmall : use the push mode of the parser using tiny increments
+	--memory : parse from memory
+	--maxmem nbbytes : limits memory allocation to nbbytes bytes
+	--nowarning : do not emit warnings from parser/validator
+	--noblanks : drop (ignorable?) blanks spaces
+	--nocdata : replace cdata section with text nodes
+	--format : reformat/reindent the input
+	--encode encoding : output in the given encoding
+	--dropdtd : remove the DOCTYPE of the input docs
+	--pretty STYLE : pretty-print in a particular style
+	                 0 Do not pretty print
+	                 1 Format the XML content, as --format
+	                 2 Add whitespace inside tags, preserving content
+	--c14n : save in W3C canonical format v1.0 (with comments)
+	--c14n11 : save in W3C canonical format v1.1 (with comments)
+	--exc-c14n : save in W3C exclusive canonical format (with comments)
+	--nsclean : remove redundant namespace declarations
+	--testIO : test user I/O support
+	--catalogs : use SGML catalogs from $SGML_CATALOG_FILES
+	             otherwise XML Catalogs starting from 
+	         file:///etc/xml/catalog are activated by default
+	--nocatalogs: deactivate all catalogs
+	--auto : generate a small doc on the fly
+	--xinclude : do XInclude processing
+	--noxincludenode : same but do not generate XInclude nodes
+	--nofixup-base-uris : do not fixup xml:base uris
+	--loaddtd : fetch external DTD
+	--dtdattr : loaddtd + populate the tree with inherited attributes 
+	--stream : use the streaming interface to process very large files
+	--walker : create a reader and walk though the resulting doc
+	--pattern pattern_value : test the pattern support
+	--chkregister : verify the node registration code
+	--relaxng schema : do RelaxNG validation against the schema
+	--schema schema : do validation against the WXS schema
+	--schematron schema : do validation against a schematron
+	--sax1: use the old SAX1 interfaces for processing
+	--sax: do not build a tree but work just at the SAX level
+	--oldxml10: use XML-1.0 parsing rules before the 5th edition
+	--xpath expr: evaluate the XPath expression, imply --noout
+
+Libxml project home page: http://xmlsoft.org/
+To report bugs or get some help check: http://xmlsoft.org/bugs.html
+bash-3.2$ xmllint [K[K[K[K[K[K[K[Kls
+RobertFlorenceLab3Tasl1-ci_schedule.xml	task2
+ciML.xsd				typescript
+task1
+bash-3.2$ x[Klsxmllint$ xmllint --noout --schema ciML.xsd RobertFlorenceLab3Tasl1-ci_schedulee.xml[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C RobertFlorenceLab3Tasl1-ci_schedule.[1Pxml[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C RobertFlorenceLab3Tasl1-ci_schedule.x[1Pml[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C RobertFlorenceLab3Tasl1-ci_schedule.xm[1Pl[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C RobertFlorenceLab3Tasl1-ci_schedule.xml[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C RobertFlorenceLab3Tasl1-ci_schedule.xml [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P RobertFlorenceLab3Tasl1-ci_schedule.xml
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P RobertFlorenceLab3Tasl1-ci_schedule.xml[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P RobertFlorenceLab3Tasl1-ci_schedule.xml[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1PRobertFlorenceLab3Tasl1-ci_schedule.xml[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P RobertFlorenceLab3Tasl1-ci_schedule.xml[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P RobertFlorenceLab3Tasl1-ci_schedule.xml[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P RobertFlorenceLab3Tasl1-ci_schedule.xml[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P RobertFlorenceLab3Tasl1-ci_schedule.xml[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P RobertFlorenceLab3Tasl1-ci_schedule.xml[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P RobertFlorenceLab3Tasl1-ci_schedule.xml[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P RobertFlorenceLab3Tasl1-ci_schedule.xml[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P RobertFlorenceLab3Tasl1-ci_schedule.xml[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1PRobertFlorenceLab3Tasl1-ci_schedule.xml[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P RobertFlorenceLab3Tasl1-ci_schedule.xml[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P RobertFlorenceLab3Tasl1-ci_schedule.xml[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P RobertFlorenceLab3Tasl1-ci_schedule.xml[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P RobertFlorenceLab3Tasl1-ci_schedule.xml[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P RobertFlorenceLab3Tasl1-ci_schedule.xml[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P RobertFlorenceLab3Tasl1-ci_schedule.xml[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P RobertFlorenceLab3Tasl1-ci_schedule.xml[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1PRobertFlorenceLab3Tasl1-ci_schedule.xml[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+bash: $: command not found
+bash-3.2$ $ xmllint RobertFlorenceLab3Tasl1-ci_schedule.xml[C[C[C[C[C[C[C[C[C[Cls[K$ xmllint RobertFlorenceLab3Tasl1-ci_schedule.xml[C[C[C[C[C[C[C[C[C[Cls[Kxmllint$ xmllint --noout --schema ciML.xsd RobertFlorenceLab3Tasl1-ci_schedulee.xml[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C RobertFlorenceLab3Tasl1-ci_schedule.[1Pxml[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C RobertFlorenceLab3Tasl1-ci_schedule.x[1Pml[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C RobertFlorenceLab3Tasl1-ci_schedule.xm[1Pl[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C RobertFlorenceLab3Tasl1-ci_schedule.xml[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C RobertFlorenceLab3Tasl1-ci_schedule.xml [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P RobertFlorenceLab3Tasl1-ci_schedule.xml
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P RobertFlorenceLab3Tasl1-ci_schedule.xml[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P RobertFlorenceLab3Tasl1-ci_schedule.xml[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1PRobertFlorenceLab3Tasl1-ci_schedule.xml[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P RobertFlorenceLab3Tasl1-ci_schedule.xml[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P RobertFlorenceLab3Tasl1-ci_schedule.xml[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P RobertFlorenceLab3Tasl1-ci_schedule.xml[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P RobertFlorenceLab3Tasl1-ci_schedule.xml[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P RobertFlorenceLab3Tasl1-ci_schedule.xml[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P RobertFlorenceLab3Tasl1-ci_schedule.xml[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P RobertFlorenceLab3Tasl1-ci_schedule.xml[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P RobertFlorenceLab3Tasl1-ci_schedule.xml[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1PRobertFlorenceLab3Tasl1-ci_schedule.xml[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+bash: $: command not found
+bash-3.2$ $ xmllint --noout RobertFlorenceLab3Tasl1-ci_schedule.xml[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8PRobertFlorenceLab3Tasl1-ci_schedule.xml[C[C[C[C[C[C[C[C[C[Cls[Kxmllint$ xmllint --noout --schema ciML.xsd RobertFlorenceLab3Tasl1-ci_schedulee.xml[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CL.xsd RobertFlorenceLab3Tasl1-ci_schedule.[1Pxml[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CL.xsd RobertFlorenceLab3Tasl1-ci_schedule.x[1Pml[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CL.xsd RobertFlorenceLab3Tasl1-ci_schedule.xm[1Pl[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.xsd RobertFlorenceLab3Tasl1-ci_schedule.xml[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cs.xsd RobertFlorenceLab3Tasl1-ci_schedule.xml[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cc.xsd RobertFlorenceLab3Tasl1-ci_schedule.xml[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ch.xsd RobertFlorenceLab3Tasl1-ci_schedule.xml[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ce.xsd RobertFlorenceLab3Tasl1-ci_schedule.xml[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cm.xsd RobertFlorenceLab3Tasl1-ci_schedule.xml[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ca.xsd RobertFlorenceLab3Tasl1-ci_schedule.xml[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cxmllint[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C$ xmllint --noout --schema schema.xsd RobertFlorenceLab3Tasl1-ci_scheduule.xml[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C --schema schema.xsd RobertFlorenceLab3Tasl1-ci_schedul[1Pe.xml[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C --schema schema.xsd RobertFlorenceLab3Tasl1-ci_schedule[1P.xml[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C --schema schema.xsd RobertFlorenceLab3Tasl1-ci_schedule.[1Pxml[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C --schema schema.xsd RobertFlorenceLab3Tasl1-ci_schedule.x[1Pml[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C --schema schema.xsd RobertFlorenceLab3Tasl1-ci_schedule.xm[1Pl[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C --schema schema.xsd RobertFlorenceLab3Tasl1-ci_schedule.xml[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C --schema schema.xsd RobertFlorenceLab3Tasl1-ci_schedule.xml [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C\ --schema schema.xsd RobertFlorenceLab3Tasl1-ci_schedule.xml [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+bash: $: command not found
+bash-3.2$ xmllint --schema schema.xsd RobertFlorenceLab3Tasl1-ci_schedule.xml
+warning: failed to load external entity "schema.xsd"
+Schemas parser error : Failed to locate the main schema resource at 'schema.xsd'.
+WXS schema schema.xsd failed to compile
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<year year="2015">
+		<semester category="Fall">
+			<mjrprogram>
+				<Physics>
+					<classes category="100">
+						<description>A non-calculus based intro to physics. Classical mechanics, wave motion and thermal physics</description>
+						<unitweight>4</unitweight>
+						<professor>David Nelson</professor>
+						<date>
+							<days>TTH</days>
+							<time>10:30-11:45</time>
+						</date>&gt;
+					</classes>
+					<classes category="101">
+						<description>A non-calculus based intro to physics. Electromagnetic theory, light, and atomic and nuclear physics</description>
+						<unitweight>4</unitweight>
+						<professor>William Barber</professor>
+						<date>
+							<days>T</days>
+							<time>6:00-8:50</time>
+						</date>&gt;
+					</classes>
+					<classes category="200">
+						<description>A calculus-based intro to physics. Classical mechanics, wave motion and thermal physics.</description>
+						<unitweight>4</unitweight>
+						<professor>Gregory Wood</professor>
+						<date>
+							<days>MW</days>
+							<time>1:30-2:45</time>
+						</date>&gt;
+					</classes>
+					<classes category="201">
+						<description>A calculus-based intro to physics. Electromagnetic theory, light, and atomic and nuclear physics.</description>
+						<unitweight>4</unitweight>
+						<professor>Clinton Harper</professor>
+						<date>
+							<days>TTH</days>
+							<time>12:00-1:00</time>
+						</date>&gt;
+					</classes>
+					<classes category="306">
+						<description>Special relativity, the Bohr model, Quantum mechanics; photons, the photoelectric effect, probability density, matter waves, Schrodinger mechanics, the Uncertainty Principle,</description>
+						<unitweight>3</unitweight>
+						<professor>Gregory Wood</professor>
+						<date>
+							<days>MW</days>
+							<time>1:30-2:45</time>
+						</date>&gt;
+					</classes>
+				</Physics>
+
+				<CMPSCI>
+					<classes category="454">
+						<description>Study of the relation of languages and machines for processing these languages, with emphasis on classes of languages and corresponding classes of machines</description>
+						<unitweight>3</unitweight>
+						<professor>Micheal Soltys</professor>
+						<date>
+							<days>MW</days>
+							<time>12:00-1:15</time>
+						</date>&gt;
+					</classes>
+					<classes category="221">
+						<description>Fundamentals of the UNIX o.s., including the command line interface, shell commands</description>
+						<unitweight>3</unitweight>
+						<professor>Ronald Rieger</professor>
+						<date>
+							<days>M</days>
+							<time>6:00-7:50</time>
+						</date>&gt;
+					</classes>
+					<classes category="150">
+						<description>Discussion of issues in design, implementation, and use of high-level prog. langs</description>
+						<unitweight>4</unitweight>
+						<professor>Jason Isaacs</professor>
+						<date>
+							<days>T</days>
+							<time>12:00-2:50</time>
+						</date>&gt;
+					</classes>
+					<classes category="232">
+						<description>Discussion of issues in design, implementation, and use of high-level prog. langs</description>
+						<unitweight>3</unitweight>
+						<professor>Kevin Scrivnor</professor>
+						<date>
+							<days>TTH</days>
+							<time>12:00-1:50</time>
+						</date>&gt;
+					</classes>
+					<classes category="345">
+						<description>An intro to the basic concepts and techniques for digital image restoration and enhancement, analysis, coding and compression</description>
+						<unitweight>3</unitweight>
+						<professor>Geoffrey Doughtery</professor>
+						<date>
+							<days>MW</days>
+							<time>12:00-1:15</time>
+						</date>&gt;
+					</classes>
+				</CMPSCI>
+
+				<Math>
+					<classes category="150">
+						<description>A course in analytic geometry and calculus</description>
+						<unitweight>4</unitweight>
+						<professor>Brian Sittinger</professor>
+						<date>
+							<days>MW</days>
+							<time>10:00-11:50</time>
+						</date>&gt;
+					</classes>
+					<classes category="151">
+						<description>Differentiation, integration, sequences, infinite series, and power series</description>
+						<unitweight>4</unitweight>
+						<professor>Peter Yi</professor>
+						<date>
+							<days>TTH</days>
+							<time>8:00-9:50</time>
+						</date>&gt;
+					</classes>
+					<classes category="250">
+						<description>functions of several variables, solid analytic geometry, partial differentiation, multiple integrals with applications; vector analysis, and line and surface integrals</description>
+						<unitweight>3</unitweight>
+						<professor>Cynthia Wyels</professor>
+						<date>
+							<days>TTH</days>
+							<time>9:00-10:15</time>
+						</date>&gt;
+					</classes>
+					<classes category="350">
+						<description>ordinary differential equations, existence and uniqueness of solutions. Linear equations. Laplace methods. Flows and diffeomorphisms, limit sets, iterations of maps. Positive entropy systems, chaotic behavior of trajectories.</description>
+						<unitweight>3</unitweight>
+						<professor>Cynthia Flores</professor>
+						<date>
+							<days>MW</days>
+							<time>12:00-1:15</time>
+						</date>&gt;
+					</classes><classes category="240">
+						<description>Matrices, linear systems of equations, determinants, vectors in 2 and 3 dimensions, eigenvalues, the vector space Rn, linear transformations, introduction to general vector spaces and applications</description>
+						<unitweight>3</unitweight>
+						<professor>Selenne Banuelos</professor>
+						<date>
+							<days>TTH</days>
+							<time>12:00-1:15</time>
+						</date>&gt;
+					</classes>
+				</Math>		
+
+			</mjrprogram>
+		</semester>
+		<semester category="Spring">
+			<mjrprogram>
+				<Physics>
+					<classes category="100">
+						<description>A non-calculus based intro to physics. Classical mechanics, wave motion and thermal physics</description>
+						<unitweight>4</unitweight>
+						<professor>David Nelson</professor>
+						<date>
+							<days>TTH</days>
+							<time>1:30-2:45</time>
+						</date>&gt;
+					</classes>
+					<classes category="101">
+						<description>A non-calculus based intro to physics. Electromagnetic theory, light, and atomic and nuclear physics</description>
+						<unitweight>4</unitweight>
+						<professor>Dale Capewell</professor>
+						<date>
+							<days>MW</days>
+							<time>4:30-5:45</time>
+						</date>&gt;
+					</classes>
+					<classes category="200">
+						<description>A calculus-based intro to physics. Classical mechanics, wave motion and thermal physics.</description>
+						<unitweight>4</unitweight>
+						<professor>Clinton Harper</professor>
+						<date>
+							<days>TTH</days>
+							<time>12:00-1:15</time>
+						</date>&gt;
+					</classes>
+					<classes category="201">
+						<description>A calculus-based intro to physics. Electromagnetic theory, light, and atomic and nuclear physics.</description>
+						<unitweight>4</unitweight>
+						<professor>Gregory Wood</professor>
+						<date>
+							<days>MW</days>
+							<time>1:30-2:45</time>
+						</date>&gt;
+					</classes>
+					<classes category="400">
+						<description>innovative approach to quantum physics by combining the essential elements of the theory with the practical applications. Applications include Raman spectroscopy, scanning tunnelling microscopy, quantum optics, quantum cryptography and quantum computing.</description>
+						<unitweight>3</unitweight>
+						<professor>Gregory Wood</professor>
+						<date>
+							<days>MW</days>
+							<time>4:30-5:45</time>
+						</date>&gt;
+					</classes>
+				</Physics>
+
+				<CMPSCI>
+					<classes category="445">
+						<description>Pattern recognition consists of image segmentation, feature extraction and classification. The principles and concepts underpinning pattern recognition, and the evolution, utility and limitations of various techniques (including neural networks) will be studied</description>
+						<unitweight>3</unitweight>
+						<professor> Geoffrey Doughtery</professor>
+						<date>
+							<days>MW</days>
+							<time>12:00-1:15</time>
+						</date>&gt;
+					</classes>
+					<classes category="221">
+						<description>Fundamentals of the UNIX o.s., including the command line interface, shell commands</description>
+						<unitweight>3</unitweight>
+						<professor>Ronald Rieger</professor>
+						<date>
+							<days>T</days>
+							<time>6:00-7:50</time>
+						</date>&gt;
+					</classes>
+					<classes category="150">
+						<description>Discussion of issues in design, implementation, and use of high-level prog. langs</description>
+						<unitweight>4</unitweight>
+						<professor>Justin Pearson</professor>
+						<date>
+							<days>T</days>
+							<time>12:00-2:50</time>
+						</date>&gt;
+					</classes>
+					<classes category="232">
+						<description>Discussion of issues in design, implementation, and use of high-level prog. langs</description>
+						<unitweight>3</unitweight>
+						<professor>Andrej Bieszczad</professor>
+						<date>
+							<days>TTH</days>
+							<time>12:00-1:50</time>
+						</date>&gt;
+					</classes>
+					<classes category="342">
+						<description>Explores the ongoing evolution of Internet based social networks using an interdisciplinary approach. Incorporates research from sociology, computer science, media studies, and philosophy to understand Internet based social networks, cultural and structural conditions of online communication, virtual identity construction, management of digital media, and the impact online social networks have on various institutions of society.</description>
+						<unitweight>3</unitweight>
+						<professor>Brian Thoms</professor>
+						<date>
+							<days>MW</days>
+							<time>4:30-5:45</time>
+						</date>&gt;
+					</classes>
+				</CMPSCI>
+
+				<Math>
+					<classes category="150">
+						<description>A course in analytic geometry and calculus</description>
+						<unitweight>4</unitweight>
+						<professor>Jorge Garcia</professor>
+						<date>
+							<days>MW</days>
+							<time>8:00-9:50</time>
+						</date>&gt;
+					</classes>
+					<classes category="151">
+						<description>Differentiation, integration, sequences, infinite series, and power series</description>
+						<unitweight>4</unitweight>
+						<professor>Peter Yi</professor>
+						<date>
+							<days>TTH</days>
+							<time>8:00-9:50</time>
+						</date>&gt;
+					</classes>
+					<classes category="250">
+						<description>functions of several variables, solid analytic geometry, partial differentiation, multiple integrals with applications; vector analysis, and line and surface integrals</description>
+						<unitweight>3</unitweight>
+						<professor>Brian Sittinger</professor>
+						<date>
+							<days>TTH</days>
+							<time>9:00-10:15</time>
+						</date>&gt;
+					</classes>
+					<classes category="350">
+						<description>ordinary differential equations, existence and uniqueness of solutions. Linear equations. Laplace methods. Flows and diffeomorphisms, limit sets, iterations of maps. Positive entropy systems, chaotic behavior of trajectories.</description>
+						<unitweight>3</unitweight>
+						<professor>Phuoc Ho</professor>
+						<date>
+							<days>MW</days>
+							<time>1:30-2:45</time>
+						</date>&gt;
+					</classes><classes category="240">
+						<description>Matrices, linear systems of equations, determinants, vectors in 2 and 3 dimensions, eigenvalues, the vector space Rn, linear transformations, introduction to general vector spaces and applications</description>
+						<unitweight>3</unitweight>
+						<professor>Selenne Banuelos</professor>
+						<date>
+							<days>TTH</days>
+							<time>12:00-1:15</time>
+						</date>&gt;
+					</classes>
+				</Math>		
+
+			</mjrprogram>
+		</semester>
+	</year>
+</catalog>
+bash-3.2$ exit
+exit
+
+Script done on Mon Feb 15 12:01:58 2016

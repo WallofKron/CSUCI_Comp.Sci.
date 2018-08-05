@@ -1,0 +1,29 @@
+<html>
+ <head>
+  <title>Friends</title>
+ </head>
+<body>
+     <table border = 1>
+	 <thead>
+	  <th>Name</th>
+	  <th>Email</th>
+	  <th>Graduation Date</th>
+	  <th>Title</th>
+	  <th>Additional Info.</th>
+         </thead>
+         <tbody>
+         {# here we iterate over every item in our list which we will pass from bar() #}
+         {% for row in rows %}
+             <tr>
+	     <td>{{ row[0]}}</td>
+             <td>{{ row[1]}}</td>
+             <td>{{ row[2]}}</td>
+             <td>{{ row[3]}}</td>
+	     <td>{{ row[4]}}</td>
+	     </tr>
+         {% endfor %}
+         </tbody>
+     </table>
+ </body>
+ </html>
+

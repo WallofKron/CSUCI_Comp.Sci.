@@ -1,0 +1,1 @@
+I believe Task2 functions as it should. I can’t seem to figure out why the ERROR: 0  at the bottom kept happening. Spent too long on it, leaving it as is. Its not really as an import a part of the program, as I copied that printf line from A.J’s project description.

@@ -1,0 +1,15 @@
+Script started on Tue Oct 11 11:26:48 2016
+[?1034hbash-3.2$ ls
+README.txt	philo		philo.dSYM	philoBase.c	typescript
+bash-3.2$ rf[Km philo,[K.s[KdSYM
+rm: philo.dSYM: is a directory
+bash-3.2$ rm[K[Krm philo
+bash-3.2$ ls
+README.txt	philoBase.c	typescript
+bash-3.2$ gcc philoBase.c -o philo
+bash-3.2$ gcc philoBase.c -o philo[C[C[C[C[C[C[C[C[C[C[K./[ho;[K[K[K[Kphilo >output.txt
+^C
+bash-3.2$ ./philo >output.txt[C[C[C[C[C[C[C[C[C[C[Kexit
+exit
+
+Script done on Tue Oct 11 11:28:41 2016

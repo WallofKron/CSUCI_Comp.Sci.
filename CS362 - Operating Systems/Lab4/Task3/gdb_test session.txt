@@ -1,0 +1,491 @@
+Last login: Sun Sep 25 16:46:34 on ttys000
+192:~ RobertFlorence$ cd Desktop/
+192:Desktop RobertFlorence$ cd CS362/Lab4/Task3/
+192:Task3 RobertFlorence$ ls
+Matrix.c	Matrix.h	input.txt
+192:Task3 RobertFlorence$ gcc Matrix.c -o matrix
+Matrix.c:88:20: warning: incompatible pointer types passing 'int **' to
+      parameter of type 'int ***'; take the address with &
+      [-Wincompatible-pointer-types]
+    loadMatrix(fp, a, m, k);
+                   ^
+                   &
+./Matrix.h:19:31: note: passing argument to parameter here
+void loadMatrix(FILE*, int ***, int, int);
+                              ^
+Matrix.c:90:20: warning: incompatible pointer types passing 'int **' to
+      parameter of type 'int ***'; take the address with &
+      [-Wincompatible-pointer-types]
+    loadMatrix(fp, a, k, n);
+                   ^
+                   &
+./Matrix.h:19:31: note: passing argument to parameter here
+void loadMatrix(FILE*, int ***, int, int);
+                              ^
+Matrix.c:105:9: error: use of undeclared identifier 'i'
+    for(i=0; i < m; i++) {
+        ^
+Matrix.c:105:14: error: use of undeclared identifier 'i'
+    for(i=0; i < m; i++) {
+             ^
+Matrix.c:105:21: error: use of undeclared identifier 'i'
+    for(i=0; i < m; i++) {
+                    ^
+Matrix.c:106:13: error: use of undeclared identifier 'j'
+        for(j=0; j < n; j++) {
+            ^
+Matrix.c:106:18: error: use of undeclared identifier 'j'
+        for(j=0; j < n; j++) {
+                 ^
+Matrix.c:106:25: error: use of undeclared identifier 'j'
+        for(j=0; j < n; j++) {
+                        ^
+Matrix.c:107:19: error: use of undeclared identifier 'i'
+            build[i][j] = 0;
+                  ^
+Matrix.c:107:22: error: use of undeclared identifier 'j'
+            build[i][j] = 0;
+                     ^
+Matrix.c:122:24: warning: format specifies type 'int *' but the argument has
+      type 'int **' [-Wformat]
+            scanf("%d",&tempload[i][j]);
+                   ~~  ^~~~~~~~~~~~~~~
+3 warnings and 8 errors generated.
+192:Task3 RobertFlorence$ gcc Matrix.c -o matrix
+Matrix.c:88:20: warning: incompatible pointer types passing 'int **' to
+      parameter of type 'int ***'; take the address with &
+      [-Wincompatible-pointer-types]
+    loadMatrix(fp, a, m, k);
+                   ^
+                   &
+./Matrix.h:19:31: note: passing argument to parameter here
+void loadMatrix(FILE*, int ***, int, int);
+                              ^
+Matrix.c:90:20: warning: incompatible pointer types passing 'int **' to
+      parameter of type 'int ***'; take the address with &
+      [-Wincompatible-pointer-types]
+    loadMatrix(fp, a, k, n);
+                   ^
+                   &
+./Matrix.h:19:31: note: passing argument to parameter here
+void loadMatrix(FILE*, int ***, int, int);
+                              ^
+Matrix.c:122:24: warning: format specifies type 'int *' but the argument has
+      type 'int **' [-Wformat]
+            scanf("%d",&tempload[i][j]);
+                   ~~  ^~~~~~~~~~~~~~~
+3 warnings generated.
+192:Task3 RobertFlorence$ gcc Matrix.c -o matrix
+Matrix.c:126:24: warning: format specifies type 'int *' but the argument has
+      type 'int **' [-Wformat]
+            scanf("%d",&tempload[i][j]);
+                   ~~  ^~~~~~~~~~~~~~~
+1 warning generated.
+192:Task3 RobertFlorence$ gcc Matrix.c -o matrix
+192:Task3 RobertFlorence$ ./matrix
+
+MATRIX MULTIPLICATION!
+
+Please Input File Name:  input.txt
+Segmentation fault: 11
+192:Task3 RobertFlorence$ gcc -g Matrix.c -o matrix
+192:Task3 RobertFlorence$ ./matrix input.txt
+
+MATRIX MULTIPLICATION!
+
+Segmentation fault: 11
+192:Task3 RobertFlorence$ gdb matrix
+GNU gdb (GDB) 7.10.1
+Copyright (C) 2015 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-apple-darwin15.2.0".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from matrix...Reading symbols from /Users/RobertFlorence/Desktop/CS362/Lab4/Task3/matrix.dSYM/Contents/Resources/DWARF/matrix...done.
+done.
+(gdb) r input.txt
+Starting program: /Users/RobertFlorence/Desktop/CS362/Lab4/Task3/matrix input.txt
+Unable to find Mach task port for process-id 44413: (os/kern) failure (0x5).
+ (please check gdb is codesigned - see taskgated(8))
+(gdb) r
+Starting program: /Users/RobertFlorence/Desktop/CS362/Lab4/Task3/matrix input.txt
+Unable to find Mach task port for process-id 44414: (os/kern) failure (0x5).
+ (please check gdb is codesigned - see taskgated(8))
+(gdb) r matrix
+Starting program: /Users/RobertFlorence/Desktop/CS362/Lab4/Task3/matrix matrix
+Unable to find Mach task port for process-id 44415: (os/kern) failure (0x5).
+ (please check gdb is codesigned - see taskgated(8))
+(gdb) q
+192:Task3 RobertFlorence$ gdb matrix
+GNU gdb (GDB) 7.10.1
+Copyright (C) 2015 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-apple-darwin15.2.0".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from matrix...Reading symbols from /Users/RobertFlorence/Desktop/CS362/Lab4/Task3/matrix.dSYM/Contents/Resources/DWARF/matrix...done.
+done.
+(gdb) where
+No stack.
+(gdb) r
+Starting program: /Users/RobertFlorence/Desktop/CS362/Lab4/Task3/matrix 
+Unable to find Mach task port for process-id 44417: (os/kern) failure (0x5).
+ (please check gdb is codesigned - see taskgated(8))
+(gdb) q
+192:Task3 RobertFlorence$ sudo gdb matrix
+Password:
+GNU gdb (GDB) 7.10.1
+Copyright (C) 2015 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-apple-darwin15.2.0".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from matrix...Reading symbols from /Users/RobertFlorence/Desktop/CS362/Lab4/Task3/matrix.dSYM/Contents/Resources/DWARF/matrix...done.
+done.
+(gdb) r
+Starting program: /Users/RobertFlorence/Desktop/CS362/Lab4/Task3/matrix 
+
+MATRIX MULTIPLICATION!
+
+Please Input File Name:  input.txt
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000000100000e03 in loadMatrix (fp=0x7fff7d7412b0, tempload=0x100001078 <a>, 
+    m=3, k=2) at Matrix.c:126
+126	            scanf("%d",tempload[i][j]);
+(gdb) where
+#0  0x0000000100000e03 in loadMatrix (fp=0x7fff7d7412b0, 
+    tempload=0x100001078 <a>, m=3, k=2) at Matrix.c:126
+#1  0x0000000100000951 in loadMatrices (fileName=0x7fff5fbffbf0 "input.txt")
+    at Matrix.c:90
+#2  0x0000000100000732 in main (argc=1, argv=0x7fff5fbffc40) at Matrix.c:29
+(gdb) help
+List of classes of commands:
+
+aliases -- Aliases of other commands
+breakpoints -- Making program stop at certain points
+data -- Examining data
+files -- Specifying and examining files
+internals -- Maintenance commands
+obscure -- Obscure features
+running -- Running the program
+stack -- Examining the stack
+status -- Status inquiries
+support -- Support facilities
+tracepoints -- Tracing of program execution without stopping the program
+user-defined -- User-defined commands
+
+Type "help" followed by a class name for a list of commands in that class.
+Type "help all" for the list of all commands.
+Type "help" followed by command name for full documentation.
+Type "apropos word" to search for commands related to "word".
+Command name abbreviations are allowed if unambiguous.
+(gdb) data
+Undefined command: "data".  Try "help".
+(gdb) files
+Undefined command: "files".  Try "help".
+(gdb) data a
+Undefined command: "data".  Try "help".
+(gdb) hel
+List of classes of commands:
+
+aliases -- Aliases of other commands
+breakpoints -- Making program stop at certain points
+data -- Examining data
+files -- Specifying and examining files
+internals -- Maintenance commands
+obscure -- Obscure features
+running -- Running the program
+stack -- Examining the stack
+status -- Status inquiries
+support -- Support facilities
+tracepoints -- Tracing of program execution without stopping the program
+user-defined -- User-defined commands
+
+Type "help" followed by a class name for a list of commands in that class.
+Type "help all" for the list of all commands.
+Type "help" followed by command name for full documentation.
+Type "apropos word" to search for commands related to "word".
+Command name abbreviations are allowed if unambiguous.
+(gdb) q
+A debugging session is active.
+
+	Inferior 1 [process 44422] will be killed.
+
+Quit anyway? (y or n) y
+192:Task3 RobertFlorence$ gcc -g Matrix.c -o matrix
+192:Task3 RobertFlorence$ ./matrix input.txt
+
+MATRIX MULTIPLICATION!
+
+Segmentation fault: 11
+192:Task3 RobertFlorence$ gcc -g Matrix.c -o matrix
+192:Task3 RobertFlorence$ ./matrix input.txt
+
+MATRIX MULTIPLICATION!
+
+Segmentation fault: 11
+192:Task3 RobertFlorence$ gcc -g Matrix.c -o matrix
+192:Task3 RobertFlorence$ sudo gdb matrix
+Password:
+GNU gdb (GDB) 7.10.1
+Copyright (C) 2015 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-apple-darwin15.2.0".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from matrix...Reading symbols from /Users/RobertFlorence/Desktop/CS362/Lab4/Task3/matrix.dSYM/Contents/Resources/DWARF/matrix...done.
+done.
+(gdb) r
+Starting program: /Users/RobertFlorence/Desktop/CS362/Lab4/Task3/matrix 
+
+MATRIX MULTIPLICATION!
+
+Please Input File Name:  input.txt
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000000100000e03 in loadMatrix (fp=0x7fff7d7412b0, tempload=0x100001078 <a>, 
+    m=3, k=2) at Matrix.c:130
+130	            scanf("%d",tempload[i][j]);
+(gdb) where
+#0  0x0000000100000e03 in loadMatrix (fp=0x7fff7d7412b0, 
+    tempload=0x100001078 <a>, m=3, k=2) at Matrix.c:130
+#1  0x0000000100000951 in loadMatrices (fileName=0x7fff5fbffbe0 "input.txt")
+    at Matrix.c:93
+#2  0x0000000100000728 in main (argc=1, argv=0x7fff5fbffc40) at Matrix.c:31
+(gdb) list
+125	
+126	    for(int i = 0; i < m; i++){
+127	        
+128	        for(int j = 0; j < k; j++){
+129	            
+130	            scanf("%d",tempload[i][j]);
+131	        }
+132	    }
+133	    
+134	    
+(gdb) r
+The program being debugged has been started already.
+Start it from the beginning? (y or n) n
+Program not restarted.
+(gdb) q
+A debugging session is active.
+
+	Inferior 1 [process 44535] will be killed.
+
+Quit anyway? (y or n) y
+192:Task3 RobertFlorence$ gcc -g Matrix.c -o matrix
+192:Task3 RobertFlorence$ ./matrix input.txt
+
+MATRIX MULTIPLICATION!
+
+Segmentation fault: 11
+192:Task3 RobertFlorence$ gcc -g Matrix.c -o matrix
+192:Task3 RobertFlorence$ sudo gdb matrix
+GNU gdb (GDB) 7.10.1
+Copyright (C) 2015 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-apple-darwin15.2.0".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from matrix...Reading symbols from /Users/RobertFlorence/Desktop/CS362/Lab4/Task3/matrix.dSYM/Contents/Resources/DWARF/matrix...done.
+done.
+(gdb) 
+(gdb) r input.txt
+Starting program: /Users/RobertFlorence/Desktop/CS362/Lab4/Task3/matrix input.txt
+
+MATRIX MULTIPLICATION!
+
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000000100000e03 in loadMatrix (fp=0x7fff7d7412b0, tempload=0x100001078 <a>, 
+    m=3, k=2) at Matrix.c:130
+130	            scanf("%d ",tempload[i][j]);
+(gdb) print m
+$1 = 3
+(gdb) print k
+$2 = 2
+(gdb) print temploda
+No symbol "temploda" in current context.
+(gdb) print tempload
+$3 = (int ***) 0x100001078 <a>
+(gdb) print fp
+$4 = (FILE *) 0x7fff7d7412b0
+(gdb) print i
+$5 = 0
+(gdb) print j
+$6 = 0
+(gdb) print &tempload[0][0]
+$7 = (int **) 0x0
+(gdb) print &*tempload[0][0]
+Cannot access memory at address 0x0
+(gdb) print *tempload[0][0]
+Cannot access memory at address 0x0
+(gdb) print*tempload[0][0]
+Cannot access memory at address 0x0
+(gdb) print tempload[0][0]
+Cannot access memory at address 0x0
+(gdb) print tempload[0][1]
+Cannot access memory at address 0x8
+(gdb) print tempload[0][2]
+Cannot access memory at address 0x10
+(gdb) print tempload[0][3]
+Cannot access memory at address 0x18
+(gdb) print tempload[0][4]
+Cannot access memory at address 0x20
+(gdb) print tempload[1][0]
+Cannot access memory at address 0x0
+(gdb) print tempload[2][0]
+Cannot access memory at address 0x0
+(gdb) print (*tempload)[2][0]
+Cannot access memory at address 0x10
+(gdb) print (*tempload)[0][0]
+Cannot access memory at address 0x0
+(gdb) print tempload[0][0]
+Cannot access memory at address 0x0
+(gdb) print *tempload
+$8 = (int **) 0x0
+(gdb) q
+A debugging session is active.
+
+	Inferior 1 [process 44558] will be killed.
+
+Quit anyway? (y or n) y
+192:Task3 RobertFlorence$ gcc -g Matrix.c -o matrix
+Matrix.c:93:20: warning: incompatible pointer types passing 'int **' to
+      parameter of type 'int ***'; take the address with &
+      [-Wincompatible-pointer-types]
+    loadMatrix(fp, a, m, k);
+                   ^
+                   &
+./Matrix.h:19:31: note: passing argument to parameter here
+void loadMatrix(FILE*, int ***, int, int);
+                              ^
+Matrix.c:95:20: warning: incompatible pointer types passing 'int **' to
+      parameter of type 'int ***'; take the address with &
+      [-Wincompatible-pointer-types]
+    loadMatrix(fp, b, k, n);
+                   ^
+                   &
+./Matrix.h:19:31: note: passing argument to parameter here
+void loadMatrix(FILE*, int ***, int, int);
+                              ^
+2 warnings generated.
+192:Task3 RobertFlorence$ gcc -g Matrix.c -o matrix
+192:Task3 RobertFlorence$ sudo gdb matrix
+Password:
+GNU gdb (GDB) 7.10.1
+Copyright (C) 2015 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-apple-darwin15.2.0".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from matrix...Reading symbols from /Users/RobertFlorence/Desktop/CS362/Lab4/Task3/matrix.dSYM/Contents/Resources/DWARF/matrix...done.
+done.
+(gdb) r input.txt
+Starting program: /Users/RobertFlorence/Desktop/CS362/Lab4/Task3/matrix input.txt
+
+MATRIX MULTIPLICATION!
+
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000000100000e03 in loadMatrix (fp=0x7fff7d7412b0, tempload=0x100001078 <a>, 
+    m=3, k=2) at Matrix.c:130
+130	            scanf("%d ",tempload[i][j]);
+(gdb) stack
+Undefined command: "stack".  Try "help".
+(gdb) where
+#0  0x0000000100000e03 in loadMatrix (fp=0x7fff7d7412b0, 
+    tempload=0x100001078 <a>, m=3, k=2) at Matrix.c:130
+#1  0x0000000100000951 in loadMatrices (fileName=0x7fff5fbffbd0 "input.txt")
+    at Matrix.c:93
+#2  0x0000000100000728 in main (argc=2, argv=0x7fff5fbffc30) at Matrix.c:31
+(gdb) print &tempload
+$1 = (int ****) 0x7fff5fbffb50
+(gdb) print tempload
+$2 = (int ***) 0x100001078 <a>
+(gdb) print &&tempload
+A syntax error in expression, near `&&tempload'.
+(gdb) print *tempload
+$3 = (int **) 0x0
+(gdb) print tempload[0]
+$4 = (int **) 0x0
+(gdb) q
+A debugging session is active.
+
+	Inferior 1 [process 44584] will be killed.
+
+Quit anyway? (y or n) y
+192:Task3 RobertFlorence$ gcc -g Matrix.c -o matrix
+Matrix.c:130:25: warning: format specifies type 'int *' but the argument has
+      type 'int **' [-Wformat]
+            scanf("%d ",&tempload[i][j]);
+                   ~~   ^~~~~~~~~~~~~~~
+1 warning generated.
+192:Task3 RobertFlorence$ gcc -g Matrix.c -o matrix
+192:Task3 RobertFlorence$ ./matrix input.txt
+
+MATRIX MULTIPLICATION!
+
+Segmentation fault: 11
+192:Task3 RobertFlorence$ gcc -g Matrix.c -o matrix
+Matrix.c:130:25: warning: format specifies type 'int *' but the argument has
+      type 'int' [-Wformat]
+            scanf("%d ",(*tempload)[i][j]);
+                   ~~   ^~~~~~~~~~~~~~~~~
+1 warning generated.
+192:Task3 RobertFlorence$ gcc -g Matrix.c -o matrix
+192:Task3 RobertFlorence$ ./matrix input.txt
+
+MATRIX MULTIPLICATION!
+
+Segmentation fault: 11
+192:Task3 RobertFlorence$ 

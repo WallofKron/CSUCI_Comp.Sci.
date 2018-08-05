@@ -1,0 +1,449 @@
+Last login: Thu Apr  7 11:50:20 on console
+SIE-1222-19:~ robert.florence883$ cd Desktop/CS232/
+SIE-1222-19:CS232 robert.florence883$ ls
+Lab1:2	Lab3	Lab4	Lab5	Lab6	Lab7	PROJECT
+SIE-1222-19:CS232 robert.florence883$ cd P
+-bash: cd: P: No such file or directory
+SIE-1222-19:CS232 robert.florence883$ cd PROJECT/
+SIE-1222-19:PROJECT robert.florence883$ ls
+l8t1	l8t3
+SIE-1222-19:PROJECT robert.florence883$ cd l8t1
+SIE-1222-19:l8t1 robert.florence883$ ls
+Terminal Saved Output	l8t1.h			lex.yy.c
+Terminal Saved Output2	l8t1.l			y.tab.c
+l8t1.c			l8t1.y			y.tab.h
+l8t1.dSYM		l8t1build.sh
+SIE-1222-19:l8t1 robert.florence883$ ./l8t1build.sh 
+SIE-1222-19:l8t1 robert.florence883$ ./l8t1
+> (add 3 4)
+lex: LPAREN
+lex: FUNC sval = add
+lex: NUMBER dval = 3.000000
+yacc: NUMBER
+lex: NUMBER dval = 4.000000
+yacc: NUMBER
+lex: RPAREN
+LPAREN FUNC expr expr RPAREN
+7.000000lex: EOL
+> yacc: program expr
+7.000000
+> (sub 4 3)
+lex: LPAREN
+lex: FUNC sval = sub
+lex: NUMBER dval = 4.000000
+yacc: NUMBER
+lex: NUMBER dval = 3.000000
+yacc: NUMBER
+lex: RPAREN
+LPAREN FUNC expr expr RPAREN
+1.000000lex: EOL
+> yacc: program expr
+1.000000
+> (mult 5 6)
+lex: LPAREN
+lex: FUNC sval = mult
+lex: NUMBER dval = 5.000000
+yacc: NUMBER
+lex: NUMBER dval = 6.000000
+yacc: NUMBER
+lex: RPAREN
+LPAREN FUNC expr expr RPAREN
+30.000000lex: EOL
+> yacc: program expr
+30.000000
+> (div 5 0)
+lex: LPAREN
+lex: FUNC sval = div
+lex: NUMBER dval = 5.000000
+yacc: NUMBER
+lex: NUMBER dval = 0.000000
+yacc: NUMBER
+lex: RPAREN
+LPAREN FUNC expr expr RPAREN
+ERROR: Cannot divide by 00.000000lex: EOL
+> yacc: program expr
+0.000000
+> quit
+QUIT
+SIE-1222-19:l8t1 robert.florence883$ 
+SIE-1222-19:l8t1 robert.florence883$ 
+SIE-1222-19:l8t1 robert.florence883$ 
+SIE-1222-19:l8t1 robert.florence883$ 
+SIE-1222-19:l8t1 robert.florence883$ 
+SIE-1222-19:l8t1 robert.florence883$ 
+SIE-1222-19:l8t1 robert.florence883$ 
+SIE-1222-19:l8t1 robert.florence883$ ./l8t1build.sh 
+l8t1.c:111:25: error: expected ')'
+        return (log(op1);
+                        ^
+l8t1.c:111:16: note: to match this '('
+        return (log(op1);
+               ^
+1 error generated.
+SIE-1222-19:l8t1 robert.florence883$ ./l8t1build.sh 
+SIE-1222-19:l8t1 robert.florence883$ ./l8t1
+> (abs -5
+lex: LPAREN
+lex: FUNC sval = abs
+lex: NUMBER dval = 5.000000
+yacc: NUMBER
+lex: EOL
+syntax error
+error
+> error
+> (abs -5)
+lex: LPAREN
+error
+> lex: FUNC sval = abs
+error
+> lex: NUMBER dval = 5.000000
+error
+> lex: RPAREN
+LPAREN FUNC expr expr RPAREN
+5.000000lex: EOL
+> yacc: program expr
+5.000000
+> (abs 6)
+lex: LPAREN
+lex: FUNC sval = abs
+lex: NUMBER dval = 6.000000
+yacc: NUMBER
+lex: RPAREN
+yacc: LPAREN FUNC expr RPAREN
+ result = 6.000000lex: EOL
+> yacc: program expr
+6.000000
+> wow
+lex: EOL
+syntax error
+error
+> > yacc: program expr
+6.000000
+> (remainder 11 5)
+lex: LPAREN
+lex: FUNC sval = remainder
+lex: NUMBER dval = 11.000000
+yacc: NUMBER
+lex: NUMBER dval = 5.000000
+yacc: NUMBER
+lex: RPAREN
+LPAREN FUNC expr expr RPAREN
+1.000000lex: EOL
+> yacc: program expr
+1.000000
+> (remainder 42 2)
+lex: LPAREN
+lex: FUNC sval = remainder
+lex: NUMBER dval = 42.000000
+yacc: NUMBER
+lex: NUMBER dval = 2.000000
+yacc: NUMBER
+lex: RPAREN
+LPAREN FUNC expr expr RPAREN
+0.000000lex: EOL
+> yacc: program expr
+0.000000
+> quit
+QUIT
+SIE-1222-19:l8t1 robert.florence883$ ./l8t1
+> (log 5)
+lex: LPAREN
+lex: FUNC sval = log
+lex: NUMBER dval = 5.000000
+yacc: NUMBER
+lex: RPAREN
+yacc: LPAREN FUNC expr RPAREN
+ result = 1.609438lex: EOL
+> yacc: program expr
+1.609438
+> (log 1)
+lex: LPAREN
+lex: FUNC sval = log
+lex: NUMBER dval = 1.000000
+yacc: NUMBER
+lex: RPAREN
+yacc: LPAREN FUNC expr RPAREN
+ result = 0.000000lex: EOL
+> yacc: program expr
+0.000000
+> (log 0)
+lex: LPAREN
+lex: FUNC sval = log
+lex: NUMBER dval = 0.000000
+yacc: NUMBER
+lex: RPAREN
+yacc: LPAREN FUNC expr RPAREN
+ result = -inflex: EOL
+> yacc: program expr
+-inf
+> (max 5 90
+lex: LPAREN
+lex: FUNC sval = max
+lex: NUMBER dval = 5.000000
+yacc: NUMBER
+lex: NUMBER dval = 90.000000
+yacc: NUMBER
+lex: EOL
+syntax error
+error
+> error
+> (max 5 90)     
+lex: LPAREN
+error
+> lex: FUNC sval = max
+error
+> lex: NUMBER dval = 5.000000
+error
+> lex: NUMBER dval = 90.000000
+error
+> lex: RPAREN
+LPAREN FUNC expr expr RPAREN
+90.000000lex: EOL
+> yacc: program expr
+90.000000
+> (sqrt 5)
+lex: LPAREN
+lex: FUNC sval = sqrt
+lex: NUMBER dval = 5.000000
+yacc: NUMBER
+lex: RPAREN
+yacc: LPAREN FUNC expr RPAREN
+ result = 2.236068lex: EOL
+> yacc: program expr
+2.236068
+> (sqrt 169)
+lex: LPAREN
+lex: FUNC sval = sqrt
+lex: NUMBER dval = 169.000000
+yacc: NUMBER
+lex: RPAREN
+yacc: LPAREN FUNC expr RPAREN
+ result = 13.000000lex: EOL
+> yacc: program expr
+13.000000
+> (exp 1)
+lex: LPAREN
+lex: FUNC sval = exp
+lex: NUMBER dval = 1.000000
+yacc: NUMBER
+lex: RPAREN
+yacc: LPAREN FUNC expr RPAREN
+ result = 2.718282lex: EOL
+> yacc: program expr
+2.718282
+> (pow 2 5)
+lex: LPAREN
+lex: FUNC sval = pow
+lex: NUMBER dval = 2.000000
+yacc: NUMBER
+lex: NUMBER dval = 5.000000
+yacc: NUMBER
+lex: RPAREN
+LPAREN FUNC expr expr RPAREN
+32.000000lex: EOL
+> yacc: program expr
+32.000000
+> (pow 2 10)
+lex: LPAREN
+lex: FUNC sval = pow
+lex: NUMBER dval = 2.000000
+yacc: NUMBER
+lex: NUMBER dval = 10.000000
+yacc: NUMBER
+lex: RPAREN
+LPAREN FUNC expr expr RPAREN
+1024.000000lex: EOL
+> yacc: program expr
+1024.000000
+> quit
+QUIT
+SIE-1222-19:l8t1 robert.florence883$ ./l8t1build.sh 
+SIE-1222-19:l8t1 robert.florence883$ ./l8t1
+> (add (exp (sub 3.5 (sqrt(15))) (log (remainder (pow 3 (sqrt 20)) 5.2)))
+lex: LPAREN
+lex: FUNC sval = add
+lex: LPAREN
+lex: FUNC sval = exp
+lex: LPAREN
+lex: FUNC sval = sub
+lex: NUMBER dval = 3.500000
+yacc: NUMBER
+lex: LPAREN
+lex: FUNC sval = sqrt
+lex: LPAREN
+lex: NUMBER dval = 15.000000
+syntax error
+error
+> yacc: NUMBER
+lex: RPAREN
+LPAREN FUNC expr expr RPAREN
+3.872983lex: RPAREN
+LPAREN FUNC expr expr RPAREN
+-0.372983lex: RPAREN
+yacc: LPAREN FUNC expr RPAREN
+ result = 0.688677lex: LPAREN
+lex: FUNC sval = log
+lex: LPAREN
+lex: FUNC sval = remainder
+lex: LPAREN
+lex: FUNC sval = pow
+lex: NUMBER dval = 3.000000
+yacc: NUMBER
+lex: LPAREN
+lex: FUNC sval = sqrt
+lex: NUMBER dval = 20.000000
+yacc: NUMBER
+lex: RPAREN
+yacc: LPAREN FUNC expr RPAREN
+ result = 4.472136lex: RPAREN
+LPAREN FUNC expr expr RPAREN
+136.066470lex: NUMBER dval = 5.200000
+yacc: NUMBER
+lex: RPAREN
+LPAREN FUNC expr expr RPAREN
+0.866470lex: RPAREN
+yacc: LPAREN FUNC expr RPAREN
+ result = -0.143328lex: RPAREN
+LPAREN FUNC expr expr RPAREN
+0.545349lex: EOL
+> yacc: program expr
+0.545349
+> (add (exp (sub 3.5 (sqrt 15))) (log (remainder (pow 3 (sqrt 20)) 5.2)))
+lex: LPAREN
+lex: FUNC sval = add
+lex: LPAREN
+lex: FUNC sval = exp
+lex: LPAREN
+lex: FUNC sval = sub
+lex: NUMBER dval = 3.500000
+yacc: NUMBER
+lex: LPAREN
+lex: FUNC sval = sqrt
+lex: NUMBER dval = 15.000000
+yacc: NUMBER
+lex: RPAREN
+yacc: LPAREN FUNC expr RPAREN
+ result = 3.872983lex: RPAREN
+LPAREN FUNC expr expr RPAREN
+-0.372983lex: RPAREN
+yacc: LPAREN FUNC expr RPAREN
+ result = 0.688677lex: LPAREN
+lex: FUNC sval = log
+lex: LPAREN
+lex: FUNC sval = remainder
+lex: LPAREN
+lex: FUNC sval = pow
+lex: NUMBER dval = 3.000000
+yacc: NUMBER
+lex: LPAREN
+lex: FUNC sval = sqrt
+lex: NUMBER dval = 20.000000
+yacc: NUMBER
+lex: RPAREN
+yacc: LPAREN FUNC expr RPAREN
+ result = 4.472136lex: RPAREN
+LPAREN FUNC expr expr RPAREN
+136.066470lex: NUMBER dval = 5.200000
+yacc: NUMBER
+lex: RPAREN
+LPAREN FUNC expr expr RPAREN
+0.866470lex: RPAREN
+yacc: LPAREN FUNC expr RPAREN
+ result = -0.143328lex: RPAREN
+LPAREN FUNC expr expr RPAREN
+0.545349lex: EOL
+> yacc: program expr
+0.545349
+> quit            
+QUIT
+SIE-1222-19:l8t1 robert.florence883$ ./l8t1build.sh 
+SIE-1222-19:l8t1 robert.florence883$ ./l8t1
+> (log 2 128)
+lex: LPAREN
+lex: FUNC sval = log
+lex: NUMBER dval = 2.000000
+yacc: NUMBER
+lex: NUMBER dval = 128.000000
+yacc: NUMBER
+lex: RPAREN
+LPAREN FUNC expr expr RPAREN
+0.142857lex: EOL
+> yacc: program expr
+0.142857
+> (log 2 4)
+lex: LPAREN
+lex: FUNC sval = log
+lex: NUMBER dval = 2.000000
+yacc: NUMBER
+lex: NUMBER dval = 4.000000
+yacc: NUMBER
+lex: RPAREN
+LPAREN FUNC expr expr RPAREN
+0.500000lex: EOL
+> yacc: program expr
+0.500000
+> (log 10 100)
+lex: LPAREN
+lex: FUNC sval = log
+lex: NUMBER dval = 10.000000
+yacc: NUMBER
+lex: NUMBER dval = 100.000000
+yacc: NUMBER
+lex: RPAREN
+LPAREN FUNC expr expr RPAREN
+0.500000lex: EOL
+> yacc: program expr
+0.500000
+> (log 2 8)
+lex: LPAREN
+lex: FUNC sval = log
+lex: NUMBER dval = 2.000000
+yacc: NUMBER
+lex: NUMBER dval = 8.000000
+yacc: NUMBER
+lex: RPAREN
+LPAREN FUNC expr expr RPAREN
+0.333333lex: EOL
+> yacc: program expr
+0.333333
+> quit
+QUIT
+SIE-1222-19:l8t1 robert.florence883$ ./l8t1build.sh 
+SIE-1222-19:l8t1 robert.florence883$ ./l8t1
+> (log 2 8)
+lex: LPAREN
+lex: FUNC sval = log
+lex: NUMBER dval = 2.000000
+yacc: NUMBER
+lex: NUMBER dval = 8.000000
+yacc: NUMBER
+lex: RPAREN
+LPAREN FUNC expr expr RPAREN
+3.000000lex: EOL
+> yacc: program expr
+3.000000
+> (cbrt 8)
+lex: LPAREN
+lex: FUNC sval = cbrt
+lex: NUMBER dval = 8.000000
+yacc: NUMBER
+lex: RPAREN
+yacc: LPAREN FUNC expr RPAREN
+ result = 2.000000lex: EOL
+> yacc: program expr
+2.000000
+> (hypot 3 4)
+lex: LPAREN
+lex: FUNC sval = hypot
+lex: NUMBER dval = 3.000000
+yacc: NUMBER
+lex: NUMBER dval = 4.000000
+yacc: NUMBER
+lex: RPAREN
+LPAREN FUNC expr expr RPAREN
+5.000000lex: EOL
+> yacc: program expr
+5.000000
+> quit
+QUIT
+SIE-1222-19:l8t1 robert.florence883$ 

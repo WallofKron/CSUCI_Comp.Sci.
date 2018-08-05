@@ -1,0 +1,5 @@
+statement: Assign: firstvar to: 1.0
+statement: Assign: secondvar to: 2.0
+statement: Repeat 10.0
+statement: Assign: thirdvar to: 2.0
+Parser error in: {<LPAREN>}	statement: Parser error in: {<DIV>}	statement: Parser error in: {<LPAREN>}	statement: Assign: firstvar to: Parser error in: {<PLUS>}	Parser error in: statement: Parser error in: {<RPAREN>}	statement: Parser error in: {<SEMICOLON>}	statement: Repeat 2.0

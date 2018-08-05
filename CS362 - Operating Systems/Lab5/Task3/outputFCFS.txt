@@ -1,0 +1,77 @@
+T0: Process 1 Arrived!
+CPU: P1(15)
+<Queue>: 
+
+T2: Process 2 Arrived!
+CPU: P1(13)
+<Queue>: P2(6), 
+
+T5: Process 3 Arrived!
+CPU: P1(10)
+<Queue>: P2(6), P3(2), 
+
+T10: Process 4 Arrived!
+CPU: P1(5)
+<Queue>: P2(6), P3(2), P4(5), 
+
+T15: Process 1 Finished!
+CPU: P2(6)
+<Queue>: P3(2), P4(5), 
+
+T18: Process 5 Arrived!
+CPU: P2(3)
+<Queue>: P3(2), P4(5), P5(7), 
+
+T21: Process 2 Finished!
+CPU: P3(2)
+<Queue>: P4(5), P5(7), 
+
+T23: Process 3 Finished!
+CPU: P4(5)
+<Queue>: P5(7), 
+
+T23: Process 6 Arrived!
+CPU: P4(5)
+<Queue>: P5(7), P6(4), 
+
+T27: Process 7 Arrived!
+CPU: P4(1)
+<Queue>: P5(7), P6(4), P7(11), 
+
+T28: Process 4 Finished!
+CPU: P5(7)
+<Queue>: P6(4), P7(11), 
+
+T35: Process 5 Finished!
+CPU: P6(4)
+<Queue>: P7(11), 
+
+T36: Process 8 Arrived!
+CPU: P6(3)
+<Queue>: P7(11), P8(9), 
+
+T39: Process 6 Finished!
+CPU: P7(11)
+<Queue>: P8(9), 
+
+T40: Process 9 Arrived!
+CPU: P7(10)
+<Queue>: P8(9), P9(3), 
+
+T42: Process 10 Arrived!
+CPU: P7(8)
+<Queue>: P8(9), P9(3), P10(6), 
+
+T50: Process 7 Finished!
+CPU: P8(9)
+<Queue>: P9(3), P10(6), 
+
+T59: Process 8 Finished!
+CPU: P9(3)
+<Queue>: P10(6), 
+
+T62: Process 9 Finished!
+CPU: P10(6)
+<Queue>: 
+
+Average Waiting Time: 10.000000

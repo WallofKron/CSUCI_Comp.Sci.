@@ -1,0 +1,89 @@
+Last login: Tue Oct 18 09:13:47 on ttys001
+Roberts-MacBook-Pro-2:~ RobertFlorence$ ls
+Applications	Documents	Library		Music		Public
+Desktop		Downloads	Movies		Pictures
+Roberts-MacBook-Pro-2:~ RobertFlorence$ cd Desktop/CS362/Lab8/Task1/
+Roberts-MacBook-Pro-2:Task1 RobertFlorence$ ls
+giveMeNum.c		testStatLibMain.c
+Roberts-MacBook-Pro-2:Task1 RobertFlorence$ script
+Script started, output file is typescript
+bash-3.2$ ls
+giveMeNum.c		testStatLibMain.c	typescript
+bash-3.2$ gcc *.c -o testNoLib
+bash-3.2$ ./testNoLib 
+Give me a number: 
+5
+You gave me : 5
+bash-3.2$ gcc -c giveMeNum.c -o giveMeNum.o
+bash-3.2$ ar rcs libgiveMeNum.a giveMeNum.o
+bash-3.2$ ls
+giveMeNum.c		libgiveMeNum.a		testStatLibMain.c
+giveMeNum.o		testNoLib		typescript
+bash-3.2$ nm libgiveMeNum.a 
+
+libgiveMeNum.a(giveMeNum.o):
+0000000000000000 T _giveMeNum
+                 U _printf
+                 U _scanf
+bash-3.2$ ar t libgiveMeNum.a 
+__.SYMDEF SORTED
+giveMeNum.o
+bash-3.2$ ls
+giveMeNum.c		libgiveMeNum.a		testStatLibMain.c
+giveMeNum.o		testNoLib		typescript
+bash-3.2$ gcc testStatLibMain.c -L -lgiveMeNum -o testStatLib
+ld: warning: directory not found for option '-L-lgiveMeNum'
+Undefined symbols for architecture x86_64:
+  "_giveMeNum", referenced from:
+      _main in testStatLibMain-fbea94.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+bash-3.2$ gcc testStatLibMain.c -L -1giveMeNum -o testStatLib
+ld: warning: directory not found for option '-L-1giveMeNum'
+Undefined symbols for architecture x86_64:
+  "_giveMeNum", referenced from:
+      _main in testStatLibMain-dd5432.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+bash-3.2$ gcc testStatLibMain.c -L. -1giveMeNum -o testStatLib
+clang: error: unknown argument: '-1giveMeNum'
+bash-3.2$ gcc testStatLibMain.c -L. -lgiveMeNum -o testStatLib
+bash-3.2$ ./testStatLib 
+Give me a number: 
+55
+You gave me : 55
+bash-3.2$ exit
+exit
+
+Script done, output file is typescript
+Roberts-MacBook-Pro-2:Task1 RobertFlorence$ oops
+-bash: oops: command not found
+Roberts-MacBook-Pro-2:Task1 RobertFlorence$ gcc -v *.c
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple x86_64-apple-macosx10.12.0 -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name giveMeNum.c -mrelocation-model pic -pic-level 2 -mthread-model posix -mdisable-fp-elim -masm-verbose -munwind-tables -target-cpu penryn -target-linker-version 274.1 -v -dwarf-column-info -debugger-tuning=lldb -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -fdebug-compilation-dir /Users/RobertFlorence/Desktop/CS362/Lab8/Task1 -ferror-limit 19 -fmessage-length 80 -stack-protector 1 -fblocks -fobjc-runtime=macosx-10.12.0 -fencode-extended-block-signature -fmax-type-align=16 -fdiagnostics-show-option -fcolor-diagnostics -o /var/folders/5v/hf0w1p8d2rg84q_qldylcj4c0000gn/T/giveMeNum-0655bf.o -x c giveMeNum.c
+clang -cc1 version 8.0.0 (clang-800.0.38) default target x86_64-apple-darwin15.6.0
+ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/local/include"
+ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/Library/Frameworks"
+#include "..." search starts here:
+#include <...> search starts here:
+ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include
+ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include
+ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include
+ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks (framework directory)
+End of search list.
+ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple x86_64-apple-macosx10.12.0 -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name testStatLibMain.c -mrelocation-model pic -pic-level 2 -mthread-model posix -mdisable-fp-elim -masm-verbose -munwind-tables -target-cpu penryn -target-linker-version 274.1 -v -dwarf-column-info -debugger-tuning=lldb -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -fdebug-compilation-dir /Users/RobertFlorence/Desktop/CS362/Lab8/Task1 -ferror-limit 19 -fmessage-length 80 -stack-protector 1 -fblocks -fobjc-runtime=macosx-10.12.0 -fencode-extended-block-signature -fmax-type-align=16 -fdiagnostics-show-option -fcolor-diagnostics -o /var/folders/5v/hf0w1p8d2rg84q_qldylcj4c0000gn/T/testStatLibMain-8f7905.o -x c testStatLibMain.c
+clang -cc1 version 8.0.0 (clang-800.0.38) default target x86_64-apple-darwin15.6.0
+ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/local/include"
+ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/Library/Frameworks"
+#include "..." search starts here:
+#include <...> search starts here:
+ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include
+ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include
+ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include
+ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks (framework directory)
+End of search list.
+ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.12.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -o a.out /var/folders/5v/hf0w1p8d2rg84q_qldylcj4c0000gn/T/giveMeNum-0655bf.o /var/folders/5v/hf0w1p8d2rg84q_qldylcj4c0000gn/T/testStatLibMain-8f7905.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/lib/darwin/libclang_rt.osx.a
+Roberts-MacBook-Pro-2:Task1 RobertFlorence$ 

@@ -1,0 +1,11 @@
+cistudent@NetworkingLab:~/Desktop/Project1/Task1$ ls
+hello.c  terminaloutput.txt
+cistudent@NetworkingLab:~/Desktop/Project1/Task1$ gcc -Wall hello.c `pkg-config fuse --cflags --libs` -o hello
+cistudent@NetworkingLab:~/Desktop/Project1/Task1$ mkdir tmp
+cistudent@NetworkingLab:~/Desktop/Project1/Task1$ ./hello tmp/
+cistudent@NetworkingLab:~/Desktop/Project1/Task1$ ls tmp/
+hello
+cistudent@NetworkingLab:~/Desktop/Project1/Task1$ cat tmp/hello
+Hello World!
+cistudent@NetworkingLab:~/Desktop/Project1/Task1$ exit
+

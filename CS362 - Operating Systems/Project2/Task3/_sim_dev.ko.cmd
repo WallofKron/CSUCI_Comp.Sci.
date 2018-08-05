@@ -1,0 +1,1 @@
+cmd_/home/cistudent/Desktop/CS362/Project2/Task3/sim_dev.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/cistudent/Desktop/CS362/Project2/Task3/sim_dev.ko /home/cistudent/Desktop/CS362/Project2/Task3/sim_dev.o /home/cistudent/Desktop/CS362/Project2/Task3/sim_dev.mod.o

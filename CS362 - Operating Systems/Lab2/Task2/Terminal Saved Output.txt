@@ -1,0 +1,179 @@
+Last login: Mon Sep 12 11:07:06 on ttys001
+Roberts-MacBook-Pro-2:~ RobertFlorence$ ls
+Applications	Documents	Library		Music		Public
+Desktop		Downloads	Movies		Pictures
+Roberts-MacBook-Pro-2:~ RobertFlorence$ cd Desktop/CS362/Lab2/Task2/
+Roberts-MacBook-Pro-2:Task2 RobertFlorence$ ls
+crash	crash.c
+Roberts-MacBook-Pro-2:Task2 RobertFlorence$ touch crash-revised.c
+Roberts-MacBook-Pro-2:Task2 RobertFlorence$ gcc crash-revised.c -o crashrevised
+crash-revised.c:8:5: error: expected member name or ';' after declaration
+      specifiers
+    char *last;
+    ^
+crash-revised.c:7:17: error: expected ';' at end of declaration list
+    char *first,
+                ^
+                ;
+crash-revised.c:18:7: error: member reference base type 'NAME_PTR'
+      (aka 'struct name *') is not a structure or union
+    me->first = NULL;
+    ~~^ ~~~~~
+crash-revised.c:19:7: error: member reference base type 'NAME_PTR'
+      (aka 'struct name *') is not a structure or union
+    me->last = NULL;
+    ~~^ ~~~~
+crash-revised.c:20:14: warning: incompatible pointer types passing 'NAME_PTR *'
+      (aka 'struct name **') to parameter of type 'NAME_PTR'
+      (aka 'struct name *'); dereference with * [-Wincompatible-pointer-types]
+    get_name(me);
+             ^~
+             *
+crash-revised.c:13:23: note: passing argument to parameter here
+void get_name(NAME_PTR);
+                      ^
+crash-revised.c:21:32: error: member reference base type 'NAME_PTR'
+      (aka 'struct name *') is not a structure or union
+    printf("Hello %s %s!\n", me->first, me->last);
+                             ~~^ ~~~~~
+crash-revised.c:21:43: error: member reference base type 'NAME_PTR'
+      (aka 'struct name *') is not a structure or union
+    printf("Hello %s %s!\n", me->first, me->last);
+                                        ~~^ ~~~~
+crash-revised.c:29:22: error: no member named 'last' in 'struct name'
+    scanf("%s", ptr->last);
+                ~~~  ^
+1 warning and 7 errors generated.
+Roberts-MacBook-Pro-2:Task2 RobertFlorence$ gcc crash-revised.c -o crashrevised
+crash-revised.c:13:15: error: a parameter list without types is only allowed in
+      a function definition
+void get_name(NAME_PTR);
+              ^
+crash-revised.c:24:15: error: unknown type name 'NAME_PTR'
+void get_name(NAME_PTR ptr)
+              ^
+2 errors generated.
+Roberts-MacBook-Pro-2:Task2 RobertFlorence$ gcc crash-revised.c -o crashrevised
+crash-revised.c:27:20: error: member reference type 'NAME' (aka 'struct name')
+      is not a pointer; did you mean to use '.'?
+    scanf("%s", ptr->first);
+                ~~~^~
+                   .
+crash-revised.c:29:20: error: member reference type 'NAME' (aka 'struct name')
+      is not a pointer; did you mean to use '.'?
+    scanf("%s", ptr->last);
+                ~~~^~
+                   .
+2 errors generated.
+Roberts-MacBook-Pro-2:Task2 RobertFlorence$ gcc crash-revised.c -o crashrevised
+Roberts-MacBook-Pro-2:Task2 RobertFlorence$ ./crashrevised 
+What's your first name?
+robert
+Segmentation fault: 11
+Roberts-MacBook-Pro-2:Task2 RobertFlorence$ ./crashrevised 
+What's your first name?
+^[[Aasdf
+Segmentation fault: 11
+Roberts-MacBook-Pro-2:Task2 RobertFlorence$ gcc crash-revised.c -o crashrevised
+crash-revised.c:7:16: error: use of undeclared identifier 'ARRAYSIZE'
+    char first[ARRAYSIZE];
+               ^
+crash-revised.c:8:15: error: use of undeclared identifier 'ARRAYSIZE'
+    char last[ARRAYSIZE];
+              ^
+2 errors generated.
+Roberts-MacBook-Pro-2:Task2 RobertFlorence$ gcc crash-revised.c -o crashrevised
+crash-revised.c:7:16: error: use of undeclared identifier 'ARRAYSIZE'
+    char first[ARRAYSIZE];
+               ^
+crash-revised.c:8:15: error: use of undeclared identifier 'ARRAYSIZE'
+    char last[ARRAYSIZE];
+              ^
+2 errors generated.
+Roberts-MacBook-Pro-2:Task2 RobertFlorence$ gcc crash-revised.c -o crashrevised
+crash-revised.c:19:15: error: array type 'char [150]' is not assignable
+    me->first = "NULL";
+    ~~~~~~~~~ ^
+crash-revised.c:20:14: error: array type 'char [150]' is not assignable
+    me->last = "NULL";
+    ~~~~~~~~ ^
+2 errors generated.
+Roberts-MacBook-Pro-2:Task2 RobertFlorence$ gcc crash-revised.c -o crashrevised
+Roberts-MacBook-Pro-2:Task2 RobertFlorence$ ./crashrevised 
+What's your first name?
+what
+What's your last name?
+bert
+Hello  !
+Roberts-MacBook-Pro-2:Task2 RobertFlorence$ gcc crash-revised.c -o crashrevised
+crash-revised.c:24:6: error: conflicting types for 'get_name'
+void get_name(NAME *ptr)
+     ^
+crash-revised.c:13:6: note: previous declaration is here
+void get_name(NAME);
+     ^
+crash-revised.c:27:20: error: member reference type 'NAME *'
+      (aka 'struct name *') is a pointer; did you mean to use '->'?
+    scanf("%s", ptr.first);
+                ~~~^
+                   ->
+crash-revised.c:29:20: error: member reference type 'NAME *'
+      (aka 'struct name *') is a pointer; did you mean to use '->'?
+    scanf("%s", ptr.last);
+                ~~~^
+                   ->
+3 errors generated.
+Roberts-MacBook-Pro-2:Task2 RobertFlorence$ gcc crash-revised.c -o crashrevised
+crash-revised.c:24:6: error: conflicting types for 'get_name'
+void get_name(NAME *ptr)
+     ^
+crash-revised.c:13:6: note: previous declaration is here
+void get_name(NAME);
+     ^
+1 error generated.
+Roberts-MacBook-Pro-2:Task2 RobertFlorence$ gcc crash-revised.c -o crashrevised
+crash-revised.c:20:14: error: passing 'NAME' (aka 'struct name') to parameter of
+      incompatible type 'NAME *' (aka 'struct name *'); remove *
+    get_name(*me);
+             ^~~
+crash-revised.c:13:20: note: passing argument to parameter here
+void get_name(NAME*);
+                   ^
+1 error generated.
+Roberts-MacBook-Pro-2:Task2 RobertFlorence$ gcc crash-revised.c -o crashrevised
+crash-revised.c:20:14: error: passing 'NAME' (aka 'struct name') to parameter of
+      incompatible type 'NAME *' (aka 'struct name *'); remove *
+    get_name(*me);
+             ^~~
+crash-revised.c:13:21: note: passing argument to parameter 'ptr' here
+void get_name(NAME *ptr);
+                    ^
+1 error generated.
+Roberts-MacBook-Pro-2:Task2 RobertFlorence$ gcc crash-revised.c -o crashrevised
+Roberts-MacBook-Pro-2:Task2 RobertFlorence$ ./crashrevised 
+What's your first name?
+what
+What's your last name?
+bob
+Hello what bob!
+Roberts-MacBook-Pro-2:Task2 RobertFlorence$ ./crashrevised 
+What's your first name?
+asdf
+What's your last name?
+asdf
+Hello asdf asdf!
+Roberts-MacBook-Pro-2:Task2 RobertFlorence$ gcc crash-revised.c -o crashrevised
+Roberts-MacBook-Pro-2:Task2 RobertFlorence$ ./crashrevised 
+What's your first name?
+what
+Segmentation fault: 11
+Roberts-MacBook-Pro-2:Task2 RobertFlorence$ bob
+-bash: bob: command not found
+Roberts-MacBook-Pro-2:Task2 RobertFlorence$ gcc crash-revised.c -o crashrevised
+Roberts-MacBook-Pro-2:Task2 RobertFlorence$ ./crashrevised 
+What's your first name?
+what
+What's your last name?
+bob
+Hello what bob!
+Roberts-MacBook-Pro-2:Task2 RobertFlorence$ 

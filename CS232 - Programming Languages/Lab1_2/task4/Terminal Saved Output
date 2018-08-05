@@ -1,0 +1,219 @@
+Last login: Thu Jan 28 12:11:54 on ttys000
+SIE-1222-19:~ robert.florence883$ ls
+Applications	Documents	Library		Music		Public
+Desktop		Downloads	Movies		Pictures
+SIE-1222-19:~ robert.florence883$ cd Desktop/
+SIE-1222-19:Desktop robert.florence883$ cd CS232/
+SIE-1222-19:CS232 robert.florence883$ ls
+Lab1
+SIE-1222-19:CS232 robert.florence883$ cd Lab1/
+SIE-1222-19:Lab1 robert.florence883$ LS
+src	task1	task2
+SIE-1222-19:Lab1 robert.florence883$ ls
+src	task1	task2
+SIE-1222-19:Lab1 robert.florence883$ cd task2
+SIE-1222-19:task2 robert.florence883$ ls
+types.c
+SIE-1222-19:task2 robert.florence883$ gcc types.c -o types
+types.c:12:2: error: non-void function 'main' should return a value
+      [-Wreturn-type]
+        return ;
+        ^
+1 error generated.
+SIE-1222-19:task2 robert.florence883$ gcc types.c -o types
+types.c:15:39: error: use of undeclared identifier 'faculty'; did you mean
+      'nfaculty'?
+    printf("CSUCI has %d faculty.\n", faculty);
+                                      ^~~~~~~
+                                      nfaculty
+types.c:6:9: note: 'nfaculty' declared here
+    int nfaculty = 0;
+        ^
+types.c:18:57: warning: format specifies type 'int' but the argument has type
+      'double' [-Wformat]
+    printf("CSUCI's student to faculty ratio is %d.\n", ratio);
+                                                ~~      ^~~~~
+                                                %f
+1 warning and 1 error generated.
+SIE-1222-19:task2 robert.florence883$ gcc types.c -o types
+SIE-1222-19:task2 robert.florence883$ ./types
+How many students does CSUCI have ?:1200
+CSUCI has 1200 students.
+How many faculty does CSUCI have ?:25
+CSUCI has 25 faculty.
+CSUCI's student to faculty ratio is 48.000000.
+SIE-1222-19:task2 robert.florence883$ ./types
+How many students does CSUCI have ?:1200
+CSUCI has 1200 students.
+How many faculty does CSUCI have ?:25
+CSUCI has 25 faculty.
+CSUCI's student to faculty ratio is 48.000000.
+SIE-1222-19:task2 robert.florence883$ gcc types.c -o types
+SIE-1222-19:task2 robert.florence883$ ./types
+How many students does CSUCI have ?:1200
+CSUCI has 1200 students.
+How many faculty does CSUCI have ?:25
+CSUCI has 25 faculty.
+CSUCI's student to faculty ratio is 48.0.
+SIE-1222-19:task2 robert.florence883$ cd..
+-bash: cd..: command not found
+SIE-1222-19:task2 robert.florence883$ cd ..
+SIE-1222-19:Lab1 robert.florence883$ ls
+src	task1	task2	task3
+SIE-1222-19:Lab1 robert.florence883$ cd task3
+SIE-1222-19:task3 robert.florence883$ gcc if-then-else.c
+SIE-1222-19:task3 robert.florence883$ gcc if-then-else.c -o ifthenelse
+SIE-1222-19:task3 robert.florence883$ ls
+a.out		if-then-else.c	ifthenelse
+SIE-1222-19:task3 robert.florence883$ ls
+if-then-else.c	ifthenelse
+SIE-1222-19:task3 robert.florence883$ ./ifthenelse 
+Low on gas!
+SIE-1222-19:task3 robert.florence883$ gcc if-then-else.c -o ifthenelse
+if-then-else.c:12:17: warning: data argument not used by format string
+      [-Wformat-extra-args]
+    scanf("&d", &gaslevel);
+          ~~~~  ^
+1 warning generated.
+SIE-1222-19:task3 robert.florence883$ gcc if-then-else.c -o ifthenelse
+SIE-1222-19:task3 robert.florence883$ ./ifthenelse 
+Gas level?(0 - 10: 9
+Good driver !
+SIE-1222-19:task3 robert.florence883$ ./ifthenelse 
+Gas level?(0 - 10: 3
+Low on gas!
+SIE-1222-19:task3 robert.florence883$ ./ifthenelse > ifthenoutput.txt
+-bash: ./ifthenelse: No such file or directory
+SIE-1222-19:task3 robert.florence883$ gcc if-then-else.c -o ifthenelse
+SIE-1222-19:task3 robert.florence883$ ./ifthenelse > ifthenoutput.txt
+3
+SIE-1222-19:task3 robert.florence883$ gcc if-then-else.c -o ifthenelse
+SIE-1222-19:task3 robert.florence883$ ./ifthenelse > ifthenoutput.txt
+4
+SIE-1222-19:task3 robert.florence883$ ./ifthenelse > ifthenoutput.txt
+7
+SIE-1222-19:task3 robert.florence883$ cd ..
+SIE-1222-19:Lab1 robert.florence883$ cd task4
+SIE-1222-19:task4 robert.florence883$ mkfile data.txt
+usage: mkfile [-nv] size[b|k|m|g] filename ...
+SIE-1222-19:task4 robert.florence883$ touch data.txt
+SIE-1222-19:task4 robert.florence883$ ls
+array.c		data.txt
+SIE-1222-19:task4 robert.florence883$ gcc array.c -o array
+array.c:16:20: warning: format specifies type 'int *' but the argument has type
+      'double *' [-Wformat]
+        scanf("%d",&input)
+               ~~  ^~~~~~
+               %lf
+array.c:16:27: error: expected ';' after expression
+        scanf("%d",&input)
+                          ^
+                          ;
+array.c:29:10: error: use of undeclared identifier 'i'
+    for (i = 0; i < num; i++) {
+         ^
+array.c:29:17: error: use of undeclared identifier 'i'
+    for (i = 0; i < num; i++) {
+                ^
+array.c:29:21: error: use of undeclared identifier 'num'; did you mean 'sum'?
+    for (i = 0; i < num; i++) {
+                    ^~~
+                    sum
+array.c:9:12: note: 'sum' declared here
+    double sum = 0.0;
+           ^
+array.c:29:26: error: use of undeclared identifier 'i'
+    for (i = 0; i < num; i++) {
+                         ^
+array.c:30:31: error: use of undeclared identifier 'i'
+        printf("%d, ", number[i]);
+                              ^
+1 warning and 6 errors generated.
+SIE-1222-19:task4 robert.florence883$ gcc array.c -o array
+array.c:16:28: error: expected ';' after expression
+        scanf("%lf",&input)
+                           ^
+                           ;
+array.c:30:24: warning: format specifies type 'int' but the argument has type
+      'double' [-Wformat]
+        printf("%d, ", number[i]);
+                ~~     ^~~~~~~~~
+                %f
+1 warning and 1 error generated.
+SIE-1222-19:task4 robert.florence883$ gcc array.c -o array
+SIE-1222-19:task4 robert.florence883$ ./array
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+Data: 1.000000, 2.000000, 3.000000, 4.000000, 5.000000, 6.000000, 7.000000, 8.000000, 9.000000, 10.000000, 11.000000, 12.000000, 
+6.500000
+SIE-1222-19:task4 robert.florence883$ gcc array.c -o array
+SIE-1222-19:task4 robert.florence883$ ./array
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+Data: 1.00, 2.00, 3.00, 4.00, 5.00, 6.00, 7.00, 8.00, 9.00, 10.00, 11.00, 12.00, 
+6.500000
+SIE-1222-19:task4 robert.florence883$ gcc array.c -o array
+array.c:43:2: error: expected '}'
+}
+ ^
+array.c:6:1: note: to match this '{'
+{
+^
+1 error generated.
+SIE-1222-19:task4 robert.florence883$ gcc array.c -o array
+SIE-1222-19:task4 robert.florence883$ ./array
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+Data: 1.00, 2.00, 3.00, 4.00, 5.00, 6.00, 7.00, 8.00, 9.00, 10.00, 11.00, 12.00
+6.50
+SIE-1222-19:task4 robert.florence883$ gcc array.c -o array
+SIE-1222-19:task4 robert.florence883$ ./array
+1   
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+Data: 1.00, 2.00, 3.00, 4.00, 5.00, 6.00, 7.00, 8.00, 9.00, 10.00, 11.00, 12.00
+Average: 6.50
+SIE-1222-19:task4 robert.florence883$ ./array < data.txt
+Data: 1.00, 2.00, 3.00, 4.00, 5.00, 6.00, 7.00, 8.00, 9.00, 10.00, 11.00, 12.00
+Average: 6.50
+SIE-1222-19:task4 robert.florence883$ ./array < data.txt > output.txt
+SIE-1222-19:task4 robert.florence883$ 

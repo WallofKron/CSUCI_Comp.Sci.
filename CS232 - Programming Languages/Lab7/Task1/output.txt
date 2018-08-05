@@ -1,0 +1,20 @@
+The bank has 100
+My budget encompasses 500
+the car cost a thousand dollars
+the investment in the stock and bond helped fund the new car
+financially we have 200 to our name
+we need to go to the bank to deposit 150
+we are trying to raise proper funding to increase our budget
+John plays the stock market when he works at the bank
+
+POTENTIALLY INTERESTING READING!!!
+Sum is: 950
+OCCURENCES:
+bank: 3
+dollar: 1
+financ: 1
+budget: 2
+fund: 2
+stock: 2
+bond: 1
+invest: 1

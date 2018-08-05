@@ -1,0 +1,14 @@
+Last login: Tue Mar  1 00:41:29 on ttys000
+192:~ RobertFlorence$ cd Desktop/CS232/LAB5/
+192:LAB5 RobertFlorence$ ls
+task1	task2
+192:LAB5 RobertFlorence$ cd task2
+192:task2 RobertFlorence$ gcc *.c
+tabledriven.c:145:26: warning: multi-character character constant [-Wmultichar]
+                    case '/n':
+                         ^
+tabledriven.c:145:26: warning: overflow converting case value to switch
+      condition type (12142 to 110) [-Wswitch]
+2 warnings generated.
+192:task2 RobertFlorence$ ./a.out <input.txt
+{IDTOKEN<firstvar>}	{<ASSIGNMENT>}	{NumberTOKEN<1>}	{<SEMICOLON>}	{IDTOKEN<secondvar>}	{<ASSIGNMENT>}	{NumberTOKEN<2>}	{<SEMICOLON>}	{<REPEAT>}	{<LPAREN>}	{NumberTOKEN<10>}	{<RPAREN>}	{IDTOKEN<thirdvar>}	{<ASSIGNMENT>}	{NumberTOKEN<2>}	{<MULT>}	{<LPAREN>}	{IDTOKEN<firstvar>}	{<PLUS>}	{IDTOKEN<secondvar>}	{<RPAREN>}	{<DIV>}	{<LPAREN>}	{IDTOKEN<firstvar>}	{<PLUS>}	{NumberTOKEN<2>}	{<RPAREN>}	{<SEMICOLON>}	{<REPEAT>}	{<LPAREN>}	{IDTOKEN<firstvar>}	{<PLUS>}	{NumberTOKEN<2>}	{<MULT>}	{IDTOKEN<secondvar>}	{<RPAREN>}	{<REPEAT>}	{<LPAREN>}	{IDTOKEN<thirdvar>}	{<RPAREN>}	{<PRINT>}	{IDTOKEN<firstvar>}	192:task2 RobertFlorence$ 

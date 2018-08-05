@@ -1,0 +1,105 @@
+1). 4096 page size
+
+2). It seems as though, the first page of the file is invalid or has special permissions, the first 4096(first page) bytes are causing the program to segmentation fault.
+
+3). My guess is that the program crashes during the first page, is because that page might have special access privileges. So when we try to access memory we are not allowed to, it segmentation faults.
+
+4). values 4096 to 21067 do not cause a segmentation fault during execution.
+
+
+
+
+
+
+
+
+Script started on Thu Oct 27 12:37:11 2016
+bash-3.2$ ls
+input.txt		memoryMappedFile.c
+mem			typescript
+bash-3.2$ rm mem
+bash-3.2$ ls
+input.txt		memoryMappedFile.c	typescript
+bash-3.2$ gccmmemoryMappedFile.c -o mem
+bash-3.2$ ./mem
+Playing with pages of size 4096
+Enter file name: input.txt
+Enter file offset between 0 and 21067: 2
+Byte at offset 2 is 'r'
+Segmentation fault: 11
+bash-3.2$ ./mem
+Playing with pages of size 4096
+Enter file name: input.txt
+Enter file offset between 0 and 21067: 1000
+Byte at offset 1000 is 'u'
+Segmentation fault: 11
+bash-3.2$ ./mem
+Playing with pages of size 4096
+Enter file name: input.txt
+Enter file offset between 0 and 21067: 2000
+Byte at offset 2000 is 'r'
+Segmentation fault: 11
+bash-3.2$ ./mem
+Playing with pages of size 4096
+Enter file name: input.txt
+Enter file offset between 0 and 21067: 5000
+Byte at offset 5000 is ' '
+Byte at offset 5000 is ' '
+bash-3.2$ ./mem
+Playing with pages of size 4096
+Enter file name: input.txt
+Enter file offset between 0 and 21067: 4000
+Byte at offset 4000 is 'f'
+Segmentation fault: 11
+bash-3.2$ ./mem
+Playing with pages of size 4096
+Enter file name: input.txt
+Enter file offset between 0 and 21067: 8100
+Byte at offset 8100 is 'i'
+Byte at offset 8100 is 'i'
+bash-3.2$ ./mem
+Playing with pages of size 4096
+Enter file name: input.txt
+Enter file offset between 0 and 21067: 8200
+Byte at offset 8200 is 's'
+Byte at offset 8200 is 's'
+bash-3.2$ ./mem
+Playing with pages of size 4096
+Enter file name: input.txt
+Enter file offset between 0 and 21067: 10000
+Byte at offset 10000 is 'c'
+Byte at offset 10000 is 'c'
+bash-3.2$ ./mem
+Playing with pages of size 4096
+Enter file name: input.txt
+Enter file offset between 0 and 21067: 12
+Byte at offset 12 is 'd'
+Segmentation fault: 11
+bash-3.2$ ./mem
+Playing with pages of size 4096
+Enter file name: input.txt
+Enter file offset between 0 and 21067: 12000
+Byte at offset 12000 is 'l'
+Byte at offset 12000 is 'l'
+bash-3.2$ ./mem
+Playing with pages of size 4096
+Enter file name: input.txt
+Enter file offset between 0 and 21067: 15000
+Byte at offset 15000 is ','
+Byte at offset 15000 is ','
+bash-3.2$ ./mem
+Playing with pages of size 4096
+Enter file name: input.txt
+Enter file offset between 0 and 21067: 20000
+Byte at offset 20000 is 'v'
+Byte at offset 20000 is 'v'
+bash-3.2$ ./mem
+Playing with pages of size 4096
+Enter file name: input.txt
+Enter file offset between 0 and 21067: 21066
+Byte at offset 21066 is 'c'
+Byte at offset 21066 is 'c'
+bash-3.2$ exit
+exit
+
+Script done on Thu Oct 27 12:39:36 2016

@@ -1,0 +1,37 @@
+Script started on Tue Oct 25 11:11:17 2016
+[?1034hbash-3.2$ exit[Kls
+invertedPageTable.c	task4.c			typescript
+bash-3.2$ lsexitgcc task3.c -L. -lInvertedPageTable -o testStatLibrary[C[C[C[C[C[C[C[C[C[Cexit[K[2Pls[Kgcc -rdynamic -o testDYLIb[K[Kib task4.c -ldl
+[1mtask4.c:21:36: [0m[0;1;35mwarning: [0m[1mdeclaration of 'struct Table' will not be visible
+      outside of this function [-Wvisibility][0m
+extern void releaseInverted(struct Table *invTable);
+[0;1;32m                                   ^
+[0m[1mtask4.c:22:33: [0m[0;1;35mwarning: [0m[1mdeclaration of 'struct Table' will not be visible
+      outside of this function [-Wvisibility][0m
+extern void initInverted(struct Table *Table, int memSize, int frameSize);
+[0;1;32m                                ^
+[0m[1mtask4.c:23:29: [0m[0;1;35mwarning: [0m[1mdeclaration of 'struct Table' will not be visible
+      outside of this function [-Wvisibility][0m
+extern int translate(struct Table *Table, int pid);
+[0;1;32m                            ^
+[0m[1mtask4.c:24:28: [0m[0;1;35mwarning: [0m[1mdeclaration of 'struct Table' will not be visible
+      outside of this function [-Wvisibility][0m
+extern void addPage(struct Table *node, int pid, unsigned long timestamp...
+[0;1;32m                           ^
+[0m[1mtask4.c:39:5: [0m[0;1;35mwarning: [0m[1mimplicit declaration of function 'gettimeofday' is
+      invalid in C99 [-Wimplicit-function-declaration][0m
+    gettimeofday(&tval,NULL);
+[0;1;32m    ^
+[0m[1mtask4.c:45:18: [0m[0;1;31merror: [0m[1mvariable has incomplete type 'struct Table'[0m
+    struct Table CPU;
+[0;1;32m                 ^
+[0m[1mtask4.c:45:12: [0m[0;1;30mnote: [0mforward declaration of 'struct Table'[0m
+    struct Table CPU;
+[0;1;32m           ^
+[0m5 warnings and 1 error generated.
+bash-3.2$ nm libInvertedPageTable
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/nm: libInvertedPageTable: No such file or directory.
+bash-3.2$ exit
+exit
+
+Script done on Tue Oct 25 11:12:19 2016

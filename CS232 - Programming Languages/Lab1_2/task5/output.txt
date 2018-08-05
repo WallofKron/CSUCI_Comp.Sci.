@@ -1,0 +1,5 @@
+Type some words(0 to finish): 
+Words read: 3
+hello
+world
+asdf

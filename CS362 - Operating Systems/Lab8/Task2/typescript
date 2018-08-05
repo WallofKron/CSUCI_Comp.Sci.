@@ -1,0 +1,19 @@
+Script started on Thu Oct 20 12:37:01 2016
+[?1034hbash-3.2$ ls
+giveMeNum.c	testDyLibMain.c	typescript
+bash-3.2$ gcc *,[K.c -o testNoLib
+bash-3.2$ ./testNoLib 
+ERR: dlopen(./libgiveMeNum.so, 1): image not found
+bash-3.2$ gcc -fPIC -shared  [K-nostartfiles -o libgiveMeNum.so giveMeNum.c\[K
+bash-3.2$ gcc -rdynamic -o testDyLibMi[Kain testDyLibMain.c -ldl
+bash-3.2$ nm libgiveMeNum.so 
+0000000000000f30 T _giveMeNum
+                 U _printf
+                 U _scanf
+                 U dyld_stub_binder
+bash-3.2$ man gcc
+No manual entry for gcc
+bash-3.2$ exit
+exit
+
+Script done on Thu Oct 20 12:44:13 2016

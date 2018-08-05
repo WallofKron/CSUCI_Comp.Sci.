@@ -1,0 +1,139 @@
+Last login: Tue Feb  2 11:57:27 on console
+SIE-1222-19:~ robert.florence883$ cd Desktop/
+SIE-1222-19:Desktop robert.florence883$ cd CS232/
+SIE-1222-19:CS232 robert.florence883$ cd lab1
+SIE-1222-19:lab1 robert.florence883$ ls
+src	task1	task2	task3	task4	task5
+SIE-1222-19:lab1 robert.florence883$ touch data.txt
+SIE-1222-19:lab1 robert.florence883$ cd task6
+SIE-1222-19:task6 robert.florence883$ gcc file.c
+file.c:15:29: error: use of undeclared identifier 'buffer'
+    fscanf(inputfile, "%s", buffer);
+                            ^
+file.c:16:24: error: use of undeclared identifier 'buffer'
+    printf("1 : %s\n", buffer);
+                       ^
+file.c:25:13: error: too few arguments to function call,
+      expected at least 2, have 0
+    fprintf();
+    ~~~~~~~ ^
+3 errors generated.
+SIE-1222-19:task6 robert.florence883$ gcc file.c
+file.c:4:21: error: expected ';' at end of declaration
+    char buffer[255]
+                    ^
+                    ;
+file.c:26:18: error: too few arguments to function call,
+      expected at least 2, have 1
+    fprintf("   ");
+    ~~~~~~~      ^
+2 errors generated.
+SIE-1222-19:task6 robert.florence883$ gcc file.c
+SIE-1222-19:task6 robert.florence883$ gcc file.c -o file
+SIE-1222-19:task6 robert.florence883$ ./file
+1 : Hello
+SIE-1222-19:task6 robert.florence883$ gcc file.c -o file
+SIE-1222-19:task6 robert.florence883$ ./file
+1 : Hello There!
+SIE-1222-19:task6 robert.florence883$ gcc file.c -o file
+file.c:21:17: warning: format specifies type 'int *' but the
+      argument has type 'char (*)[200]' [-Wformat]
+    scanf("%d", &newname);
+           ~~   ^~~~~~~~
+file.c:23:32: error: invalid operands to binary expression
+      ('char *' and 'char *')
+    output_file = fopen(newname+".txt", "w");
+                        ~~~~~~~^~~~~~~
+file.c:30:26: warning: format string is not a string literal
+      (potentially insecure) [-Wformat-security]
+    fprintf(output_file, buffer);
+                         ^~~~~~
+2 warnings and 1 error generated.
+SIE-1222-19:task6 robert.florence883$ gcc file.c -o file
+file.c:21:17: warning: format specifies type 'char *' but the
+      argument has type 'char (*)[200]' [-Wformat]
+    scanf("%s", &newname);
+           ~~   ^~~~~~~~
+file.c:23:22: error: invalid operands to binary expression
+      ('char *' and 'char *')
+    newname = newname+".txt";
+              ~~~~~~~^~~~~~~
+file.c:32:26: warning: format string is not a string literal
+      (potentially insecure) [-Wformat-security]
+    fprintf(output_file, buffer);
+                         ^~~~~~
+2 warnings and 1 error generated.
+SIE-1222-19:task6 robert.florence883$ gcc file.c -o file
+file.c:21:17: warning: format specifies type 'char *' but the
+      argument has type 'char (*)[200]' [-Wformat]
+    scanf("%s", &newname);
+           ~~   ^~~~~~~~
+file.c:23:15: warning: implicitly declaring library function
+      'strcat' with type 'char *(char *, const char *)'
+    newname = strcat(newname,".txt");
+              ^
+file.c:23:15: note: include the header <string.h> or explicitly
+      provide a declaration for 'strcat'
+file.c:23:13: error: array type 'char [200]' is not assignable
+    newname = strcat(newname,".txt");
+    ~~~~~~~ ^
+file.c:32:26: warning: format string is not a string literal
+      (potentially insecure) [-Wformat-security]
+    fprintf(output_file, buffer);
+                         ^~~~~~
+3 warnings and 1 error generated.
+SIE-1222-19:task6 robert.florence883$ gcc file.c -o file
+file.c:22:17: warning: format specifies type 'char *' but the
+      argument has type 'char (*)[200]' [-Wformat]
+    scanf("%s", &newname);
+           ~~   ^~~~~~~~
+file.c:24:5: warning: implicitly declaring library function
+      'strcat' with type 'char *(char *, const char *)'
+    strcat(newstr,newname);
+    ^
+file.c:24:5: note: include the header <string.h> or explicitly
+      provide a declaration for 'strcat'
+file.c:34:26: warning: format string is not a string literal
+      (potentially insecure) [-Wformat-security]
+    fprintf(output_file, buffer);
+                         ^~~~~~
+3 warnings generated.
+SIE-1222-19:task6 robert.florence883$ gcc file.c -o file
+file.c:23:17: warning: format specifies type 'char *' but the
+      argument has type 'char (*)[200]' [-Wformat]
+    scanf("%s", &newname);
+           ~~   ^~~~~~~~
+file.c:35:26: warning: format string is not a string literal
+      (potentially insecure) [-Wformat-security]
+    fprintf(output_file, buffer);
+                         ^~~~~~
+2 warnings generated.
+SIE-1222-19:task6 robert.florence883$ ./file
+content of file: Hello There!
+new file name: hello
+SIE-1222-19:task6 robert.florence883$ gcc file.c -o file
+file.c:23:17: warning: format specifies type 'char *' but the
+      argument has type 'char (*)[200]' [-Wformat]
+    scanf("%s", &newname);
+           ~~   ^~~~~~~~
+file.c:35:26: warning: format string is not a string literal
+      (potentially insecure) [-Wformat-security]
+    fprintf(output_file, buffer);
+                         ^~~~~~
+2 warnings generated.
+SIE-1222-19:task6 robert.florence883$ ./file
+content of file: Hello There!
+new file name: whatsup
+SIE-1222-19:task6 robert.florence883$ gcc file.c -o file
+file.c:23:17: warning: format specifies type 'char *' but the
+      argument has type 'char (*)[200]' [-Wformat]
+    scanf("%s", &newname);
+           ~~   ^~~~~~~~
+file.c:35:26: warning: format string is not a string literal
+      (potentially insecure) [-Wformat-security]
+    fprintf(output_file, buffer);
+                         ^~~~~~
+2 warnings generated.
+SIE-1222-19:task6 robert.florence883$ ./file > programoutput.txt
+newfile
+SIE-1222-19:task6 robert.florence883$ 

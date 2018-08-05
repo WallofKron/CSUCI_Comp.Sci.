@@ -1,0 +1,24 @@
+Last login: Sun Apr 17 19:55:08 on ttys000
+192:~ RobertFlorence$ cd Desktop/CS232/PROJECT/l8t3\:t4/
+192:l8t3:t4 RobertFlorence$ ./l8t3build.sh
+192:l8t3:t4 RobertFlorence$ ./l8t3
+> (add 1 (sub 3 4))
+0.000000
+> (mult (add 3 (sqrt 5)) (div 5 (cbrt 8)))
+13.090170
+> (min (max 9 (sqrt 9)) (pow 3 (log 7 3)))
+9.000000
+> (hypot (exp2 2) (cbrt 27))
+5.000000
+> (remainder 9 3)
+0.000000
+> (exp (neg 5))
+0.006738
+> (exp (abs 5))
+148.413159
+> quit
+192:l8t3:t4 RobertFlorence$ 
+
+
+
+

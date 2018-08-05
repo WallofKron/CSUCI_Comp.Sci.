@@ -1,0 +1,78 @@
+
+Start time(microseconds): 2752
+End time(microseconds): 346771
+Process/FORK Time Taken: 344
+
+
+
+Start time(microseconds): 863451
+End time(microseconds): 212012
+Process/FORK Time Taken: 349
+
+
+
+Start time(microseconds): 15237
+End time(microseconds): 352503
+Process/FORK Time Taken: 337
+
+
+
+Start time(microseconds): 159445
+End time(microseconds): 497555
+Process/FORK Time Taken: 338
+
+
+
+Start time(microseconds): 287799
+End time(microseconds): 625274
+Process/FORK Time Taken: 337
+
+
+
+Start time(microseconds): 407306
+End time(microseconds): 748408
+Process/FORK Time Taken: 341
+
+
+
+Start time(microseconds): 431614
+End time(microseconds): 778049
+Process/FORK Time Taken: 346
+
+
+
+Start time(microseconds): 511363
+End time(microseconds): 851632
+Process/FORK Time Taken: 340
+
+
+
+Start time(microseconds): 591325
+End time(microseconds): 931318
+Process/FORK Time Taken: 339
+
+
+
+Start time(microseconds): 583067
+End time(microseconds): 929258
+Process/FORK Time Taken: 346
+
+
+
+Start time(microseconds): 686927
+End time(microseconds): 26645
+Process/FORK Time Taken: 340
+
+
+
+Start time(microseconds): 543010
+End time(microseconds): 888945
+Process/FORK Time Taken: 345
+
+
+
+Start time(microseconds): 438931
+End time(microseconds): 785730
+Process/FORK Time Taken: 346
+
+

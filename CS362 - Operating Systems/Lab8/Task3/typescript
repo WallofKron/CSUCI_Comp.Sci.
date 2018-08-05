@@ -1,0 +1,796 @@
+Script started on Tue Oct 25 10:55:22 2016
+[?1034hbash-3.2$ gcc -c invertedPageTable.c -o invertedPageTable.o[C[C[C[C[C[C[C[C[C[Cclear[Kgcc -c invertedPageTable.c -o invertedPageTable.o[C[C[C[C[C[C[C[C[C[Cclear[Kgcc -c invertedPageTable.c -o invertedPageTable.o[C[C[C[C[C[C[C[C[C[Cclear[Kgcc -c invertedPageTable.c -o invertedPageTable.o[C[C[C[C[C[C[C[C[C[C[Kgcc -c invertedPageTable.c -o invertedPageTable.o
+[1minvertedPageTable.c:55:28: [0m[0;1;35mwarning: [0m[1minteger literal is too large to be
+      represented in a signed integer type, interpreting as unsigned
+      [-Wimplicitly-unsigned-literal][0m
+    unsigned long tempTS = 9999999999999999999;            //arbitraril...
+[0;1;32m                           ^
+[0m[1minvertedPageTable.c:124:5: [0m[0;1;35mwarning: [0m[1mimplicit declaration of function
+      'gettimeofday' is invalid in C99 [-Wimplicit-function-declaration][0m
+    gettimeofday(&tval,NULL);
+[0;1;32m    ^
+[0m2 warnings generated.
+bash-3.2$ ar rcs libInvertedLP[K[KPageTable.a invertedPageTable.o
+bash-3.2$ nm libInvertedPageTable.a 
+
+libInvertedPageTable.a(invertedPageTable.o):
+0000000000000100 T _addPage
+                 U _free
+                 U _gettimeofday
+0000000000000000 T _initInverted
+                 U _malloc
+                 U _printf
+0000000000000530 T _releaseInverted
+0000000000000410 T _translate
+bash-3.2$ ar t libInvertedPageTable.a 
+__.SYMDEF SORTED
+invertedPageTable.o
+bash-3.2$ gvv[K[Kcc [K[K[K[K;[Kls
+invertedPageTable.c	libInvertedPageTable.a	typescript
+invertedPageTable.o	task3.c
+bash-3.2$ gcc task3.c -L. -lib[K[Kinvertedpagetable 0[K-o test[K[K[KestStatLibrary
+[1mtask3.c:21:36: [0m[0;1;35mwarning: [0m[1mdeclaration of 'struct Table' will not be visible
+      outside of this function [-Wvisibility][0m
+extern void releaseInverted(struct Table *invTable);
+[0;1;32m                                   ^
+[0m[1mtask3.c:22:33: [0m[0;1;35mwarning: [0m[1mdeclaration of 'struct Table' will not be visible
+      outside of this function [-Wvisibility][0m
+extern void initInverted(struct Table *Table, int memSize, int frameSize);
+[0;1;32m                                ^
+[0m[1mtask3.c:23:29: [0m[0;1;35mwarning: [0m[1mdeclaration of 'struct Table' will not be visible
+      outside of this function [-Wvisibility][0m
+extern int translate(struct Table *Table, int pid);
+[0;1;32m                            ^
+[0m[1mtask3.c:24:28: [0m[0;1;35mwarning: [0m[1mdeclaration of 'struct Table' will not be visible
+      outside of this function [-Wvisibility][0m
+extern void addPage(struct Table *node, int pid, unsigned long timestamp...
+[0;1;32m                           ^
+[0m[1mtask3.c:39:5: [0m[0;1;35mwarning: [0m[1mimplicit declaration of function 'gettimeofday' is
+      invalid in C99 [-Wimplicit-function-declaration][0m
+    gettimeofday(&tval,NULL);
+[0;1;32m    ^
+[0m[1mtask3.c:45:18: [0m[0;1;31merror: [0m[1mvariable has incomplete type 'struct Table'[0m
+    struct Table CPU;
+[0;1;32m                 ^
+[0m[1mtask3.c:45:12: [0m[0;1;30mnote: [0mforward declaration of 'struct Table'[0m
+    struct Table CPU;
+[0;1;32m           ^
+[0m5 warnings and 1 error generated.
+bash-3.2$ gcc task3.c -L. -linvertedpagetable -o testStatLibrary[1P[1@I[C[C[C[C[C[C[C[1P[1@t[1P[1@d[C[1P[1@P[C[C[C[C[1P[1@T
+[1mtask3.c:21:36: [0m[0;1;35mwarning: [0m[1mdeclaration of 'struct Table' will not be visible
+      outside of this function [-Wvisibility][0m
+extern void releaseInverted(struct Table *invTable);
+[0;1;32m                                   ^
+[0m[1mtask3.c:22:33: [0m[0;1;35mwarning: [0m[1mdeclaration of 'struct Table' will not be visible
+      outside of this function [-Wvisibility][0m
+extern void initInverted(struct Table *Table, int memSize, int frameSize);
+[0;1;32m                                ^
+[0m[1mtask3.c:23:29: [0m[0;1;35mwarning: [0m[1mdeclaration of 'struct Table' will not be visible
+      outside of this function [-Wvisibility][0m
+extern int translate(struct Table *Table, int pid);
+[0;1;32m                            ^
+[0m[1mtask3.c:24:28: [0m[0;1;35mwarning: [0m[1mdeclaration of 'struct Table' will not be visible
+      outside of this function [-Wvisibility][0m
+extern void addPage(struct Table *node, int pid, unsigned long timestamp...
+[0;1;32m                           ^
+[0m[1mtask3.c:39:5: [0m[0;1;35mwarning: [0m[1mimplicit declaration of function 'gettimeofday' is
+      invalid in C99 [-Wimplicit-function-declaration][0m
+    gettimeofday(&tval,NULL);
+[0;1;32m    ^
+[0m[1mtask3.c:45:18: [0m[0;1;31merror: [0m[1mvariable has incomplete type 'struct Table'[0m
+    struct Table CPU;
+[0;1;32m                 ^
+[0m[1mtask3.c:45:12: [0m[0;1;30mnote: [0mforward declaration of 'struct Table'[0m
+    struct Table CPU;
+[0;1;32m           ^
+[0m5 warnings and 1 error generated.
+bash-3.2$ gcc task3.c -L. -lInvertedPageTable -o testStatLibrary
+[1mtask3.c:21:36: [0m[0;1;35mwarning: [0m[1mdeclaration of 'struct Table' will not be visible
+      outside of this function [-Wvisibility][0m
+extern void releaseInverted(struct Table *invTable);
+[0;1;32m                                   ^
+[0m[1mtask3.c:22:33: [0m[0;1;35mwarning: [0m[1mdeclaration of 'struct Table' will not be visible
+      outside of this function [-Wvisibility][0m
+extern void initInverted(struct Table *Table, int memSize, int frameSize);
+[0;1;32m                                ^
+[0m[1mtask3.c:23:29: [0m[0;1;35mwarning: [0m[1mdeclaration of 'struct Table' will not be visible
+      outside of this function [-Wvisibility][0m
+extern int translate(struct Table *Table, int pid);
+[0;1;32m                            ^
+[0m[1mtask3.c:24:28: [0m[0;1;35mwarning: [0m[1mdeclaration of 'struct Table' will not be visible
+      outside of this function [-Wvisibility][0m
+extern void addPage(struct Table *node, int pid, unsigned long timestamp...
+[0;1;32m                           ^
+[0m[1mtask3.c:39:5: [0m[0;1;35mwarning: [0m[1mimplicit declaration of function 'gettimeofday' is
+      invalid in C99 [-Wimplicit-function-declaration][0m
+    gettimeofday(&tval,NULL);
+[0;1;32m    ^
+[0m[1mtask3.c:47:18: [0m[0;1;35mwarning: [0m[1mincompatible pointer types passing 'struct Table **' to
+      parameter of type 'struct Table *' [-Wincompatible-pointer-types][0m
+    initInverted(&CPU, Msize, Fsize);
+[0;1;32m                 ^~~~
+[0m[1mtask3.c:22:40: [0m[0;1;30mnote: [0mpassing argument to parameter 'Table' here[0m
+extern void initInverted(struct Table *Table, int memSize, int frameSize);
+[0;1;32m                                       ^
+[0m[1mtask3.c:49:8: [0m[0;1;31merror: [0m[1mmember reference type 'struct Table *' is a pointer; did
+      you mean to use '->'?[0m
+    CPU.d = tempOffset;
+[0;1;32m    ~~~^
+[0m[0;32m       ->
+[0m[1mtask3.c:49:8: [0m[0;1;31merror: [0m[1mincomplete definition of type 'struct Table'[0m
+    CPU.d = tempOffset;
+[0;1;32m    ~~~^
+[0m[1mtask3.c:45:12: [0m[0;1;30mnote: [0mforward declaration of 'struct Table'[0m
+    struct Table *CPU;
+[0;1;32m           ^
+[0m[1mtask3.c:51:28: [0m[0;1;31merror: [0m[1mmember reference type 'struct Table *' is a pointer; did
+      you mean to use '->'?[0m
+    for (int j = 0; j < CPU.numPages; j++){         //generate initial p...
+[0;1;32m                        ~~~^
+[0m[0;32m                           ->
+[0m[1mtask3.c:51:28: [0m[0;1;31merror: [0m[1mincomplete definition of type 'struct Table'[0m
+    for (int j = 0; j < CPU.numPages; j++){         //generate initial p...
+[0;1;32m                        ~~~^
+[0m[1mtask3.c:45:12: [0m[0;1;30mnote: [0mforward declaration of 'struct Table'[0m
+    struct Table *CPU;
+[0;1;32m           ^
+[0m[1mtask3.c:56:17: [0m[0;1;35mwarning: [0m[1mincompatible pointer types passing 'struct Table **' to
+      parameter of type 'struct Table *' [-Wincompatible-pointer-types][0m
+        addPage(&CPU, tempPid, curTime, j);              //new page goe...
+[0;1;32m                ^~~~
+[0m[1mtask3.c:24:35: [0m[0;1;30mnote: [0mpassing argument to parameter 'node' here[0m
+extern void addPage(struct Table *node, int pid, unsigned long timestamp...
+[0;1;32m                                  ^
+[0m[1mtask3.c:64:32: [0m[0;1;31merror: [0m[1mmember reference type 'struct Table *' is a pointer; did
+      you mean to use '->'?[0m
+        for (int k = 0; k < CPU.numPages; k++){
+[0;1;32m                            ~~~^
+[0m[0;32m                               ->
+[0m[1mtask3.c:64:32: [0m[0;1;31merror: [0m[1mincomplete definition of type 'struct Table'[0m
+        for (int k = 0; k < CPU.numPages; k++){
+[0;1;32m                            ~~~^
+[0m[1mtask3.c:45:12: [0m[0;1;30mnote: [0mforward declaration of 'struct Table'[0m
+    struct Table *CPU;
+[0;1;32m           ^
+[0m[1mtask3.c:65:60: [0m[0;1;31merror: [0m[1mmember reference type 'struct Table *' is a pointer; did
+      you mean to use '->'?[0m
+            printf("PID: %d\tPage: %d\tTimestamp: %ld", CPU.pageTable[k]...
+[0;1;32m                                                        ~~~^
+[0m[0;32m                                                           ->
+[0m[1mtask3.c:65:60: [0m[0;1;31merror: [0m[1mincomplete definition of type 'struct Table'[0m
+            printf("PID: %d\tPage: %d\tTimestamp: %ld", CPU.pageTable[k]...
+[0;1;32m                                                        ~~~^
+[0m[1mtask3.c:45:12: [0m[0;1;30mnote: [0mforward declaration of 'struct Table'[0m
+    struct Table *CPU;
+[0;1;32m           ^
+[0m[1mtask3.c:65:82: [0m[0;1;31merror: [0m[1mmember reference type 'struct Table *' is a pointer; did
+      you mean to use '->'?[0m
+  ...%d\tPage: %d\tTimestamp: %ld", CPU.pageTable[k].pid, CPU.pageTable[k].p...
+[0;1;32m                                                          ~~~^
+[0m[0;32m                                                             ->
+[0m[1mtask3.c:65:82: [0m[0;1;31merror: [0m[1mincomplete definition of type 'struct Table'[0m
+  ...%d\tPage: %d\tTimestamp: %ld", CPU.pageTable[k].pid, CPU.pageTable[k].p...
+[0;1;32m                                                          ~~~^
+[0m[1mtask3.c:45:12: [0m[0;1;30mnote: [0mforward declaration of 'struct Table'[0m
+    struct Table *CPU;
+[0;1;32m           ^
+[0m[1mtask3.c:65:102: [0m[0;1;31merror: [0m[1mmember reference type 'struct Table *' is a pointer; did
+      you mean to use '->'?[0m
+  ...%d\tTimestamp: %ld", CPU.pageTable[k].pid, CPU.pageTable[k].p, CPU.pageT...
+[0;1;32m                                                                    ~~~^
+[0m[0;32m                                                                       ->
+[0m[1mtask3.c:65:102: [0m[0;1;31merror: [0m[1mincomplete definition of type 'struct Table'[0m
+  ...%d\tTimestamp: %ld", CPU.pageTable[k].pid, CPU.pageTable[k].p, CPU.pageT...
+[0;1;32m                                                                    ~~~^
+[0m[1mtask3.c:45:12: [0m[0;1;30mnote: [0mforward declaration of 'struct Table'[0m
+    struct Table *CPU;
+[0;1;32m           ^
+[0m[1mtask3.c:90:59: [0m[0;1;31merror: [0m[1mmember reference type 'struct Table *' is a pointer; did
+      you mean to use '->'?[0m
+                    if (!(userPage >= 0 && userPage <= CPU.numPages)){
+[0;1;32m                                                       ~~~^
+[0m[0;32m                                                          ->
+[0m[1mtask3.c:90:59: [0m[0;1;31merror: [0m[1mincomplete definition of type 'struct Table'[0m
+                    if (!(userPage >= 0 && userPage <= CPU.numPages)){
+[0;1;32m                                                       ~~~^
+[0m[1mtask3.c:45:12: [0m[0;1;30mnote: [0mforward declaration of 'struct Table'[0m
+    struct Table *CPU;
+[0;1;32m           ^
+[0m[1mtask3.c:96:33: [0m[0;1;35mwarning: [0m[1mincompatible pointer types passing 'struct Table **' to
+      parameter of type 'struct Table *' [-Wincompatible-pointer-types][0m
+                        addPage(&CPU, userPID, curTime, userPage)...
+[0;1;32m                                ^~~~
+[0m[1mtask3.c:24:35: [0m[0;1;30mnote: [0mpassing argument to parameter 'node' here[0m
+extern void addPage(struct Table *node, int pid, unsigned long timestamp...
+[0;1;32m                                  ^
+[0m[1mtask3.c:107:27: [0m[0;1;35mwarning: [0m[1mincompatible pointer types passing 'struct Table **' to
+      parameter of type 'struct Table *' [-Wincompatible-pointer-types][0m
+                translate(&CPU, PIDtemp);
+[0;1;32m                          ^~~~
+[0m[1mtask3.c:23:36: [0m[0;1;30mnote: [0mpassing argument to parameter 'Table' here[0m
+extern int translate(struct Table *Table, int pid);
+[0;1;32m                                   ^
+[0m[1mtask3.c:127:21: [0m[0;1;35mwarning: [0m[1mincompatible pointer types passing 'struct Table **' to
+      parameter of type 'struct Table *' [-Wincompatible-pointer-types][0m
+    releaseInverted(&CPU);
+[0;1;32m                    ^~~~
+[0m[1mtask3.c:21:43: [0m[0;1;30mnote: [0mpassing argument to parameter 'invTable' here[0m
+extern void releaseInverted(struct Table *invTable);
+[0;1;32m                                          ^
+[0m10 warnings and 14 errors generated.
+bash-3.2$ gcc task3.c -L. -lInvertedPageTable -o testStatLibrary
+[1mtask3.c:21:36: [0m[0;1;35mwarning: [0m[1mdeclaration of 'struct Table' will not be visible
+      outside of this function [-Wvisibility][0m
+extern void releaseInverted(struct Table *invTable);
+[0;1;32m                                   ^
+[0m[1mtask3.c:22:33: [0m[0;1;35mwarning: [0m[1mdeclaration of 'struct Table' will not be visible
+      outside of this function [-Wvisibility][0m
+extern void initInverted(struct Table *Table, int memSize, int frameSize);
+[0;1;32m                                ^
+[0m[1mtask3.c:23:29: [0m[0;1;35mwarning: [0m[1mdeclaration of 'struct Table' will not be visible
+      outside of this function [-Wvisibility][0m
+extern int translate(struct Table *Table, int pid);
+[0;1;32m                            ^
+[0m[1mtask3.c:24:28: [0m[0;1;35mwarning: [0m[1mdeclaration of 'struct Table' will not be visible
+      outside of this function [-Wvisibility][0m
+extern void addPage(struct Table *node, int pid, unsigned long timestamp...
+[0;1;32m                           ^
+[0m[1mtask3.c:39:5: [0m[0;1;35mwarning: [0m[1mimplicit declaration of function 'gettimeofday' is
+      invalid in C99 [-Wimplicit-function-declaration][0m
+    gettimeofday(&tval,NULL);
+[0;1;32m    ^
+[0m[1mtask3.c:45:18: [0m[0;1;31merror: [0m[1mvariable has incomplete type 'struct Table'[0m
+    struct Table CPU;
+[0;1;32m                 ^
+[0m[1mtask3.c:45:12: [0m[0;1;30mnote: [0mforward declaration of 'struct Table'[0m
+    struct Table CPU;
+[0;1;32m           ^
+[0m5 warnings and 1 error generated.
+bash-3.2$ gcc task3.c -L. -lInvertedPageTable -o testStatLibrary
+[1mtask3.c:21:36: [0m[0;1;35mwarning: [0m[1mdeclaration of 'struct Table' will not be visible
+      outside of this function [-Wvisibility][0m
+extern void releaseInverted(struct Table *invTable);
+[0;1;32m                                   ^
+[0m[1mtask3.c:22:33: [0m[0;1;35mwarning: [0m[1mdeclaration of 'struct Table' will not be visible
+      outside of this function [-Wvisibility][0m
+extern void initInverted(struct Table *Table, int memSize, int frameSize);
+[0;1;32m                                ^
+[0m[1mtask3.c:23:29: [0m[0;1;35mwarning: [0m[1mdeclaration of 'struct Table' will not be visible
+      outside of this function [-Wvisibility][0m
+extern int translate(struct Table *Table, int pid);
+[0;1;32m                            ^
+[0m[1mtask3.c:24:28: [0m[0;1;35mwarning: [0m[1mdeclaration of 'struct Table' will not be visible
+      outside of this function [-Wvisibility][0m
+extern void addPage(struct Table *node, int pid, unsigned long timestamp...
+[0;1;32m                           ^
+[0m[1mtask3.c:39:5: [0m[0;1;35mwarning: [0m[1mimplicit declaration of function 'gettimeofday' is
+      invalid in C99 [-Wimplicit-function-declaration][0m
+    gettimeofday(&tval,NULL);
+[0;1;32m    ^
+[0m[1mtask3.c:47:18: [0m[0;1;35mwarning: [0m[1mincompatible pointer types passing 'struct Table **' to
+      parameter of type 'struct Table *' [-Wincompatible-pointer-types][0m
+    initInverted(&CPU, Msize, Fsize);
+[0;1;32m                 ^~~~
+[0m[1mtask3.c:22:40: [0m[0;1;30mnote: [0mpassing argument to parameter 'Table' here[0m
+extern void initInverted(struct Table *Table, int memSize, int frameSize);
+[0;1;32m                                       ^
+[0m[1mtask3.c:49:8: [0m[0;1;31merror: [0m[1mmember reference type 'struct Table *' is a pointer; did
+      you mean to use '->'?[0m
+    CPU.d = tempOffset;
+[0;1;32m    ~~~^
+[0m[0;32m       ->
+[0m[1mtask3.c:49:8: [0m[0;1;31merror: [0m[1mincomplete definition of type 'struct Table'[0m
+    CPU.d = tempOffset;
+[0;1;32m    ~~~^
+[0m[1mtask3.c:45:12: [0m[0;1;30mnote: [0mforward declaration of 'struct Table'[0m
+    struct Table *CPU;
+[0;1;32m           ^
+[0m[1mtask3.c:51:28: [0m[0;1;31merror: [0m[1mmember reference type 'struct Table *' is a pointer; did
+      you mean to use '->'?[0m
+    for (int j = 0; j < CPU.numPages; j++){         //generate initial p...
+[0;1;32m                        ~~~^
+[0m[0;32m                           ->
+[0m[1mtask3.c:51:28: [0m[0;1;31merror: [0m[1mincomplete definition of type 'struct Table'[0m
+    for (int j = 0; j < CPU.numPages; j++){         //generate initial p...
+[0;1;32m                        ~~~^
+[0m[1mtask3.c:45:12: [0m[0;1;30mnote: [0mforward declaration of 'struct Table'[0m
+    struct Table *CPU;
+[0;1;32m           ^
+[0m[1mtask3.c:56:17: [0m[0;1;35mwarning: [0m[1mincompatible pointer types passing 'struct Table **' to
+      parameter of type 'struct Table *' [-Wincompatible-pointer-types][0m
+        addPage(&CPU, tempPid, curTime, j);              //new page goe...
+[0;1;32m                ^~~~
+[0m[1mtask3.c:24:35: [0m[0;1;30mnote: [0mpassing argument to parameter 'node' here[0m
+extern void addPage(struct Table *node, int pid, unsigned long timestamp...
+[0;1;32m                                  ^
+[0m[1mtask3.c:64:32: [0m[0;1;31merror: [0m[1mmember reference type 'struct Table *' is a pointer; did
+      you mean to use '->'?[0m
+        for (int k = 0; k < CPU.numPages; k++){
+[0;1;32m                            ~~~^
+[0m[0;32m                               ->
+[0m[1mtask3.c:64:32: [0m[0;1;31merror: [0m[1mincomplete definition of type 'struct Table'[0m
+        for (int k = 0; k < CPU.numPages; k++){
+[0;1;32m                            ~~~^
+[0m[1mtask3.c:45:12: [0m[0;1;30mnote: [0mforward declaration of 'struct Table'[0m
+    struct Table *CPU;
+[0;1;32m           ^
+[0m[1mtask3.c:65:60: [0m[0;1;31merror: [0m[1mmember reference type 'struct Table *' is a pointer; did
+      you mean to use '->'?[0m
+            printf("PID: %d\tPage: %d\tTimestamp: %ld", CPU.pageTable[k]...
+[0;1;32m                                                        ~~~^
+[0m[0;32m                                                           ->
+[0m[1mtask3.c:65:60: [0m[0;1;31merror: [0m[1mincomplete definition of type 'struct Table'[0m
+            printf("PID: %d\tPage: %d\tTimestamp: %ld", CPU.pageTable[k]...
+[0;1;32m                                                        ~~~^
+[0m[1mtask3.c:45:12: [0m[0;1;30mnote: [0mforward declaration of 'struct Table'[0m
+    struct Table *CPU;
+[0;1;32m           ^
+[0m[1mtask3.c:65:82: [0m[0;1;31merror: [0m[1mmember reference type 'struct Table *' is a pointer; did
+      you mean to use '->'?[0m
+  ...%d\tPage: %d\tTimestamp: %ld", CPU.pageTable[k].pid, CPU.pageTable[k].p...
+[0;1;32m                                                          ~~~^
+[0m[0;32m                                                             ->
+[0m[1mtask3.c:65:82: [0m[0;1;31merror: [0m[1mincomplete definition of type 'struct Table'[0m
+  ...%d\tPage: %d\tTimestamp: %ld", CPU.pageTable[k].pid, CPU.pageTable[k].p...
+[0;1;32m                                                          ~~~^
+[0m[1mtask3.c:45:12: [0m[0;1;30mnote: [0mforward declaration of 'struct Table'[0m
+    struct Table *CPU;
+[0;1;32m           ^
+[0m[1mtask3.c:65:102: [0m[0;1;31merror: [0m[1mmember reference type 'struct Table *' is a pointer; did
+      you mean to use '->'?[0m
+  ...%d\tTimestamp: %ld", CPU.pageTable[k].pid, CPU.pageTable[k].p, CPU.pageT...
+[0;1;32m                                                                    ~~~^
+[0m[0;32m                                                                       ->
+[0m[1mtask3.c:65:102: [0m[0;1;31merror: [0m[1mincomplete definition of type 'struct Table'[0m
+  ...%d\tTimestamp: %ld", CPU.pageTable[k].pid, CPU.pageTable[k].p, CPU.pageT...
+[0;1;32m                                                                    ~~~^
+[0m[1mtask3.c:45:12: [0m[0;1;30mnote: [0mforward declaration of 'struct Table'[0m
+    struct Table *CPU;
+[0;1;32m           ^
+[0m[1mtask3.c:90:59: [0m[0;1;31merror: [0m[1mmember reference type 'struct Table *' is a pointer; did
+      you mean to use '->'?[0m
+                    if (!(userPage >= 0 && userPage <= CPU.numPages)){
+[0;1;32m                                                       ~~~^
+[0m[0;32m                                                          ->
+[0m[1mtask3.c:90:59: [0m[0;1;31merror: [0m[1mincomplete definition of type 'struct Table'[0m
+                    if (!(userPage >= 0 && userPage <= CPU.numPages)){
+[0;1;32m                                                       ~~~^
+[0m[1mtask3.c:45:12: [0m[0;1;30mnote: [0mforward declaration of 'struct Table'[0m
+    struct Table *CPU;
+[0;1;32m           ^
+[0m[1mtask3.c:96:33: [0m[0;1;35mwarning: [0m[1mincompatible pointer types passing 'struct Table **' to
+      parameter of type 'struct Table *' [-Wincompatible-pointer-types][0m
+                        addPage(&CPU, userPID, curTime, userPage)...
+[0;1;32m                                ^~~~
+[0m[1mtask3.c:24:35: [0m[0;1;30mnote: [0mpassing argument to parameter 'node' here[0m
+extern void addPage(struct Table *node, int pid, unsigned long timestamp...
+[0;1;32m                                  ^
+[0m[1mtask3.c:107:27: [0m[0;1;35mwarning: [0m[1mincompatible pointer types passing 'struct Table **' to
+      parameter of type 'struct Table *' [-Wincompatible-pointer-types][0m
+                translate(&CPU, PIDtemp);
+[0;1;32m                          ^~~~
+[0m[1mtask3.c:23:36: [0m[0;1;30mnote: [0mpassing argument to parameter 'Table' here[0m
+extern int translate(struct Table *Table, int pid);
+[0;1;32m                                   ^
+[0m[1mtask3.c:127:21: [0m[0;1;35mwarning: [0m[1mincompatible pointer types passing 'struct Table **' to
+      parameter of type 'struct Table *' [-Wincompatible-pointer-types][0m
+    releaseInverted(&CPU);
+[0;1;32m                    ^~~~
+[0m[1mtask3.c:21:43: [0m[0;1;30mnote: [0mpassing argument to parameter 'invTable' here[0m
+extern void releaseInverted(struct Table *invTable);
+[0;1;32m                                          ^
+[0m10 warnings and 14 errors generated.
+bash-3.2$ gcc task3.c -L. -lInvertedPageTable -o testStatLibrary
+[1mtask3.c:21:36: [0m[0;1;35mwarning: [0m[1mdeclaration of 'struct Table' will not be visible
+      outside of this function [-Wvisibility][0m
+extern void releaseInverted(struct Table *invTable);
+[0;1;32m                                   ^
+[0m[1mtask3.c:22:33: [0m[0;1;35mwarning: [0m[1mdeclaration of 'struct Table' will not be visible
+      outside of this function [-Wvisibility][0m
+extern void initInverted(struct Table *Table, int memSize, int frameSize);
+[0;1;32m                                ^
+[0m[1mtask3.c:23:29: [0m[0;1;35mwarning: [0m[1mdeclaration of 'struct Table' will not be visible
+      outside of this function [-Wvisibility][0m
+extern int translate(struct Table *Table, int pid);
+[0;1;32m                            ^
+[0m[1mtask3.c:24:28: [0m[0;1;35mwarning: [0m[1mdeclaration of 'struct Table' will not be visible
+      outside of this function [-Wvisibility][0m
+extern void addPage(struct Table *node, int pid, unsigned long timestamp...
+[0;1;32m                           ^
+[0m[1mtask3.c:39:5: [0m[0;1;35mwarning: [0m[1mimplicit declaration of function 'gettimeofday' is
+      invalid in C99 [-Wimplicit-function-declaration][0m
+    gettimeofday(&tval,NULL);
+[0;1;32m    ^
+[0m[1mtask3.c:47:18: [0m[0;1;35mwarning: [0m[1mincompatible pointer types passing 'struct Table *' to
+      parameter of type 'struct Table *' [-Wincompatible-pointer-types][0m
+    initInverted(CPU, Msize, Fsize);
+[0;1;32m                 ^~~
+[0m[1mtask3.c:22:40: [0m[0;1;30mnote: [0mpassing argument to parameter 'Table' here[0m
+extern void initInverted(struct Table *Table, int memSize, int frameSize);
+[0;1;32m                                       ^
+[0m[1mtask3.c:49:8: [0m[0;1;31merror: [0m[1mmember reference type 'struct Table *' is a pointer; did
+      you mean to use '->'?[0m
+    CPU.d = tempOffset;
+[0;1;32m    ~~~^
+[0m[0;32m       ->
+[0m[1mtask3.c:49:8: [0m[0;1;31merror: [0m[1mincomplete definition of type 'struct Table'[0m
+    CPU.d = tempOffset;
+[0;1;32m    ~~~^
+[0m[1mtask3.c:45:12: [0m[0;1;30mnote: [0mforward declaration of 'struct Table'[0m
+    struct Table *CPU;
+[0;1;32m           ^
+[0m[1mtask3.c:51:28: [0m[0;1;31merror: [0m[1mmember reference type 'struct Table *' is a pointer; did
+      you mean to use '->'?[0m
+    for (int j = 0; j < CPU.numPages; j++){         //generate initial p...
+[0;1;32m                        ~~~^
+[0m[0;32m                           ->
+[0m[1mtask3.c:51:28: [0m[0;1;31merror: [0m[1mincomplete definition of type 'struct Table'[0m
+    for (int j = 0; j < CPU.numPages; j++){         //generate initial p...
+[0;1;32m                        ~~~^
+[0m[1mtask3.c:45:12: [0m[0;1;30mnote: [0mforward declaration of 'struct Table'[0m
+    struct Table *CPU;
+[0;1;32m           ^
+[0m[1mtask3.c:56:17: [0m[0;1;35mwarning: [0m[1mincompatible pointer types passing 'struct Table *' to
+      parameter of type 'struct Table *' [-Wincompatible-pointer-types][0m
+        addPage(CPU, tempPid, curTime, j);              //new page goes ...
+[0;1;32m                ^~~
+[0m[1mtask3.c:24:35: [0m[0;1;30mnote: [0mpassing argument to parameter 'node' here[0m
+extern void addPage(struct Table *node, int pid, unsigned long timestamp...
+[0;1;32m                                  ^
+[0m[1mtask3.c:64:32: [0m[0;1;31merror: [0m[1mmember reference type 'struct Table *' is a pointer; did
+      you mean to use '->'?[0m
+        for (int k = 0; k < CPU.numPages; k++){
+[0;1;32m                            ~~~^
+[0m[0;32m                               ->
+[0m[1mtask3.c:64:32: [0m[0;1;31merror: [0m[1mincomplete definition of type 'struct Table'[0m
+        for (int k = 0; k < CPU.numPages; k++){
+[0;1;32m                            ~~~^
+[0m[1mtask3.c:45:12: [0m[0;1;30mnote: [0mforward declaration of 'struct Table'[0m
+    struct Table *CPU;
+[0;1;32m           ^
+[0m[1mtask3.c:65:60: [0m[0;1;31merror: [0m[1mmember reference type 'struct Table *' is a pointer; did
+      you mean to use '->'?[0m
+            printf("PID: %d\tPage: %d\tTimestamp: %ld", CPU.pageTable[k]...
+[0;1;32m                                                        ~~~^
+[0m[0;32m                                                           ->
+[0m[1mtask3.c:65:60: [0m[0;1;31merror: [0m[1mincomplete definition of type 'struct Table'[0m
+            printf("PID: %d\tPage: %d\tTimestamp: %ld", CPU.pageTable[k]...
+[0;1;32m                                                        ~~~^
+[0m[1mtask3.c:45:12: [0m[0;1;30mnote: [0mforward declaration of 'struct Table'[0m
+    struct Table *CPU;
+[0;1;32m           ^
+[0m[1mtask3.c:65:82: [0m[0;1;31merror: [0m[1mmember reference type 'struct Table *' is a pointer; did
+      you mean to use '->'?[0m
+  ...%d\tPage: %d\tTimestamp: %ld", CPU.pageTable[k].pid, CPU.pageTable[k].p...
+[0;1;32m                                                          ~~~^
+[0m[0;32m                                                             ->
+[0m[1mtask3.c:65:82: [0m[0;1;31merror: [0m[1mincomplete definition of type 'struct Table'[0m
+  ...%d\tPage: %d\tTimestamp: %ld", CPU.pageTable[k].pid, CPU.pageTable[k].p...
+[0;1;32m                                                          ~~~^
+[0m[1mtask3.c:45:12: [0m[0;1;30mnote: [0mforward declaration of 'struct Table'[0m
+    struct Table *CPU;
+[0;1;32m           ^
+[0m[1mtask3.c:65:102: [0m[0;1;31merror: [0m[1mmember reference type 'struct Table *' is a pointer; did
+      you mean to use '->'?[0m
+  ...%d\tTimestamp: %ld", CPU.pageTable[k].pid, CPU.pageTable[k].p, CPU.pageT...
+[0;1;32m                                                                    ~~~^
+[0m[0;32m                                                                       ->
+[0m[1mtask3.c:65:102: [0m[0;1;31merror: [0m[1mincomplete definition of type 'struct Table'[0m
+  ...%d\tTimestamp: %ld", CPU.pageTable[k].pid, CPU.pageTable[k].p, CPU.pageT...
+[0;1;32m                                                                    ~~~^
+[0m[1mtask3.c:45:12: [0m[0;1;30mnote: [0mforward declaration of 'struct Table'[0m
+    struct Table *CPU;
+[0;1;32m           ^
+[0m[1mtask3.c:90:59: [0m[0;1;31merror: [0m[1mmember reference type 'struct Table *' is a pointer; did
+      you mean to use '->'?[0m
+                    if (!(userPage >= 0 && userPage <= CPU.numPages)){
+[0;1;32m                                                       ~~~^
+[0m[0;32m                                                          ->
+[0m[1mtask3.c:90:59: [0m[0;1;31merror: [0m[1mincomplete definition of type 'struct Table'[0m
+                    if (!(userPage >= 0 && userPage <= CPU.numPages)){
+[0;1;32m                                                       ~~~^
+[0m[1mtask3.c:45:12: [0m[0;1;30mnote: [0mforward declaration of 'struct Table'[0m
+    struct Table *CPU;
+[0;1;32m           ^
+[0m[1mtask3.c:96:33: [0m[0;1;35mwarning: [0m[1mincompatible pointer types passing 'struct Table *' to
+      parameter of type 'struct Table *' [-Wincompatible-pointer-types][0m
+                        addPage(CPU, userPID, curTime, userPage)...
+[0;1;32m                                ^~~
+[0m[1mtask3.c:24:35: [0m[0;1;30mnote: [0mpassing argument to parameter 'node' here[0m
+extern void addPage(struct Table *node, int pid, unsigned long timestamp...
+[0;1;32m                                  ^
+[0m[1mtask3.c:107:27: [0m[0;1;35mwarning: [0m[1mincompatible pointer types passing 'struct Table *' to
+      parameter of type 'struct Table *' [-Wincompatible-pointer-types][0m
+                translate(CPU, PIDtemp);
+[0;1;32m                          ^~~
+[0m[1mtask3.c:23:36: [0m[0;1;30mnote: [0mpassing argument to parameter 'Table' here[0m
+extern int translate(struct Table *Table, int pid);
+[0;1;32m                                   ^
+[0m[1mtask3.c:127:21: [0m[0;1;35mwarning: [0m[1mincompatible pointer types passing 'struct Table *' to
+      parameter of type 'struct Table *' [-Wincompatible-pointer-types][0m
+    releaseInverted(CPU);
+[0;1;32m                    ^~~
+[0m[1mtask3.c:21:43: [0m[0;1;30mnote: [0mpassing argument to parameter 'invTable' here[0m
+extern void releaseInverted(struct Table *invTable);
+[0;1;32m                                          ^
+[0m10 warnings and 14 errors generated.
+bash-3.2$ gcc task3.c -L. -lInvertedPageTable -o testStatLibrary
+[1mtask3.c:21:36: [0m[0;1;35mwarning: [0m[1mdeclaration of 'struct Table' will not be visible
+      outside of this function [-Wvisibility][0m
+extern void releaseInverted(struct Table *invTable);
+[0;1;32m                                   ^
+[0m[1mtask3.c:22:33: [0m[0;1;35mwarning: [0m[1mdeclaration of 'struct Table' will not be visible
+      outside of this function [-Wvisibility][0m
+extern void initInverted(struct Table *Table, int memSize, int frameSize);
+[0;1;32m                                ^
+[0m[1mtask3.c:23:29: [0m[0;1;35mwarning: [0m[1mdeclaration of 'struct Table' will not be visible
+      outside of this function [-Wvisibility][0m
+extern int translate(struct Table *Table, int pid);
+[0;1;32m                            ^
+[0m[1mtask3.c:24:28: [0m[0;1;35mwarning: [0m[1mdeclaration of 'struct Table' will not be visible
+      outside of this function [-Wvisibility][0m
+extern void addPage(struct Table *node, int pid, unsigned long timestamp...
+[0;1;32m                           ^
+[0m[1mtask3.c:39:5: [0m[0;1;35mwarning: [0m[1mimplicit declaration of function 'gettimeofday' is
+      invalid in C99 [-Wimplicit-function-declaration][0m
+    gettimeofday(&tval,NULL);
+[0;1;32m    ^
+[0m[1mtask3.c:47:18: [0m[0;1;35mwarning: [0m[1mincompatible pointer types passing 'struct Table *' to
+      parameter of type 'struct Table *' [-Wincompatible-pointer-types][0m
+    initInverted(CPU, Msize, Fsize);
+[0;1;32m                 ^~~
+[0m[1mtask3.c:22:40: [0m[0;1;30mnote: [0mpassing argument to parameter 'Table' here[0m
+extern void initInverted(struct Table *Table, int memSize, int frameSize);
+[0;1;32m                                       ^
+[0m[1mtask3.c:49:8: [0m[0;1;31merror: [0m[1mmember reference type 'struct Table *' is a pointer; did
+      you mean to use '->'?[0m
+    CPU.d = tempOffset;
+[0;1;32m    ~~~^
+[0m[0;32m       ->
+[0m[1mtask3.c:49:8: [0m[0;1;31merror: [0m[1mincomplete definition of type 'struct Table'[0m
+    CPU.d = tempOffset;
+[0;1;32m    ~~~^
+[0m[1mtask3.c:45:12: [0m[0;1;30mnote: [0mforward declaration of 'struct Table'[0m
+    struct Table *CPU;
+[0;1;32m           ^
+[0m[1mtask3.c:51:28: [0m[0;1;31merror: [0m[1mmember reference type 'struct Table *' is a pointer; did
+      you mean to use '->'?[0m
+    for (int j = 0; j < CPU.numPages; j++){         //generate initial p...
+[0;1;32m                        ~~~^
+[0m[0;32m                           ->
+[0m[1mtask3.c:51:28: [0m[0;1;31merror: [0m[1mincomplete definition of type 'struct Table'[0m
+    for (int j = 0; j < CPU.numPages; j++){         //generate initial p...
+[0;1;32m                        ~~~^
+[0m[1mtask3.c:45:12: [0m[0;1;30mnote: [0mforward declaration of 'struct Table'[0m
+    struct Table *CPU;
+[0;1;32m           ^
+[0m[1mtask3.c:56:17: [0m[0;1;35mwarning: [0m[1mincompatible pointer types passing 'struct Table *' to
+      parameter of type 'struct Table *' [-Wincompatible-pointer-types][0m
+        addPage(CPU, tempPid, curTime, j);              //new page goes ...
+[0;1;32m                ^~~
+[0m[1mtask3.c:24:35: [0m[0;1;30mnote: [0mpassing argument to parameter 'node' here[0m
+extern void addPage(struct Table *node, int pid, unsigned long timestamp...
+[0;1;32m                                  ^
+[0m[1mtask3.c:64:32: [0m[0;1;31merror: [0m[1mmember reference type 'struct Table *' is a pointer; did
+      you mean to use '->'?[0m
+        for (int k = 0; k < CPU.numPages; k++){
+[0;1;32m                            ~~~^
+[0m[0;32m                               ->
+[0m[1mtask3.c:64:32: [0m[0;1;31merror: [0m[1mincomplete definition of type 'struct Table'[0m
+        for (int k = 0; k < CPU.numPages; k++){
+[0;1;32m                            ~~~^
+[0m[1mtask3.c:45:12: [0m[0;1;30mnote: [0mforward declaration of 'struct Table'[0m
+    struct Table *CPU;
+[0;1;32m           ^
+[0m[1mtask3.c:65:60: [0m[0;1;31merror: [0m[1mmember reference type 'struct Table *' is a pointer; did
+      you mean to use '->'?[0m
+            printf("PID: %d\tPage: %d\tTimestamp: %ld", CPU.pageTable[k]...
+[0;1;32m                                                        ~~~^
+[0m[0;32m                                                           ->
+[0m[1mtask3.c:65:60: [0m[0;1;31merror: [0m[1mincomplete definition of type 'struct Table'[0m
+            printf("PID: %d\tPage: %d\tTimestamp: %ld", CPU.pageTable[k]...
+[0;1;32m                                                        ~~~^
+[0m[1mtask3.c:45:12: [0m[0;1;30mnote: [0mforward declaration of 'struct Table'[0m
+    struct Table *CPU;
+[0;1;32m           ^
+[0m[1mtask3.c:65:82: [0m[0;1;31merror: [0m[1mmember reference type 'struct Table *' is a pointer; did
+      you mean to use '->'?[0m
+  ...%d\tPage: %d\tTimestamp: %ld", CPU.pageTable[k].pid, CPU.pageTable[k].p...
+[0;1;32m                                                          ~~~^
+[0m[0;32m                                                             ->
+[0m[1mtask3.c:65:82: [0m[0;1;31merror: [0m[1mincomplete definition of type 'struct Table'[0m
+  ...%d\tPage: %d\tTimestamp: %ld", CPU.pageTable[k].pid, CPU.pageTable[k].p...
+[0;1;32m                                                          ~~~^
+[0m[1mtask3.c:45:12: [0m[0;1;30mnote: [0mforward declaration of 'struct Table'[0m
+    struct Table *CPU;
+[0;1;32m           ^
+[0m[1mtask3.c:65:102: [0m[0;1;31merror: [0m[1mmember reference type 'struct Table *' is a pointer; did
+      you mean to use '->'?[0m
+  ...%d\tTimestamp: %ld", CPU.pageTable[k].pid, CPU.pageTable[k].p, CPU.pageT...
+[0;1;32m                                                                    ~~~^
+[0m[0;32m                                                                       ->
+[0m[1mtask3.c:65:102: [0m[0;1;31merror: [0m[1mincomplete definition of type 'struct Table'[0m
+  ...%d\tTimestamp: %ld", CPU.pageTable[k].pid, CPU.pageTable[k].p, CPU.pageT...
+[0;1;32m                                                                    ~~~^
+[0m[1mtask3.c:45:12: [0m[0;1;30mnote: [0mforward declaration of 'struct Table'[0m
+    struct Table *CPU;
+[0;1;32m           ^
+[0m[1mtask3.c:90:59: [0m[0;1;31merror: [0m[1mmember reference type 'struct Table *' is a pointer; did
+      you mean to use '->'?[0m
+                    if (!(userPage >= 0 && userPage <= CPU.numPages)){
+[0;1;32m                                                       ~~~^
+[0m[0;32m                                                          ->
+[0m[1mtask3.c:90:59: [0m[0;1;31merror: [0m[1mincomplete definition of type 'struct Table'[0m
+                    if (!(userPage >= 0 && userPage <= CPU.numPages)){
+[0;1;32m                                                       ~~~^
+[0m[1mtask3.c:45:12: [0m[0;1;30mnote: [0mforward declaration of 'struct Table'[0m
+    struct Table *CPU;
+[0;1;32m           ^
+[0m[1mtask3.c:96:33: [0m[0;1;35mwarning: [0m[1mincompatible pointer types passing 'struct Table *' to
+      parameter of type 'struct Table *' [-Wincompatible-pointer-types][0m
+                        addPage(CPU, userPID, curTime, userPage)...
+[0;1;32m                                ^~~
+[0m[1mtask3.c:24:35: [0m[0;1;30mnote: [0mpassing argument to parameter 'node' here[0m
+extern void addPage(struct Table *node, int pid, unsigned long timestamp...
+[0;1;32m                                  ^
+[0m[1mtask3.c:107:27: [0m[0;1;35mwarning: [0m[1mincompatible pointer types passing 'struct Table *' to
+      parameter of type 'struct Table *' [-Wincompatible-pointer-types][0m
+                translate(CPU, PIDtemp);
+[0;1;32m                          ^~~
+[0m[1mtask3.c:23:36: [0m[0;1;30mnote: [0mpassing argument to parameter 'Table' here[0m
+extern int translate(struct Table *Table, int pid);
+[0;1;32m                                   ^
+[0m[1mtask3.c:127:21: [0m[0;1;35mwarning: [0m[1mincompatible pointer types passing 'struct Table **' to
+      parameter of type 'struct Table *' [-Wincompatible-pointer-types][0m
+    releaseInverted(&CPU);
+[0;1;32m                    ^~~~
+[0m[1mtask3.c:21:43: [0m[0;1;30mnote: [0mpassing argument to parameter 'invTable' here[0m
+extern void releaseInverted(struct Table *invTable);
+[0;1;32m                                          ^
+[0m10 warnings and 14 errors generated.
+bash-3.2$ gcc task3.c -L. -lInvertedPageTable -o testStatLibrary
+[1mtask3.c:21:36: [0m[0;1;35mwarning: [0m[1mdeclaration of 'struct Table' will not be visible
+      outside of this function [-Wvisibility][0m
+extern void releaseInverted(struct Table *invTable);
+[0;1;32m                                   ^
+[0m[1mtask3.c:22:33: [0m[0;1;35mwarning: [0m[1mdeclaration of 'struct Table' will not be visible
+      outside of this function [-Wvisibility][0m
+extern void initInverted(struct Table *Table, int memSize, int frameSize);
+[0;1;32m                                ^
+[0m[1mtask3.c:23:29: [0m[0;1;35mwarning: [0m[1mdeclaration of 'struct Table' will not be visible
+      outside of this function [-Wvisibility][0m
+extern int translate(struct Table *Table, int pid);
+[0;1;32m                            ^
+[0m[1mtask3.c:24:28: [0m[0;1;35mwarning: [0m[1mdeclaration of 'struct Table' will not be visible
+      outside of this function [-Wvisibility][0m
+extern void addPage(struct Table *node, int pid, unsigned long timestamp...
+[0;1;32m                           ^
+[0m[1mtask3.c:39:5: [0m[0;1;35mwarning: [0m[1mimplicit declaration of function 'gettimeofday' is
+      invalid in C99 [-Wimplicit-function-declaration][0m
+    gettimeofday(&tval,NULL);
+[0;1;32m    ^
+[0m[1mtask3.c:47:18: [0m[0;1;35mwarning: [0m[1mincompatible pointer types passing 'struct Table *' to
+      parameter of type 'struct Table *' [-Wincompatible-pointer-types][0m
+    initInverted(CPU, Msize, Fsize);
+[0;1;32m                 ^~~
+[0m[1mtask3.c:22:40: [0m[0;1;30mnote: [0mpassing argument to parameter 'Table' here[0m
+extern void initInverted(struct Table *Table, int memSize, int frameSize);
+[0;1;32m                                       ^
+[0m[1mtask3.c:49:8: [0m[0;1;31merror: [0m[1mincomplete definition of type 'struct Table'[0m
+    CPU->d = tempOffset;
+[0;1;32m    ~~~^
+[0m[1mtask3.c:45:12: [0m[0;1;30mnote: [0mforward declaration of 'struct Table'[0m
+    struct Table *CPU;
+[0;1;32m           ^
+[0m[1mtask3.c:51:28: [0m[0;1;31merror: [0m[1mincomplete definition of type 'struct Table'[0m
+    for (int j = 0; j < CPU->numPages; j++){         //generate initial ...
+[0;1;32m                        ~~~^
+[0m[1mtask3.c:45:12: [0m[0;1;30mnote: [0mforward declaration of 'struct Table'[0m
+    struct Table *CPU;
+[0;1;32m           ^
+[0m[1mtask3.c:56:17: [0m[0;1;35mwarning: [0m[1mincompatible pointer types passing 'struct Table *' to
+      parameter of type 'struct Table *' [-Wincompatible-pointer-types][0m
+        addPage(CPU, tempPid, curTime, j);              //new page goes ...
+[0;1;32m                ^~~
+[0m[1mtask3.c:24:35: [0m[0;1;30mnote: [0mpassing argument to parameter 'node' here[0m
+extern void addPage(struct Table *node, int pid, unsigned long timestamp...
+[0;1;32m                                  ^
+[0m[1mtask3.c:64:32: [0m[0;1;31merror: [0m[1mincomplete definition of type 'struct Table'[0m
+        for (int k = 0; k < CPU->numPages; k++){
+[0;1;32m                            ~~~^
+[0m[1mtask3.c:45:12: [0m[0;1;30mnote: [0mforward declaration of 'struct Table'[0m
+    struct Table *CPU;
+[0;1;32m           ^
+[0m[1mtask3.c:65:60: [0m[0;1;31merror: [0m[1mmember reference type 'struct Table *' is a pointer; did
+      you mean to use '->'?[0m
+            printf("PID: %d\tPage: %d\tTimestamp: %ld", CPU.pageTable[k]...
+[0;1;32m                                                        ~~~^
+[0m[0;32m                                                           ->
+[0m[1mtask3.c:65:60: [0m[0;1;31merror: [0m[1mincomplete definition of type 'struct Table'[0m
+            printf("PID: %d\tPage: %d\tTimestamp: %ld", CPU.pageTable[k]...
+[0;1;32m                                                        ~~~^
+[0m[1mtask3.c:45:12: [0m[0;1;30mnote: [0mforward declaration of 'struct Table'[0m
+    struct Table *CPU;
+[0;1;32m           ^
+[0m[1mtask3.c:65:83: [0m[0;1;31merror: [0m[1mmember reference type 'struct Table *' is a pointer; did
+      you mean to use '->'?[0m
+  ...%d\tPage: %d\tTimestamp: %ld", CPU.pageTable[k]->pid, CPU.pageTable[k]->...
+[0;1;32m                                                           ~~~^
+[0m[0;32m                                                              ->
+[0m[1mtask3.c:65:83: [0m[0;1;31merror: [0m[1mincomplete definition of type 'struct Table'[0m
+  ...%d\tPage: %d\tTimestamp: %ld", CPU.pageTable[k]->pid, CPU.pageTable[k]->...
+[0;1;32m                                                           ~~~^
+[0m[1mtask3.c:45:12: [0m[0;1;30mnote: [0mforward declaration of 'struct Table'[0m
+    struct Table *CPU;
+[0;1;32m           ^
+[0m[1mtask3.c:65:104: [0m[0;1;31merror: [0m[1mmember reference type 'struct Table *' is a pointer; did
+      you mean to use '->'?[0m
+  ...%ld", CPU.pageTable[k]->pid, CPU.pageTable[k]->p, CPU.pageTable[k]->time...
+[0;1;32m                                                       ~~~^
+[0m[0;32m                                                          ->
+[0m[1mtask3.c:65:104: [0m[0;1;31merror: [0m[1mincomplete definition of type 'struct Table'[0m
+  ...%d\tTimestamp: %ld", CPU.pageTable[k]->pid, CPU.pageTable[k]->p, CPU.pag...
+[0;1;32m                                                                      ~~~^
+[0m[1mtask3.c:45:12: [0m[0;1;30mnote: [0mforward declaration of 'struct Table'[0m
+    struct Table *CPU;
+[0;1;32m           ^
+[0m[1mtask3.c:90:59: [0m[0;1;31merror: [0m[1mincomplete definition of type 'struct Table'[0m
+                    if (!(userPage >= 0 && userPage <= CPU->numPages)){
+[0;1;32m                                                       ~~~^
+[0m[1mtask3.c:45:12: [0m[0;1;30mnote: [0mforward declaration of 'struct Table'[0m
+    struct Table *CPU;
+[0;1;32m           ^
+[0m[1mtask3.c:96:33: [0m[0;1;35mwarning: [0m[1mincompatible pointer types passing 'struct Table *' to
+      parameter of type 'struct Table *' [-Wincompatible-pointer-types][0m
+                        addPage(CPU, userPID, curTime, userPage)...
+[0;1;32m                                ^~~
+[0m[1mtask3.c:24:35: [0m[0;1;30mnote: [0mpassing argument to parameter 'node' here[0m
+extern void addPage(struct Table *node, int pid, unsigned long timestamp...
+[0;1;32m                                  ^
+[0m[1mtask3.c:107:27: [0m[0;1;35mwarning: [0m[1mincompatible pointer types passing 'struct Table *' to
+      parameter of type 'struct Table *' [-Wincompatible-pointer-types][0m
+                translate(CPU, PIDtemp);
+[0;1;32m                          ^~~
+[0m[1mtask3.c:23:36: [0m[0;1;30mnote: [0mpassing argument to parameter 'Table' here[0m
+extern int translate(struct Table *Table, int pid);
+[0;1;32m                                   ^
+[0m[1mtask3.c:127:21: [0m[0;1;35mwarning: [0m[1mincompatible pointer types passing 'struct Table **' to
+      parameter of type 'struct Table *' [-Wincompatible-pointer-types][0m
+    releaseInverted(&CPU);
+[0;1;32m                    ^~~~
+[0m[1mtask3.c:21:43: [0m[0;1;30mnote: [0mpassing argument to parameter 'invTable' here[0m
+extern void releaseInverted(struct Table *invTable);
+[0;1;32m                                          ^
+[0m10 warnings and 10 errors generated.
+bash-3.2$ gcc task3.c -L. -lInvertedPageTable -o testStatLibrary
+[1mtask3.c:21:36: [0m[0;1;35mwarning: [0m[1mdeclaration of 'struct Table' will not be visible
+      outside of this function [-Wvisibility][0m
+extern void releaseInverted(struct Table *invTable);
+[0;1;32m                                   ^
+[0m[1mtask3.c:22:33: [0m[0;1;35mwarning: [0m[1mdeclaration of 'struct Table' will not be visible
+      outside of this function [-Wvisibility][0m
+extern void initInverted(struct Table *Table, int memSize, int frameSize);
+[0;1;32m                                ^
+[0m[1mtask3.c:23:29: [0m[0;1;35mwarning: [0m[1mdeclaration of 'struct Table' will not be visible
+      outside of this function [-Wvisibility][0m
+extern int translate(struct Table *Table, int pid);
+[0;1;32m                            ^
+[0m[1mtask3.c:24:28: [0m[0;1;35mwarning: [0m[1mdeclaration of 'struct Table' will not be visible
+      outside of this function [-Wvisibility][0m
+extern void addPage(struct Table *node, int pid, unsigned long timestamp...
+[0;1;32m                           ^
+[0m[1mtask3.c:39:5: [0m[0;1;35mwarning: [0m[1mimplicit declaration of function 'gettimeofday' is
+      invalid in C99 [-Wimplicit-function-declaration][0m
+    gettimeofday(&tval,NULL);
+[0;1;32m    ^
+[0m[1mtask3.c:45:18: [0m[0;1;31merror: [0m[1mvariable has incomplete type 'struct Table'[0m
+    struct Table CPU;
+[0;1;32m                 ^
+[0m[1mtask3.c:45:12: [0m[0;1;30mnote: [0mforward declaration of 'struct Table'[0m
+    struct Table CPU;
+[0;1;32m           ^
+[0m5 warnings and 1 error generated.
+bash-3.2$ esit[K[K[Kxit
+exit
+
+Script done on Tue Oct 25 11:08:35 2016

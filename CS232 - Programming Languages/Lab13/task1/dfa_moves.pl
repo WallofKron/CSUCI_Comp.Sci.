@@ -1,0 +1,10 @@
+start(q0).
+final(q0).
+move(q0,0,q1).
+move(q0,1,q2).
+move(q1,0,q0).
+move(q1,1,q3).
+move(q2,0,q3).
+move(q2,1,q0).
+move(q3,0,q2).
+move(q3,1,q1).

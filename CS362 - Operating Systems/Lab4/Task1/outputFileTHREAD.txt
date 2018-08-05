@@ -1,0 +1,60 @@
+
+Start time(microseconds): 441771
+End time(microseconds): 468847
+Thread Time Taken: 27
+
+
+
+Start time(microseconds): 559211
+End time(microseconds): 586415
+Thread Time Taken: 27
+
+
+
+Start time(microseconds): 583611
+End time(microseconds): 611507
+Thread Time Taken: 27
+
+
+
+Start time(microseconds): 135931
+End time(microseconds): 163765
+Thread Time Taken: 27
+
+
+
+Start time(microseconds): 655801
+End time(microseconds): 684615
+Thread Time Taken: 28
+
+
+
+Start time(microseconds): 175438
+End time(microseconds): 203127
+Thread Time Taken: 27
+
+
+
+Start time(microseconds): 655689
+End time(microseconds): 683214
+Thread Time Taken: 27
+
+
+
+Start time(microseconds): 215983
+End time(microseconds): 244104
+Thread Time Taken: 28
+
+
+
+Start time(microseconds): 703747
+End time(microseconds): 732362
+Thread Time Taken: 28
+
+
+
+Start time(microseconds): 87153
+End time(microseconds): 114314
+Thread Time Taken: 27
+
+

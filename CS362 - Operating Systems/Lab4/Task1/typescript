@@ -1,0 +1,106 @@
+Script started on Sun Sep 25 16:40:26 2016
+[?1034hbash-3.2$ ls
+fork				thread
+forkCreationTest.c		threadCreationTest.c
+forkCreationTestCOPY.c		threadCreationTestCOPY.c
+outputFileTHREAD.txt		typescript
+outputfileFORK.txt
+bash-3.2$ rm outputp[KFileTHREAD.txt 
+bash-3.2$ ls
+fork				thread
+forkCreationTest.c		threadCreationTest.c
+forkCreationTestCOPY.c		threadCreationTestCOPY.c
+outputfileFORK.txt		typescript
+bash-3.2$ rm outputfileFORK
+rm: outputfileFORK: No such file or directory
+bash-3.2$ rm outputfileFORK.txt
+bash-3.2$ ls
+fork				threadCreationTest.c
+forkCreationTest.c		threadCreationTestCOPY.c
+forkCreationTestCOPY.c		typescript
+thread
+bash-3.2$ rf fork
+bash: rf: command not found
+bash-3.2$ rm fork
+bash-3.2$ rm thread
+bash-3.2$ ls
+forkCreationTest.c		threadCreationTestCOPY.c
+forkCreationTestCOPY.c		typescript
+threadCreationTest.c
+bash-3.2$ lsrm thread[2Pforkf[C[C[C[C[Cls[Krm outputfileFORK.txt[K[C[C[C[C[C[C[C[C[C[Cls[Krm outputFileTHREAD.txt [C[C[C[C[C[C[C[C[C[Cls[Kexit./matrix blah.txt[C[C[C[C[C[C[C[C[C[Cexit[K[2Plsrm outputFileTHREAD.txt [C[C[C[C[C[C[C[C[C[Cls[Krm outputfileFORK.txt[C[C[C[C[C[C[C[C[C[Cls[Krf forkm[C[C[C[C[Cthreadls[K[Kgcc forkCreationTest.c[K[KCOPY.c - [Ko fork
+bash-3.2$ gcc forkCreationTestCOPY.c -o fork[1P[1P[1P[1P[1@t[1@h[1@r[1@e[1@a[1@d[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[Kthread
+bash-3.2$ ls
+fork				threadCreationTest.c
+forkCreationTest.c		threadCreationTestCOPY.c
+forkCreationTestCOPY.c		typescript
+thread
+bash-3.2$ ls[K[K./fork
+Results of speed test outputted to file 'outputfileFORK.txt'
+bash-3.2$ ./tj[Khread
+Results of speed test outputted to file 'outputfileTHREAD.txt'
+bash-3.2$ cat [K[K[K[Kls
+fork				thread
+forkCreationTest.c		threadCreationTest.c
+forkCreationTestCOPY.c		threadCreationTestCOPY.c
+outputFileTHREAD.txt		typescript
+outputfileFORK.txt
+bash-3.2$ cat outputFIL[K[KileTh[KHREAD.txt
+
+Start time(microseconds): 441771
+End time(microseconds): 468847
+Thread Time Taken: 27
+
+
+bash-3.2$ cat outputFileTHREAD.txt[C[1P.txt[1P.txt[1P.txt[1P.txt[1P.txt[1P.txtF.txtO.txtR.txtK.txt[C[1PileFORK.txtfileFORK.txt
+
+Start time(microseconds): 2752
+End time(microseconds): 346771
+Process/FORK Time Taken: 344
+
+
+bash-3.2$ cat outputfileFORK.txtFileTHREAD.txt[C[C[C[C[C[C[C[C[C[Cls[K./thread
+Results of speed test outputted to file 'outputfileTHREAD.txt'
+bash-3.2$ ./thread
+Results of speed test outputted to file 'outputfileTHREAD.txt'
+bash-3.2$ ./thread
+Results of speed test outputted to file 'outputfileTHREAD.txt'
+bash-3.2$ ./thread
+Results of speed test outputted to file 'outputfileTHREAD.txt'
+bash-3.2$ ./thread
+Results of speed test outputted to file 'outputfileTHREAD.txt'
+bash-3.2$ ./thread
+Results of speed test outputted to file 'outputfileTHREAD.txt'
+bash-3.2$ ./thread
+Results of speed test outputted to file 'outputfileTHREAD.txt'
+bash-3.2$ ./thread
+Results of speed test outputted to file 'outputfileTHREAD.txt'
+bash-3.2$ ./threadcat outputfileFORK.txtFileTHREAD.txt[C[C[C[C[C[C[C[C[C[Cls[K./thread[2Pfork
+^[[AResults of speed test outputted to file 'outputfileFORK.txt'
+bash-3.2$ ./fork
+Results of speed test outputted to file 'outputfileFORK.txt'
+bash-3.2$ ./fork
+Results of speed test outputted to file 'outputfileFORK.txt'
+bash-3.2$ ./fork
+Results of speed test outputted to file 'outputfileFORK.txt'
+bash-3.2$ ./fork
+Results of speed test outputted to file 'outputfileFORK.txt'
+bash-3.2$ ./fork
+Results of speed test outputted to file 'outputfileFORK.txt'
+bash-3.2$ ./fork
+Results of speed test outputted to file 'outputfileFORK.txt'
+bash-3.2$ ./fork
+Results of speed test outputted to file 'outputfileFORK.txt'
+bash-3.2$ ./fork
+Results of speed test outputted to file 'outputfileFORK.txt'
+bash-3.2$ ./fork
+Results of speed test outputted to file 'outputfileFORK.txt'
+bash-3.2$ ./fork
+Results of speed test outputted to file 'outputfileFORK.txt'
+bash-3.2$ ./fork
+Results of speed test outputted to file 'outputfileFORK.txt'
+bash-3.2$ ./forkthread
+Results of speed test outputted to file 'outputfileTHREAD.txt'
+bash-3.2$ exit
+exit
+
+Script done on Sun Sep 25 16:45:42 2016

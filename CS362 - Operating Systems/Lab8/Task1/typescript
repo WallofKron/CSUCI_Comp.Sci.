@@ -1,0 +1,50 @@
+Script started on Thu Oct 20 12:17:28 2016
+[?1034hbash-3.2$ ls
+giveMeNum.c		testStatLibMain.c	typescript
+bash-3.2$ gcc *,c[K[K.c -o testNoLib
+bash-3.2$ ./testNoLib 
+Give me a number: 
+5
+You gave me : 5
+bash-3.2$ gcc -c Give[K[K[K[KgivemeNum,.[K[K.c[K[K[K[K[K[K[KMeNum.c -o give [KMeNum.o
+bash-3.2$ ar rcs libgiveme[K[KMeNum.a giveme[K[KMeNum.o
+bash-3.2$ ls
+giveMeNum.c		libgiveMeNum.a		testStatLibMain.c
+giveMeNum.o		testNoLib		typescript
+bash-3.2$ nm libgiveMeNum.a 
+
+libgiveMeNum.a(giveMeNum.o):
+0000000000000000 T _giveMeNum
+                 U _printf
+                 U _scanf
+bash-3.2$ ar t lb[KibgiveMeNum.a 
+__.SYMDEF SORTED
+giveMeNum.o
+bash-3.2$ ls
+giveMeNum.c		libgiveMeNum.a		testStatLibMain.c
+giveMeNum.o		testNoLib		typescript
+bash-3.2$ gcc testStatLibMain.c -L -lgiveMeNum 0[K-i[Ko testStatLib
+ld: warning: directory not found for option '-L-lgiveMeNum'
+Undefined symbols for architecture x86_64:
+  "_giveMeNum", referenced from:
+      _main in testStatLibMain-fbea94.o
+ld: symbol(s) not found for architecture x86_64
+clang: [0;1;31merror: [0mlinker command failed with exit code 1 (use -v to see invocation)[0m
+bash-3.2$ gcc testStatLibMain.c -L -lgiveMeNum -o testStatLib[1P[1@1
+ld: warning: directory not found for option '-L-1giveMeNum'
+Undefined symbols for architecture x86_64:
+  "_giveMeNum", referenced from:
+      _main in testStatLibMain-dd5432.o
+ld: symbol(s) not found for architecture x86_64
+clang: [0;1;31merror: [0mlinker command failed with exit code 1 (use -v to see invocation)[0m
+bash-3.2$ gcc testStatLibMain.c -L -1giveMeNum -o testStatLib[1@.
+clang: [0;1;31merror: [0munknown argument: '-1giveMeNum'[0m
+bash-3.2$ gcc testStatLibMain.c -L. -1giveMeNum -o testStatLib[1P[1@l
+bash-3.2$ ./testStatLib 
+Give me a number: 
+55
+You gave me : 55
+bash-3.2$ quit[K[K[K[Keit[K[Kxti[K[Kit
+exit
+
+Script done on Thu Oct 20 12:33:49 2016

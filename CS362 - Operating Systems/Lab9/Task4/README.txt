@@ -1,0 +1,3 @@
+For the 4th task. It runs exactly as it should. I just didn’t mess with the setup of the replace.c file as much. So to run the program, you have to pass it an initial string of length, how much ever you want. Originally I was testing with size 12, but then moved it up to about 16 or 17 sized reference string. But after you pass it a reference string just as we were before, then it generates random strings of numbers between 0 and 6 (1-5). 
+
+The results were basically exactly as was expected. The OPT page swap algorithm beat out everyone by a mile, and the LRU was roughly approximately close to performing as well each time. Most times, there wasn’t much difference between LRU and OPT. LFU proved to be quite inefficient though. 

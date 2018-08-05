@@ -1,0 +1,1 @@
+I believe the functionality of the code is all there. I was just having issues with the struct pointer. I was also having issues with The Main.c file not recognizing the struct of the other c file. (the intended purpose of the library). But I couldn’t successfully build the libraries because of the last error.

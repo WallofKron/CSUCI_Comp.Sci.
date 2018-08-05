@@ -1,0 +1,1088 @@
+Last login: Thu Sep  8 18:42:20 on ttys000
+192:~ RobertFlorence$ cd Desktop/CS362/Lab2/Task2/
+192:Task2 RobertFlorence$ ls
+crash			crash-4802-501.core	crash.c
+192:Task2 RobertFlorence$ gdb crash crash-4802-501.core 
+GNU gdb (GDB) 7.10.1
+Copyright (C) 2015 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-apple-darwin15.2.0".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from crash...(no debugging symbols found)...done.
+"/Users/RobertFlorence/Desktop/CS362/Lab2/Task2/crash-4802-501.core": no core file handler recognizes format
+(gdb) exit
+Undefined command: "exit".  Try "help".
+(gdb) quit
+192:Task2 RobertFlorence$ clear
+
+192:Task2 RobertFlorence$ ls
+crash			crash-4802-501.core	crash.c
+192:Task2 RobertFlorence$ bt
+-bash: bt: command not found
+192:Task2 RobertFlorence$ cd /
+192:/ RobertFlorence$ ls
+Applications			etc
+Library				home
+Network				installer.failurerequests
+System				net
+User Information		private
+Users				sbin
+Volumes				tmp
+bin				usr
+cores				var
+dev
+192:/ RobertFlorence$ cd Users/
+192:Users RobertFlorence$ ls
+Guest		RobertFlorence	Shared		kyleflorence
+192:Users RobertFlorence$ cd RobertFlorence/
+192:~ RobertFlorence$ ls
+Applications	Documents	Library		Music		Public
+Desktop		Downloads	Movies		Pictures
+192:~ RobertFlorence$ cd Desktop/CS362/Lab2/Task2/
+192:Task2 RobertFlorence$ cd \
+> lab2
+-bash: cd: lab2: No such file or directory
+192:Task2 RobertFlorence$ cd \Lab2
+-bash: cd: Lab2: No such file or directory
+192:Task2 RobertFlorence$ cd /Lab2
+-bash: cd: /Lab2: No such file or directory
+192:Task2 RobertFlorence$ ls
+crash			crash-4802-501.core	crash.c
+192:Task2 RobertFlorence$ cd -
+/Users/RobertFlorence
+192:~ RobertFlorence$ ls
+Applications	Documents	Library		Music		Public
+Desktop		Downloads	Movies		Pictures
+192:~ RobertFlorence$ cd Desktop/CS362/Lab2/
+192:Lab2 RobertFlorence$ ls
+Task1	Task2	Task3
+192:Lab2 RobertFlorence$ cd Task3/
+192:Task3 RobertFlorence$ ls
+RobertFlorenceLab2Task3.zip	sub
+input.txt			sub.c
+output.txt
+192:Task3 RobertFlorence$ ls
+RobertFlorenceLab2Task3.zip	sub
+input.txt			sub.c
+output.txt
+192:Task3 RobertFlorence$ gcc sub.c -sub
+clang: error: unknown argument: '-sub'
+192:Task3 RobertFlorence$ gcc sub.c -o sub
+192:Task3 RobertFlorence$ ./sub
+1 
+./sub 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+SHELL=/bin/bash 
+TERM=xterm-256color 
+TMPDIR=/var/folders/5v/hf0w1p8d2rg84q_qldylcj4c0000gn/T/ 
+192:Task3 RobertFlorence$ ./sub x y -h
+4 
+./sub 
+x 
+y 
+-h 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+192:Task3 RobertFlorence$ gcc sub.c -o sub
+192:Task3 RobertFlorence$ ./sub x y -h <input.txt
+4 
+x 
+y 
+-h 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+192:Task3 RobertFlorence$ ./sub x y <input.txt -h
+4 
+x 
+y 
+-h 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+192:Task3 RobertFlorence$ ./sub x y <input.txt -h >output.txt
+192:Task3 RobertFlorence$ ./sub -h
+2 
+-h 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+SHELL=/bin/bash 
+TERM=xterm-256color 
+192:Task3 RobertFlorence$ gcc sub.c -o sub
+192:Task3 RobertFlorence$ ./sub -h
+2 
+-h 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+SHELL=/bin/bash 
+TERM=xterm-256color 
+Usage: sub  fromChar  toChar  srcFile  destFile
+192:Task3 RobertFlorence$ ./sub
+1 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+SHELL=/bin/bash 
+TERM=xterm-256color 
+TMPDIR=/var/folders/5v/hf0w1p8d2rg84q_qldylcj4c0000gn/T/ 
+Please Enter character to change FROM: f
+Please Enter character to change TO: x
+192:Task3 RobertFlorence$ gcc sub.c -o sub
+sub.c:41:21: warning: format specifies type 'char *' but the argument has type
+      'char' [-Wformat]
+        printf("%s",fromchar);
+                ~~  ^~~~~~~~
+                %c
+sub.c:42:21: warning: format specifies type 'char *' but the argument has type
+      'char' [-Wformat]
+        printf("%s",tochar);
+                ~~  ^~~~~~
+                %c
+2 warnings generated.
+192:Task3 RobertFlorence$ gcc sub.c -o sub
+192:Task3 RobertFlorence$ ./sub
+1 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+SHELL=/bin/bash 
+TERM=xterm-256color 
+TMPDIR=/var/folders/5v/hf0w1p8d2rg84q_qldylcj4c0000gn/T/ 
+Please Enter character to change FROM: sdf
+Please Enter character to change TO: sd192:Task3 RobertFlorence$ ./sub
+1 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+SHELL=/bin/bash 
+TERM=xterm-256color 
+TMPDIR=/var/folders/5v/hf0w1p8d2rg84q_qldylcj4c0000gn/T/ 
+Please Enter character to change FROM: f
+Please Enter character to change TO: x
+fx192:Task3 RobertFlorence$ ./sub
+1 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+SHELL=/bin/bash 
+TERM=xterm-256color 
+TMPDIR=/var/folders/5v/hf0w1p8d2rg84q_qldylcj4c0000gn/T/ 
+Please Enter character to change FROM: asdf
+Please Enter character to change TO: as192:Task3 RobertFlorence$ gcc sub.c -o sub
+sub.c:32:22: warning: incompatible pointer to integer conversion assigning to
+      'char' from 'char *'; dereference with * [-Wint-conversion]
+            fromchar = argv[1];
+                     ^ ~~~~~~~
+                       *
+sub.c:33:20: warning: incompatible pointer to integer conversion assigning to
+      'char' from 'char *'; dereference with * [-Wint-conversion]
+            tochar = argv[2];
+                   ^ ~~~~~~~
+                     *
+sub.c:36:24: warning: format specifies type 'char *' but the argument has type
+      'char **' [-Wformat]
+            scanf("%s",&inputfile);
+                   ~~  ^~~~~~~~~~
+sub.c:38:28: error: expected identifier or '('
+            for(int j = 0, int n = strlen(inputfile) ; j < n ; j++){
+                           ^
+sub.c:38:28: error: expected ';' in 'for' statement specifier
+sub.c:38:28: error: expected expression
+sub.c:38:60: error: use of undeclared identifier 'n'
+            for(int j = 0, int n = strlen(inputfile) ; j < n ; j++){
+                                                           ^
+sub.c:38:62: error: expected ')'
+            for(int j = 0, int n = strlen(inputfile) ; j < n ; j++){
+                                                             ^
+sub.c:38:16: note: to match this '('
+            for(int j = 0, int n = strlen(inputfile) ; j < n ; j++){
+               ^
+sub.c:38:64: error: use of undeclared identifier 'j'
+            for(int j = 0, int n = strlen(inputfile) ; j < n ; j++){
+                                                               ^
+3 warnings and 6 errors generated.
+192:Task3 RobertFlorence$ gcc sub.c -o sub
+sub.c:36:24: warning: format specifies type 'char *' but the argument has type
+      'char **' [-Wformat]
+            scanf("%s",&inputfile);
+                   ~~  ^~~~~~~~~~
+sub.c:38:28: error: expected identifier or '('
+            for(int j = 0, int n = strlen(inputfile) ; j < n ; j++){
+                           ^
+sub.c:38:28: error: expected ';' in 'for' statement specifier
+sub.c:38:28: error: expected expression
+sub.c:38:60: error: use of undeclared identifier 'n'
+            for(int j = 0, int n = strlen(inputfile) ; j < n ; j++){
+                                                           ^
+sub.c:38:62: error: expected ')'
+            for(int j = 0, int n = strlen(inputfile) ; j < n ; j++){
+                                                             ^
+sub.c:38:16: note: to match this '('
+            for(int j = 0, int n = strlen(inputfile) ; j < n ; j++){
+               ^
+sub.c:38:64: error: use of undeclared identifier 'j'
+            for(int j = 0, int n = strlen(inputfile) ; j < n ; j++){
+                                                               ^
+1 warning and 6 errors generated.
+192:Task3 RobertFlorence$ gcc sub.c -o sub
+sub.c:38:28: error: expected identifier or '('
+            for(int j = 0, int n = strlen(inputfile) ; j < n ; j++){
+                           ^
+sub.c:38:28: error: expected ';' in 'for' statement specifier
+sub.c:38:28: error: expected expression
+sub.c:38:60: error: use of undeclared identifier 'n'
+            for(int j = 0, int n = strlen(inputfile) ; j < n ; j++){
+                                                           ^
+sub.c:38:62: error: expected ')'
+            for(int j = 0, int n = strlen(inputfile) ; j < n ; j++){
+                                                             ^
+sub.c:38:16: note: to match this '('
+            for(int j = 0, int n = strlen(inputfile) ; j < n ; j++){
+               ^
+sub.c:38:64: error: use of undeclared identifier 'j'
+            for(int j = 0, int n = strlen(inputfile) ; j < n ; j++){
+                                                               ^
+6 errors generated.
+192:Task3 RobertFlorence$ gcc sub.c -o sub
+sub.c:40:30: error: member reference base type 'char *' is not a structure or
+      union
+                c = inputfile.charAt(j);
+                    ~~~~~~~~~^~~~~~~
+sub.c:41:27: error: member reference base type 'char *' is not a structure or
+      union
+                outputfile.charAt(j) = c;
+                ~~~~~~~~~~^~~~~~~
+sub.c:46:31: error: member reference base type 'char *' is not a structure or
+      union
+                    outputfile.charAt(j) = tochar;
+                    ~~~~~~~~~~^~~~~~~
+sub.c:51:32: warning: data argument not used by format string
+      [-Wformat-extra-args]
+            printf("Output: ", outputfile)
+                   ~~~~~~~~~~  ^
+sub.c:51:43: error: expected ';' after expression
+            printf("Output: ", outputfile)
+                                          ^
+                                          ;
+1 warning and 4 errors generated.
+192:Task3 RobertFlorence$ gcc sub.c -o sub
+sub.c:40:30: error: member reference base type 'char *' is not a structure or
+      union
+                c = inputfile.charAt(j);
+                    ~~~~~~~~~^~~~~~~
+sub.c:41:27: error: member reference base type 'char *' is not a structure or
+      union
+                outputfile.charAt(j) = c;
+                ~~~~~~~~~~^~~~~~~
+sub.c:46:31: error: member reference base type 'char *' is not a structure or
+      union
+                    outputfile.charAt(j) = tochar;
+                    ~~~~~~~~~~^~~~~~~
+sub.c:51:45: error: expected ';' after expression
+            printf("Output: %s", outputfile)
+                                            ^
+                                            ;
+4 errors generated.
+192:Task3 RobertFlorence$ gcc sub.c -o sub
+sub.c:40:30: error: member reference base type 'char *' is not a structure or
+      union
+                c = inputfile.charAt(j);
+                    ~~~~~~~~~^~~~~~~
+sub.c:41:27: error: member reference base type 'char *' is not a structure or
+      union
+                outputfile.charAt(j) = c;
+                ~~~~~~~~~~^~~~~~~
+sub.c:46:31: error: member reference base type 'char *' is not a structure or
+      union
+                    outputfile.charAt(j) = tochar;
+                    ~~~~~~~~~~^~~~~~~
+3 errors generated.
+192:Task3 RobertFlorence$ gcc sub.c -o sub
+sub.c:18:10: error: definition of variable with array type needs an explicit
+      size or an initializer
+    char inputfile[];
+         ^
+sub.c:19:10: error: definition of variable with array type needs an explicit
+      size or an initializer
+    char outputfile[];
+         ^
+2 errors generated.
+192:Task3 RobertFlorence$ gcc sub.c -o sub
+192:Task3 RobertFlorence$ ./sub
+1 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+SHELL=/bin/bash 
+TERM=xterm-256color 
+TMPDIR=/var/folders/5v/hf0w1p8d2rg84q_qldylcj4c0000gn/T/ 
+Please Enter character to change FROM: a
+Please Enter character to change TO: b
+192:Task3 RobertFlorence$ ./sub a
+2 
+a 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+SHELL=/bin/bash 
+TERM=xterm-256color 
+ Segmentation fault: 11
+192:Task3 RobertFlorence$ ./sub a b
+3 
+a 
+b 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+SHELL=/bin/bash 
+Input: aaaayyyyy
+Output: aayaayyyyy192:Task3 RobertFlorence$ gcc sub.c -o sub
+192:Task3 RobertFlorence$ ./sub a b
+3 
+a 
+b 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+SHELL=/bin/bash 
+Input: banana
+b
+b
+n
+a
+n
+a
+Output: bbaaaaa
+192:Task3 RobertFlorence$ gcc sub.c -o sub
+192:Task3 RobertFlorence$ ./sub a b
+3 
+a 
+b 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+SHELL=/bin/bash 
+Input: banana
+bbbnana
+bbbnana
+bbnnana
+bbaaana
+bbnanna
+bbaaaaa
+Output: bbaaaaa
+192:Task3 RobertFlorence$ gcc sub.c -o sub
+192:Task3 RobertFlorence$ ./sub a b
+3 
+a 
+b 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+SHELL=/bin/bash 
+Input: banana
+banana
+
+bbbnana
+bbbnana
+bbnnana
+bbaaana
+bbnanna
+bbaaaaa
+Output: bbaaaaa
+192:Task3 RobertFlorence$ gcc sub.c -o sub
+192:Task3 RobertFlorence$ ./sub a b
+3 
+a 
+b 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+SHELL=/bin/bash 
+Input: banana
+ananaa
+bananaa
+aaaanaa
+aaaanaa
+aaaanaa
+aannnaa
+aaanaaa
+aaannaa
+Output: aaannaa
+192:Task3 RobertFlorence$ gcc sub.c -o sub
+192:Task3 RobertFlorence$ ./sub a b
+3 
+a 
+b 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+SHELL=/bin/bash 
+Input: banana
+
+
+ananaa
+
+
+bananaa
+aaaanaa
+aaaanaa
+aaaanaa
+aannnaa
+aaanaaa
+aaannaa
+Output: aaannaa
+192:Task3 RobertFlorence$ gcc sub.c -o sub
+192:Task3 RobertFlorence$ ./sub a b
+3 
+a 
+b 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+SHELL=/bin/bash 
+Input: banana
+
+
+banana
+
+
+ananaa
+
+
+bananaa
+aaaanaa
+aaaanaa
+aaaanaa
+aannnaa
+aaanaaa
+aaannaa
+Output: aaannaa
+192:Task3 RobertFlorence$ gcc sub.c -o sub
+^[[A192:Task3 RobertFlorence$ ./sub a b
+3 
+a 
+b 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+SHELL=/bin/bash 
+Input: banana 
+
+
+banana
+Abort trap: 6
+192:Task3 RobertFlorence$ gcc sub.c -o sub
+192:Task3 RobertFlorence$ ./sub a b
+3 
+a 
+b 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+SHELL=/bin/bash 
+Input: hey there
+
+
+hey
+Abort trap: 6
+192:Task3 RobertFlorence$ ./sub a b
+3 
+a 
+b 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+SHELL=/bin/bash 
+Input: banana
+
+
+banana
+Abort trap: 6
+192:Task3 RobertFlorence$ ./sub a b
+3 
+a 
+b 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+SHELL=/bin/bash 
+Input: abanana
+
+
+abanana
+Abort trap: 6
+192:Task3 RobertFlorence$ gcc sub.c -o sub
+192:Task3 RobertFlorence$ ./sub a b
+3 
+a 
+b 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+SHELL=/bin/bash 
+Input: banana
+
+
+banana
+
+
+banana
+
+
+
+bbbnana
+bbbnana
+bbnnana
+bbaaana
+bbnanna
+bbaaaaa
+Output: bbaaaaa
+192:Task3 RobertFlorence$ gcc sub.c -o sub
+sub.c:40:53: warning: incompatible integer to pointer conversion passing 'char'
+      to parameter of type 'const char *'; take the address with &
+      [-Wint-conversion]
+            outputfile = replace(inputfile,fromchar,tochar);
+                                                    ^~~~~~
+                                                    &
+sub.c:5:57: note: passing argument to parameter 'y' here
+char *replace(const char *curstrng, char x, const char *y);
+                                                        ^
+sub.c:40:24: error: array type 'char [1]' is not assignable
+            outputfile = replace(inputfile,fromchar,tochar);
+            ~~~~~~~~~~ ^
+1 warning and 1 error generated.
+192:Task3 RobertFlorence$ gcc sub.c -o sub
+192:Task3 RobertFlorence$ ./sub a b
+3 
+a 
+b 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+SHELL=/bin/bash 
+Input: banana
+Output: bnanannanannana
+192:Task3 RobertFlorence$ gcc sub.c -o sub
+sub.c:64:11: error: expected expression
+    while([i]!='\0')
+          ^
+sub.c:68:24: error: read-only variable is not assignable
+            curstrng[i]=y;
+            ~~~~~~~~~~~^
+2 errors generated.
+192:Task3 RobertFlorence$ gcc sub.c -o sub
+sub.c:68:24: error: read-only variable is not assignable
+            curstrng[i]=y;
+            ~~~~~~~~~~~^
+1 error generated.
+192:Task3 RobertFlorence$ gcc sub.c -o sub
+sub.c:62:7: error: conflicting types for 'replace'
+char *replace(char *curstrng, char x, const char *y) {
+      ^
+sub.c:5:7: note: previous declaration is here
+char *replace(const char *curstrng, char x, const char *y);
+      ^
+sub.c:68:24: warning: incompatible pointer to integer conversion assigning to
+      'char' from 'const char *' [-Wint-conversion]
+            curstrng[i]=y;
+                       ^~
+1 warning and 1 error generated.
+192:Task3 RobertFlorence$ gcc sub.c -o sub
+sub.c:68:24: warning: incompatible pointer to integer conversion assigning to
+      'char' from 'const char *' [-Wint-conversion]
+            curstrng[i]=y;
+                       ^~
+sub.c:72:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+2 warnings generated.
+192:Task3 RobertFlorence$ gcc sub.c -o sub
+sub.c:42:60: error: too few arguments provided to function-like macro invocation
+            strncpy(outputfile inputfile, strlen(inputfile))
+                                                           ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/usr/include/secure/_string.h:118:9: note: 
+      macro 'strncpy' defined here
+#define strncpy(dest, src, len)                                 \
+        ^
+sub.c:42:20: error: expected ';' after expression
+            strncpy(outputfile inputfile, strlen(inputfile))
+                   ^
+                   ;
+sub.c:42:13: warning: expression result unused [-Wunused-value]
+            strncpy(outputfile inputfile, strlen(inputfile))
+            ^~~~~~~
+sub.c:70:24: warning: incompatible pointer to integer conversion assigning to
+      'char' from 'const char *' [-Wint-conversion]
+            curstrng[i]=y;
+                       ^~
+2 warnings and 2 errors generated.
+192:Task3 RobertFlorence$ gcc sub.c -o sub
+sub.c:42:60: error: too few arguments provided to function-like macro invocation
+            strncpy(outputfile inputfile, strlen(inputfile));
+                                                           ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/usr/include/secure/_string.h:118:9: note: 
+      macro 'strncpy' defined here
+#define strncpy(dest, src, len)                                 \
+        ^
+sub.c:42:13: warning: expression result unused [-Wunused-value]
+            strncpy(outputfile inputfile, strlen(inputfile));
+            ^~~~~~~
+sub.c:70:24: warning: incompatible pointer to integer conversion assigning to
+      'char' from 'const char *' [-Wint-conversion]
+            curstrng[i]=y;
+                       ^~
+2 warnings and 1 error generated.
+192:Task3 RobertFlorence$ gcc sub.c -o sub
+sub.c:70:24: warning: incompatible pointer to integer conversion assigning to
+      'char' from 'const char *' [-Wint-conversion]
+            curstrng[i]=y;
+                       ^~
+sub.c:74:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+2 warnings generated.
+192:Task3 RobertFlorence$ gcc sub.c -o sub
+sub.c:40:40: warning: incompatible pointer to integer conversion passing
+      'char *' to parameter of type 'char'; remove & [-Wint-conversion]
+            replace(inputfile,fromchar,&tochar);
+                                       ^~~~~~~
+sub.c:5:50: note: passing argument to parameter 'y' here
+void *replace(char *curstrng, char x, const char y);
+                                                 ^
+sub.c:77:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+2 warnings generated.
+192:Task3 RobertFlorence$ gcc sub.c -o sub
+sub.c:77:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+1 warning generated.
+192:Task3 RobertFlorence$ gcc sub.c -o sub
+sub.c:77:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+1 warning generated.
+192:Task3 RobertFlorence$ gcc sub.c -o sub
+sub.c:74:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+1 warning generated.
+192:Task3 RobertFlorence$ gcc sub.c -o sub
+192:Task3 RobertFlorence$ ./sub a b
+3 
+a 
+b 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+SHELL=/bin/bash 
+Input: banana
+Segmentation fault: 11
+192:Task3 RobertFlorence$ gcc sub.c -o sub
+192:Task3 RobertFlorence$ ./sub a b
+3 
+a 
+b 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+SHELL=/bin/bash 
+Input: banana
+Segmentation fault: 11
+192:Task3 RobertFlorence$ ./sub
+1 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+SHELL=/bin/bash 
+TERM=xterm-256color 
+TMPDIR=/var/folders/5v/hf0w1p8d2rg84q_qldylcj4c0000gn/T/ 
+Please Enter character to change FROM: a
+Please Enter character to change TO: b
+192:Task3 RobertFlorence$ gcc sub.c -o sub
+192:Task3 RobertFlorence$ ./sub a b
+3 
+a 
+b 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+SHELL=/bin/bash 
+Input: banana
+Segmentation fault: 11
+192:Task3 RobertFlorence$ gcc sub.c -o sub
+192:Task3 RobertFlorence$ ./sub a b
+3 
+a 
+b 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+SHELL=/bin/bash 
+Input: banana
+1: 
+4: 
+5: 
+5: 
+6: 
+7: 
+5: 
+5: 
+6: 
+7: 
+5: 
+5: 
+6: 
+7: 
+2: 
+3: 
+Output: bbnbnb
+192:Task3 RobertFlorence$ gcc sub.c -o sub
+192:Task3 RobertFlorence$ ./sub a b
+3 
+a 
+b 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+SHELL=/bin/bash 
+Input: banana
+Output: bbnbnb
+192:Task3 RobertFlorence$ ./sub b a
+3 
+b 
+a 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+SHELL=/bin/bash 
+Input: banana
+Output: aanana
+192:Task3 RobertFlorence$ ./sub a b
+3 
+a 
+b 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+SHELL=/bin/bash 
+Input: asdf
+Output: bsdf
+192:Task3 RobertFlorence$ ./sub a b -f test.txt
+5 
+a 
+b 
+-f 
+test.txt 
+(null) 
+Input: giggidy
+Output: giggidy
+192:Task3 RobertFlorence$ gcc sub.c -o sub
+sub.c:100:47: error: use of undeclared identifier 'bufferstring'
+                    fprintf(outputfile,"%s\n",bufferstring);
+                                              ^
+1 error generated.
+192:Task3 RobertFlorence$ gcc sub.c -o sub
+sub.c:65:39: warning: incompatible pointer to integer conversion assigning to
+      'char' from 'void *' [-Wint-conversion]
+                        *bufferstring = malloc(fsize + 1);
+                                      ^ ~~~~~~~~~~~~~~~~~
+1 warning generated.
+192:Task3 RobertFlorence$ gcc sub.c -o sub
+192:Task3 RobertFlorence$ ./sub a b 
+3 
+a 
+b 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+SHELL=/bin/bash 
+TERM=xterm-256color 
+Segmentation fault: 11
+192:Task3 RobertFlorence$ gcc sub.c -o sub
+192:Task3 RobertFlorence$ ./sub a b 
+3 
+a 
+b 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+SHELL=/bin/bash 
+TERM=xterm-256color 
+Segmentation fault: 11
+192:Task3 RobertFlorence$ ./sub a b
+3 
+a 
+b 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+SHELL=/bin/bash 
+TERM=xterm-256color 
+Segmentation fault: 11
+192:Task3 RobertFlorence$ ./sub a 
+2 
+a 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+SHELL=/bin/bash 
+TERM=xterm-256color 
+TMPDIR=/var/folders/5v/hf0w1p8d2rg84q_qldylcj4c0000gn/T/ 
+Segmentation fault: 11
+192:Task3 RobertFlorence$ gcc sub.c -o sub
+192:Task3 RobertFlorence$ ./sub a b
+3 
+./sub 
+a 
+b 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+SHELL=/bin/bash 
+TERM=xterm-256color 
+Segmentation fault: 11
+192:Task3 RobertFlorence$ gcc sub.c -o sub
+192:Task3 RobertFlorence$ ./sub
+1 
+./sub 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+SHELL=/bin/bash 
+TERM=xterm-256color 
+TMPDIR=/var/folders/5v/hf0w1p8d2rg84q_qldylcj4c0000gn/T/ 
+Apple_PubSub_Socket_Render=/private/tmp/com.apple.launchd.aCeRcy4A6V/Render 
+Please Enter character to change FROM: a
+Please Enter character to change TO: b
+Input: banana
+Output: bbnbnb
+192:Task3 RobertFlorence$ gcc sub.c -o sub
+192:Task3 RobertFlorence$ ./sub a b
+3 
+./sub 
+a 
+b 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+SHELL=/bin/bash 
+TERM=xterm-256color 
+Input: banana
+Output: bbnbnb
+192:Task3 RobertFlorence$ ./sub a b >outputttt.txt
+^[[A
+192:Task3 RobertFlorence$ ./sub a b > outputttt.txt
+asdf
+192:Task3 RobertFlorence$ gcc sub.c -o sub
+192:Task3 RobertFlorence$ ./sub a
+2 
+./sub 
+a 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+SHELL=/bin/bash 
+TERM=xterm-256color 
+TMPDIR=/var/folders/5v/hf0w1p8d2rg84q_qldylcj4c0000gn/T/ 
+Please Enter character to change FROM: a
+Please Enter character to change TO: b
+
+Input: hay thar batch
+
+Output: hby
+192:Task3 RobertFlorence$ ./sub a b
+3 
+./sub 
+a 
+b 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+SHELL=/bin/bash 
+TERM=xterm-256color 
+
+Input: haythatbatch
+Output: hbythbtbbtch
+192:Task3 RobertFlorence$ ./sub a b
+3 
+./sub 
+a 
+b 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+SHELL=/bin/bash 
+TERM=xterm-256color 
+
+Input: hay there
+Output: hby
+192:Task3 RobertFlorence$ ./sub a b
+3 
+./sub 
+a 
+b 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+SHELL=/bin/bash 
+TERM=xterm-256color 
+
+Input: asdf
+Output: bsdf
+192:Task3 RobertFlorence$ ./sub
+1 
+./sub 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+SHELL=/bin/bash 
+TERM=xterm-256color 
+TMPDIR=/var/folders/5v/hf0w1p8d2rg84q_qldylcj4c0000gn/T/ 
+Apple_PubSub_Socket_Render=/private/tmp/com.apple.launchd.aCeRcy4A6V/Render 
+Please Enter character to change FROM: a
+Please Enter character to change TO: b
+
+Input: hay there
+
+Output: hby
+192:Task3 RobertFlorence$ ./sub a b <input.txt
+3 
+./sub 
+a 
+b 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+SHELL=/bin/bash 
+TERM=xterm-256color 
+
+Input: Output: testing
+192:Task3 RobertFlorence$ ./sub a b <input.txt >output.txt
+192:Task3 RobertFlorence$ gcc sub.c -o sub
+192:Task3 RobertFlorence$ ./sub a b -f
+4 
+./sub 
+a 
+b 
+-f 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+SHELL=/bin/bash 
+Segmentation fault: 11
+192:Task3 RobertFlorence$ ./sub a b -f input.txt
+5 
+./sub 
+a 
+b 
+-f 
+input.txt 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+Segmentation fault: 11
+192:Task3 RobertFlorence$ ./sub a b -o output.txt
+5 
+./sub 
+a 
+b 
+-o 
+output.txt 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+
+Input: whaaaat
+Segmentation fault: 11
+192:Task3 RobertFlorence$ gcc sub.c -o sub
+192:Task3 RobertFlorence$ ./sub a b -o output.txt
+5 
+./sub 
+a 
+b 
+-o 
+output.txt 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+
+Input: whaaaat
+Segmentation fault: 11
+192:Task3 RobertFlorence$ gcc sub.c -o sub
+192:Task3 RobertFlorence$ ./sub a b -o output.txt
+5 
+./sub 
+a 
+b 
+-o 
+output.txt 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+
+Input: whaaaat
+192:Task3 RobertFlorence$ ./sub a b -f input.txt
+5 
+./sub 
+a 
+b 
+-f 
+input.txt 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+Segmentation fault: 11
+192:Task3 RobertFlorence$ ./sub a b -f input
+5 
+./sub 
+a 
+b 
+-f 
+input 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+
+File Doesn't Exist
+192:Task3 RobertFlorence$ ./sub a b < input
+-bash: input: No such file or directory
+192:Task3 RobertFlorence$ gcc sub.c -o sub
+192:Task3 RobertFlorence$ ./sub a b -f input.txt
+5 
+./sub 
+a 
+b 
+-f 
+input.txt 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+Segmentation fault: 11
+192:Task3 RobertFlorence$ gcc sub.c -o sub
+192:Task3 RobertFlorence$ ./sub a b -f input.txt
+5 
+./sub 
+a 
+b 
+-f 
+input.txt 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+Segmentation fault: 11
+192:Task3 RobertFlorence$ ./sub a b -o output.txt
+5 
+./sub 
+a 
+b 
+-o 
+output.txt 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+
+Input: whatupppppaaaa
+192:Task3 RobertFlorence$ ./sub a b <input.txt
+3 
+./sub 
+a 
+b 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+SHELL=/bin/bash 
+TERM=xterm-256color 
+
+Input: Output: testing
+192:Task3 RobertFlorence$ touch NoteToGrader.txt
+192:Task3 RobertFlorence$ gcc sub.c -o sub
+192:Task3 RobertFlorence$ ./sub a b < input.txt -o output.txt
+5 
+./sub 
+a 
+b 
+-o 
+output.txt 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+
+Input: 192:Task3 RobertFlorence$ ./sub a b < input.txt -o output.txt
+5 
+./sub 
+a 
+b 
+-o 
+output.txt 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+
+Input: 192:Task3 RobertFlorence$ ./sub a b < input.txt -o output.txt
+5 
+./sub 
+a 
+b 
+-o 
+output.txt 
+(null) 
+TERM_PROGRAM=Apple_Terminal 
+
+Input: 192:Task3 RobertFlorence$ 

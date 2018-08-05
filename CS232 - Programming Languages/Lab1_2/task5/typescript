@@ -1,0 +1,20 @@
+Script started on Mon Feb  8 22:08:04 2016
+[?1034hbash-3.2$ ls
+mem-alloc.c	strings.c	typescript
+output.txt	task5
+pointer.c	task5.c
+bash-3.2$ lsexit./task5gcc task5.c -o task5
+[1mtask5.c:10:7: [0m[0;1;35mwarning: [0m[1mtentative array
+      definition assumed to have one element[0m
+char *arr[];
+[0;1;32m      ^
+[0m1 warning generated.
+bash-3.2$ gcc task5.c -o task5[C[C[C[C[C[C[C[C[C[Cls[Kexit./task5gcc task5.c -o task5[C[C[C[C[C[C[C[C[C[C[13P./task5gcc task5.c -o task5[C[C[C[C[C[C[C[C[C[C[13P./task5gcc task5.c -o task5[C[C[C[C[C[C[C[C[C[C[13P./task5 > pu[K[Koutput.xt[K[Ktxt
+hello
+work ld
+asdf
+0
+bash-3.2$ exit
+exit
+
+Script done on Mon Feb  8 22:08:47 2016

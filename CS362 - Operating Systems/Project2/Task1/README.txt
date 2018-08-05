@@ -1,0 +1,1 @@
+This task Works as it should. Did not see your note about using memcpy till way later in development. I tried to implement instead, but had a weird time-consuming bug. So I scrapped it and stuck with a simpler approach instead.

@@ -1,0 +1,101 @@
+Start a dinner for 5 diners
+Philsopher no. 0 sits at the table.
+Philsopher no. 1 sits at the table.
+Philsopher no. 3 sits at the table.
+Philsopher no. 4 sits at the table.
+Philsopher no. 2 sits at the table.
+Philsopher no. 0 gets hungry for the 1 time!
+Philsopher no. 0 tries to grab both chopsticks
+Philsopher no. 0 has grabbed chopsticks 0 and 1
+Philsopher no. 0 eating
+Philsopher no. 3 gets hungry for the 1 time!
+Philsopher no. 3 tries to grab both chopsticks
+Philsopher no. 3 has grabbed chopsticks 3 and 4
+Philsopher no. 3 eating
+Philsopher no. 4 gets hungry for the 1 time!
+Philsopher no. 4 tries to grab both chopsticks
+Philsopher no. 3 stopped eating
+Philsopher no. 3 has returned chopsticks 3 and 4
+Philsopher no. 3 finished turn 1
+Philsopher no. 2 gets hungry for the 1 time!
+Philsopher no. 3 gets hungry for the 2 time!
+Philsopher no. 2 tries to grab both chopsticks
+Philsopher no. 3 tries to grab both chopsticks
+Philsopher no. 2 has grabbed chopsticks 2 and 3
+Philsopher no. 2 eating
+Philsopher no. 1 gets hungry for the 1 time!
+Philsopher no. 1 tries to grab both chopsticks
+Philsopher no. 0 stopped eating
+Philsopher no. 0 has returned chopsticks 0 and 1
+Philsopher no. 0 finished turn 1
+Philsopher no. 0 gets hungry for the 2 time!
+Philsopher no. 0 tries to grab both chopsticks
+Philsopher no. 4 tries to grab both chopsticks
+Philsopher no. 4 has grabbed chopsticks 4 and 0
+Philsopher no. 4 eating
+Philsopher no. 4 stopped eating
+Philsopher no. 2 stopped eating
+Philsopher no. 4 has returned chopsticks 4 and 0
+Philsopher no. 4 finished turn 1
+Philsopher no. 4 gets hungry for the 2 time!
+Philsopher no. 4 tries to grab both chopsticks
+Philsopher no. 2 has returned chopsticks 2 and 3
+Philsopher no. 2 finished turn 1
+Philsopher no. 2 gets hungry for the 2 time!
+Philsopher no. 2 tries to grab both chopsticks
+Philsopher no. 0 tries to grab both chopsticks
+Philsopher no. 0 has grabbed chopsticks 0 and 1
+Philsopher no. 0 eating
+Philsopher no. 0 stopped eating
+Philsopher no. 0 has returned chopsticks 0 and 1
+Philsopher no. 0 finished turn 2
+Philsopher no. 0 gets hungry for the 3 time!
+Philsopher no. 0 tries to grab both chopsticks
+Philsopher no. 3 tries to grab both chopsticks
+Philsopher no. 3 has grabbed chopsticks 3 and 4
+Philsopher no. 3 eating
+Philsopher no. 3 stopped eating
+Philsopher no. 3 has returned chopsticks 3 and 4
+Philsopher no. 3 finished turn 2
+Philsopher no. 3 gets hungry for the 3 time!
+Philsopher no. 3 tries to grab both chopsticks
+Philsopher no. 1 tries to grab both chopsticks
+Philsopher no. 1 has grabbed chopsticks 1 and 2
+Philsopher no. 1 eating
+Philsopher no. 1 stopped eating
+Philsopher no. 1 has returned chopsticks 1 and 2
+Philsopher no. 1 finished turn 1
+Philsopher no. 1 gets hungry for the 2 time!
+Philsopher no. 1 tries to grab both chopsticks
+Philsopher no. 4 tries to grab both chopsticks
+Philsopher no. 4 has grabbed chopsticks 4 and 0
+Philsopher no. 4 eating
+Philsopher no. 4 stopped eating
+Philsopher no. 4 has returned chopsticks 4 and 0
+Philsopher no. 4 finished turn 2
+Philsopher no. 4 gets hungry for the 3 time!
+Philsopher no. 4 tries to grab both chopsticks
+Philsopher no. 2 tries to grab both chopsticks
+Philsopher no. 2 has grabbed chopsticks 2 and 3
+Philsopher no. 2 eating
+Philsopher no. 2 stopped eating
+Philsopher no. 2 has returned chopsticks 2 and 3
+Philsopher no. 2 finished turn 2
+Philsopher no. 2 gets hungry for the 3 time!
+Philsopher no. 2 tries to grab both chopsticks
+Philsopher no. 0 tries to grab both chopsticks
+Philsopher no. 0 has grabbed chopsticks 0 and 1
+Philsopher no. 0 eating
+Philsopher no. 0 stopped eating
+Philsopher no. 0 has returned chopsticks 0 and 1
+Philsopher no. 0 finished turn 3
+Philsopher no. 0 gets hungry for the 4 time!
+Philsopher no. 0 tries to grab both chopsticks
+Philsopher no. 3 tries to grab both chopsticks
+Philsopher no. 3 has grabbed chopsticks 3 and 4
+Philsopher no. 3 eating
+Philsopher no. 3 stopped eating
+Philsopher no. 3 has returned chopsticks 3 and 4
+Philsopher no. 3 finished turn 3
+Philsopher no. 3 gets hungry for the 4 time!
+Philsopher no. 3 tries to grab both chops

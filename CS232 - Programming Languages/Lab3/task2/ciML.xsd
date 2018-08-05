@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+       <xs:element name="catalog">
+              <xs:complexType>
+                     <xs:sequence>
+                            <xs:element name="year">
+                                   <xs:complexType>
+                                       <xs:sequence>
+                                          <xs:restriction base="xs:integer">
+                                              <xs:pattern value="2015|2016"/>
+                                                 <xs:element name="semester">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                               <xs:restriction base="xs:string">
+                                                                   <xs:pattern value="Fall|Spring"/>
+                                                                      <xs:element name="mjrprogram">
+                                                                             <xs:complexType>
+                                                                                    <xs:sequence>
+                                                                                           <xs:element name="Physics">
+                                                                                                  <xs:complexType>
+                                                                                                         <xs:sequence>
+                                                                                                                <xs:element name="classes" maxOccurs="5">
+                                                                                                                       <xs:complexType>
+                                                                                                                              <xs:sequence>
+                                                                                                                                     <xs:element name="description" type="xs:string"></xs:element>
+                                                                                                                                     <xs:element name="unitweight" type="xs:int"></xs:element>
+                                                                                                                                     <xs:element name="professor" type="xs:string"></xs:element>
+                                                                                                                                     <xs:element name="date">
+                                                                                                                                            <xs:complexType>
+                                                                                                                                                   <xs:sequence>
+                                                                                                                                                          <xs:element name="days" type="xs:string"></xs:element>
+                                                                                                                                                          <xs:element name="time" type="xs:string"></xs:element>
+                                                                                                                                                      </xs:sequence>
+                                                                                                                                               </xs:complexType>
+                                                                                                                                        </xs:element>
+                                                                                                                                 </xs:sequence>
+                                                                                                                              <xs:attribute name="category" type="xs:int"></xs:attribute>
+                                                                                                                          </xs:complexType>
+                                                                                                                   </xs:element>
+                                                                                                            </xs:sequence>
+                                                                                                     </xs:complexType>
+                                                                                              </xs:element>
+                                                                                           <xs:element name="CMPSCI">
+                                                                                                  <xs:complexType>
+                                                                                                         <xs:sequence>
+                                                                                                                <xs:element name="classes" maxOccurs="5">
+                                                                                                                       <xs:complexType>
+                                                                                                                              <xs:sequence>
+                                                                                                                                     <xs:element name="description" type="xs:string"></xs:element>
+                                                                                                                                     <xs:element name="unitweight" type="xs:int"></xs:element>
+                                                                                                                                     <xs:element name="professor" type="xs:string"></xs:element>
+                                                                                                                                     <xs:element name="date">
+                                                                                                                                            <xs:complexType>
+                                                                                                                                                   <xs:sequence>
+                                                                                                                                                          <xs:element name="days" type="xs:string"></xs:element>
+                                                                                                                                                          <xs:element name="time" type="xs:string"></xs:element>
+                                                                                                                                                      </xs:sequence>
+                                                                                                                                               </xs:complexType>
+                                                                                                                                        </xs:element>
+                                                                                                                                 </xs:sequence>
+                                                                                                                              <xs:attribute name="category" type="xs:int"></xs:attribute>
+                                                                                                                          </xs:complexType>
+                                                                                                                   </xs:element>
+                                                                                                            </xs:sequence>
+                                                                                                     </xs:complexType>
+                                                                                              </xs:element>
+                                                                                           <xs:element name="Math">
+                                                                                                  <xs:complexType>
+                                                                                                         <xs:sequence>
+                                                                                                                <xs:element name="classes" maxOccurs="5">
+                                                                                                                       <xs:complexType>
+                                                                                                                              <xs:sequence>
+                                                                                                                                     <xs:element name="description" type="xs:string"></xs:element>
+                                                                                                                                     <xs:element name="unitweight" type="xs:int"></xs:element>
+                                                                                                                                     <xs:element name="professor" type="xs:string"></xs:element>
+                                                                                                                                     <xs:element name="date">
+                                                                                                                                            <xs:complexType>
+                                                                                                                                                   <xs:sequence>
+                                                                                                                                                          <xs:element name="days" type="xs:string"></xs:element>
+                                                                                                                                                          <xs:element name="time" type="xs:string"></xs:element>
+                                                                                                                                                      </xs:sequence>
+                                                                                                                                               </xs:complexType>
+                                                                                                                                        </xs:element>
+                                                                                                                                 </xs:sequence>
+                                                                                                                              <xs:attribute name="category" type="xs:int"></xs:attribute>
+                                                                                                                          </xs:complexType>
+                                                                                                                   </xs:element>
+                                                                                                            </xs:sequence>
+                                                                                                     </xs:complexType>
+                                                                                              </xs:element>
+                                                                                       </xs:sequence>
+                                                                                </xs:complexType>
+                                                                         </xs:element>
+                                                                  </xs:sequence>
+                                                               <xs:attribute name="category" type="xs:string"></xs:attribute>
+                                                           </xs:complexType>
+                                                         </xs:restriction>
+                                                    </xs:element>
+                                             </xs:sequence>
+                                          <xs:attribute name="year" type="xs:int"></xs:attribute>
+                                      </xs:complexType>
+                                   </xs:restriction>
+                               </xs:element>
+                        </xs:sequence>
+                 </xs:complexType>
+          </xs:element>
+   </xs:schema>

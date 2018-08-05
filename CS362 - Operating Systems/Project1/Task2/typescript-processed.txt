@@ -1,0 +1,27 @@
+Script started on Thu 17 Nov 2016 08:02:24 PM PST
+cistudent@NetworkingLab:~/Desktop/Project1/Task2$ ls
+hellofs  hellofs-ubuntu.c  tmp	typescript
+cistudent@NetworkingLab:~/Desktop/Project1/Task2$ rm -r tmp
+cistudent@NetworkingLab:~/Desktop/Project1/Task2$ ls
+hellofs  hellofs-ubuntu.c  typescript
+cistudent@NetworkingLab:~/Desktop/Project1/Task2$ rm hellofs
+cistudent@NetworkingLab:~/Desktop/Project1/Task2$ ls
+hellofs-ubuntu.c  typescript
+cistudent@NetworkingLab:~/Desktop/Project1/Task2$ lsci-Wallnhellofs-ubuntu.c `pkg-config fuse --cflags --lib
+bs` -oahellofsofs-ubuntu.c `pkg-config fuse --cflags --lib
+cistudent@NetworkingLab:~/Desktop/Project1/Task2$ ls
+hellofs  hellofs-ubuntu.c  typescript
+cistudent@NetworkingLab:~/Desktop/Project1/Task2$ mkdir tmp
+cistudent@NetworkingLab:~/Desktop/Project1/Task2$ ./hellofs tmp/
+cistudent@NetworkingLab:~/Desktop/Project1/Task2$ ls
+hellofs  hellofs-ubuntu.c  tmp	typescript
+cistudent@NetworkingLab:~/Desktop/Project1/Task2$ ls tmp/
+fourth	hello  second  third
+cistudent@NetworkingLab:~/Desktop/Project1/Task2$ cat tmp/fourth
+cat: tmp/fourth: No such file or directory
+cistudent@NetworkingLab:~/Desktop/Project1/Task2$ done
+bash: syntax error near unexpected token `done'
+cistudent@NetworkingLab:~/Desktop/Project1/Task2$ exit
+exit
+
+Script done on Thu 17 Nov 2016 08:04:47 PM PST

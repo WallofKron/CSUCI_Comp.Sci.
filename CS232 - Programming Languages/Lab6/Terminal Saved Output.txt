@@ -1,0 +1,21 @@
+Last login: Mon Mar  7 22:23:06 on ttys000
+192:~ RobertFlorence$ cd Desktop/CS232/LAB6/
+192:LAB6 RobertFlorence$ gcc *.c
+192:LAB6 RobertFlorence$ touch PROJECTOUTPUTexplanation.txt
+192:LAB6 RobertFlorence$ ./a.out <input.txt
+statement: Assign: firstvar to: 1.0
+statement: Assign: secondvar to: 2.0
+statement: Repeat 10.0
+statement: Assign: thirdvar to: 2.0
+Parser error in: {<LPAREN>}	statement: Parser error in: {<DIV>}	statement: Parser error in: {<LPAREN>}	statement: Assign: firstvar to: Parser error in: {<PLUS>}	Parser error in: statement: Parser error in: {<RPAREN>}	statement: Parser error in: {<SEMICOLON>}	statement: Repeat 2.0
+Segmentation fault: 11
+192:LAB6 RobertFlorence$ ./a.out <input.txt >output.txt
+Segmentation fault: 11
+192:LAB6 RobertFlorence$ 
+
+
+
+
+
+
+

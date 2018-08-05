@@ -1,0 +1,42 @@
+Script started on Tue Oct 18 00:18:49 2016
+[?1034hbash-3.2$ ls
+dfs		dfs.dSYM	input.txt	main.c		typescript
+bash-3.2$ rm dfs
+bash-3.2$ rm dfs.sS[K[KdSYM
+rm: dfs.dSYM: is a directory
+bash-3.2$ asdfasdf[K[K[K[K[K[K[K[Kls
+input.txt	main.c		typescript
+bash-3.2$ lsrm dfs.dSYM[K[4Plsexit./dfsgcc main.c -o dfs[C[C[C[C[C[C[C[C[C[C./dfs[Kgcc main.c -o dfs[C[C[C[C[C[C[C[C[C[C./dfs[Kgcc main.c -o dfs[C[C[C[C[C[C[C[C[C[C./dfs[Kgcc main.c -o dfs[C[C[C[C[C[C[C[C[C[C./dfs[K[1Pexit./dfsgcc main.c -o dfs
+bash-3.2$ gcc main.c -o dfs[C[C[C[C[C[C[C[C[C[Cls[Krm dfs.dSYM[K[4Plsexit./dfs
+
+VERTICES
+Aa, Bbb, Cccc, Ddddd
+numvert: 4
+
+EDGES
+**Aa, Cccc**
+**Aa, Ddddd**
+**Bbb, Cccc**
+**Cccc, Bbb**
+**Cccc, Ddddd**
+**Ddddd, Aa**
+**Ddddd, Cccc**
+
+ADJACENCY MATRIX!
+0 0 1 1 
+0 0 1 0 
+0 1 0 1 
+1 0 1 0 
+
+
+0 
+2 
+1 
+3 
+>>>NO DEADLOCK<<<
+
+bash-3.2$ ./dfsgcc main.c -o dfs[C[C[C[C[C[C[C[C[C[C./dfs[K > output.txt
+bash-3.2$ exit
+exit
+
+Script done on Tue Oct 18 00:20:14 2016

@@ -1,0 +1,164 @@
+Script started on Sun Dec 11 15:08:43 2016
+[?1034hbash-3.2$ ls
+disk.c		disk.h		typescript
+bash-3.2$ lsexit./diskgcc disk.c -o disk
+bash-3.2$ gcc disk.c -o disk[C[C[C[C[C[C[C[C[C[Cls[Kexit./disk
+
+
+MENU:
+1). Log->Phys
+2). Phys->Log
+3). Read
+4). Write
+5). EXIT
+
+Enter a Menu Choice: 1
+
+Enter Logical Address: 1234
+
+CORRESPONDING PHYSICAL ADDRESS
+HEAD: 9
+CYL: 0
+SECT: 83
+
+
+MENU:
+1). Log->Phys
+2). Phys->Log
+3). Read
+4). Write
+5). EXIT
+
+Enter a Menu Choice: 1
+
+Enter Logical Address: 0
+
+CORRESPONDING PHYSICAL ADDRESS
+HEAD: 0
+CYL: 0
+SECT: 1
+
+
+MENU:
+1). Log->Phys
+2). Phys->Log
+3). Read
+4). Write
+5). EXIT
+
+Enter a Menu Choice: 2
+
+Enter Head: 0
+
+Enter Cyl: 0
+
+Enter Sect: 1
+
+PHYSICAL ADDRESS - Translating
+CYL: 0
+HEAD: 0
+SECT: 1
+
+Corresponding Logical Address: 0
+
+
+MENU:
+1). Log->Phys
+2). Phys->Log
+3). Read
+4). Write
+5). EXIT
+
+Enter a Menu Choice: 2
+
+Enter Head: 9
+
+Enter Cyl: 0
+
+Enter Sect: 83
+
+PHYSICAL ADDRESS - Translating
+CYL: 0
+HEAD: 9
+SECT: 83
+
+Corresponding Logical Address: 1234
+
+
+MENU:
+1). Log->Phys
+2). Phys->Log
+3). Read
+4). Write
+5). EXIT
+
+Enter a Menu Choice: 3 4
+Enter Logical address to WRITE to: 6
+Enter message to WRITE: heynick    Nickthis    ThisIsATesttothe^[[D    WriteFunction
+
+ Write Success
+
+MENU:
+1). Log->Phys
+2). Phys->Log
+3). Read
+4). Write
+5). EXIT
+
+Enter a Menu Choice: 3
+Enter Logical address to READ from: 6
+Enter Number of sectors to read: 1
+From LogAddress: 6, we read: heyNickThis
+ Read Success
+
+MENU:
+1). Log->Phys
+2). Phys->Log
+3). Read
+4). Write
+5). EXIT
+
+Enter a Menu Choice: 3
+Enter Logical address to READ from: 6
+Enter Number of sectors to read: 2
+From LogAddress: 6, we read: heyNickThisIsATesttoth
+ Read Success
+
+MENU:
+1). Log->Phys
+2). Phys->Log
+3). Read
+4). Write
+5). EXIT
+
+Enter a Menu Choice: 3
+Enter Logical address to READ from: 6
+Enter Number of sectors to read: 3
+From LogAddress: 6, we read: heyNickThisIsATesttotheWriteFunct:×Pÿ
+ Read Success
+
+MENU:
+1). Log->Phys
+2). Phys->Log
+3). Read
+4). Write
+5). EXIT
+
+Enter a Menu Choice: 3
+Enter Logical address to READ from: 6
+Enter Number of sectors to read: 4
+From LogAddress: 6, we read: heyNickThisIsATesttotheWriteFunction
+ Read Success
+
+MENU:
+1). Log->Phys
+2). Phys->Log
+3). Read
+4). Write
+5). EXIT
+
+Enter a Menu Choice: 5
+bash-3.2$ exit
+exit
+
+Script done on Sun Dec 11 15:11:30 2016

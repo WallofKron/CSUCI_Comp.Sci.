@@ -1,0 +1,15 @@
+step 1: does not work as the previous example did
+ERR: dlopen(./libgiveMeNum.so, 1): image not found
+
+it doesn’t work because it doesn’t have the library needed to link with the program.
+
+
+
+step 2: done
+step 3: done
+step 4: done
+
+step 5:  0000000000000f30 T _giveMeNum
+                 U _printf
+                 U _scanf
+                 U dyld_stub_binder

@@ -1,0 +1,44 @@
+Last login: Tue Mar 15 01:06:44 on ttys000
+Roberts-MBP-2:~ RobertFlorence$ cd Desktop/CS232/LAB7/Task2
+Roberts-MBP-2:Task2 RobertFlorence$ lex l7t2.l
+Roberts-MBP-2:Task2 RobertFlorence$ gcc lex.yy.c l7t2.c -o l7t2
+Roberts-MBP-2:Task2 RobertFlorence$ ./l7t2 
+abc = 5;
+if (abc = 2) then abc = def;<ID> value: abc = 5;
+
+<Equals>
+<NUM> value: abc = 5;
+
+<SemiColon>
+if (abc = 2) then abc = def;
+<If>
+<Rparen>
+<ID> value: if (abc = 2) then abc = def;if (abc = 2) then abc = def;
+
+<Equals>
+<NUM> value: if (abc = 2) then abc = def;if (abc = 2) then abc = def;
+
+<Lparen>
+<Then>
+<ID> value: if (abc = 2) then abc = def;if (abc = 2) then abc = def;
+
+<Equals>
+<ID> value: if (abc = 2) then abc = def;if (abc = 2) then abc = def;
+
+<SemiColon>
+<If>
+<Rparen>
+<ID> value: if (abc = 2) then abc = def;if (abc = 2) then abc = def;
+
+<Equals>
+<NUM> value: if (abc = 2) then abc = def;if (abc = 2) then abc = def;
+
+<Lparen>
+<Then>
+<ID> value: if (abc = 2) then abc = def;if (abc = 2) then abc = def;
+
+<Equals>
+<ID> value: if (abc = 2) then abc = def;if (abc = 2) then abc = def;
+
+<SemiColon>
+Roberts-MBP-2:Task2 RobertFlorence$ 

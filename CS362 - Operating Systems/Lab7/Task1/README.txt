@@ -1,0 +1,1 @@
+I believe the program works as supposed to. The numerous gdb tests (forgot to script those), seem to follow what SHOULD happen for this graph. No errors/bugs from what I am running on, either. 

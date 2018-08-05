@@ -1,0 +1,32 @@
+
+MATRIX MULTIPLICATION!
+
+Thread created successfully
+Thread created successfully
+Thread created successfully
+Thread created successfully
+Thread created successfully
+Thread created successfully
+Thread created successfully
+Thread created successfully
+Thread created successfully
+
+Matrix A
+--------
+| 1 4 |
+| 2 5 |
+| 3 6 |
+
+
+Matrix B
+--------
+| 8 7 6 |
+| 5 4 3 |
+
+
+Matrix C
+--------
+| 28 23 18 |
+| 41 34 27 |
+| 54 45 36 |
+

@@ -1,0 +1,86 @@
+Script started on Tue Nov 22 04:07:17 2016
+[?1034hbash-3.2$ ls
+task3		task3.c		task3.dSYM	task3.h		typescript
+bash-3.2$ rm task3
+bash-3.2$ rm task3ls[Kexitgcc task3.c -o task3[C[C[C[C[C[C[C[C[C[Cclear[Kgcc task3.c -o task3[C[1@ [1@-[1@t[1P[1@g[C[C[C[C[C[C[C[C[C
+bash-3.2$ gcc task3.c -g -o task3[C[C[C[C[C[C[C[C[C[C[15Prm[C[C[C[C[C[Cls[Kexitgcc task3.c -o task3[C[C[C[C[C[C[C[C[C[Cexit[K[2Plsrm task3[15@gcc task3.c -g -o[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K./tasl3[K[Kk4[K3
+
+
+MEMORY:
+Block	Type	Name	Size	Owner	Block_Ref	Contents
+0:	DIR:	/	 0	0	1
+1:	INDEX:		 0	0			
+
+
+
+MEMORY:
+Block	Type	Name	Size	Owner	Block_Ref	Contents
+0:	DIR:	/	 0	0	1
+1:	INDEX:		 1	0			2, 
+2:	FILE:	Cool	 22	123	3	
+3:	DATA:						This is data in a file
+
+
+
+MEMORY:
+Block	Type	Name	Size	Owner	Block_Ref	Contents
+0:	DIR:	/	 0	0	1
+1:	INDEX:		 2	0			2, 4, 
+2:	FILE:	Cool	 22	123	3	
+3:	DATA:						This is data in a file
+4:	DIR:	RandDir	 0	123	1
+
+
+
+MEMORY:
+Block	Type	Name	Size	Owner	Block_Ref	Contents
+0:	DIR:	/	 0	0	1
+1:	INDEX:		 3	0			2, 4, 5, 
+2:	FILE:	Cool	 22	123	3	
+3:	DATA:						This is data in a file
+4:	DIR:	RandDir	 0	123	1
+5:	DIR:	Ayyyy	 0	555	1
+
+
+
+MEMORY:
+Block	Type	Name	Size	Owner	Block_Ref	Contents
+0:	DIR:	/	 0	0	1
+1:	INDEX:		 2	0			2, 4, 
+2:	FILE:	Cool	 22	123	3	
+3:	DATA:						This is data in a file
+4:	DIR:	RandDir	 0	123	1
+
+
+
+MEMORY:
+Block	Type	Name	Size	Owner	Block_Ref	Contents
+0:	DIR:	/	 0	0	1
+1:	INDEX:		 1	0			4, 
+4:	DIR:	RandDir	 0	123	1
+
+
+
+MEMORY:
+Block	Type	Name	Size	Owner	Block_Ref	Contents
+0:	DIR:	/	 0	0	1
+1:	INDEX:		 2	0			4, 2, 
+2:	FILE:	Where	 16	8390	3	
+3:	DATA:						More Data! Wooo!
+4:	DIR:	RandDir	 0	123	1
+
+
+
+MEMORY:
+Block	Type	Name	Size	Owner	Block_Ref	Contents
+0:	DIR:	/	 0	0	1
+1:	INDEX:		 3	0			4, 2, 5, 
+2:	FILE:	Where	 16	8390	3	
+3:	DATA:						More Data! Wooo!
+4:	DIR:	RandDir	 0	123	1
+5:	DIR:	What	 0	10196	1
+
+bash-3.2$ exit
+exit
+
+Script done on Tue Nov 22 04:08:11 2016
