@@ -1,2 +1,0 @@
-BEFORE SWAP: str1 = hello and str2 = world
-AFTER SWAP: str1 = world and str2 = hello

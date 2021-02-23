@@ -1,14 +1,0 @@
-Script started on Mon Feb 22 23:16:52 2016
-[?1034hbash-3.2$ ./l4t2 catalog.xml ciML.xsd[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9P1 catalog.xml2 catalog.xml ciML.xsd[C[C[C[C[C[C[C[C[C[C[K./l4t2 catalog.xml ciML.xsd[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9P1 catalog.xml[C[C[C[C[C[C[C[C[C[Cgcc `xml2-config --cflags --libs` -o l4t1 l4t1.c[C[C[C[C[C[C[C[C[C[C[21P./l4t2 catalog.xml ciML.xsd[K[Kgcc `xml2-config --cflags --libs` -o l4t2 l4t2.c
-bash-3.2$ gcc `xml2-config --cflags --libs` -o l4t2 l4t2.c[C[C[C[C[C[C[C[C[C[C[21P./l4t2 catalog.xml ciML.xsd
-Loading catalog.xml
-Loaded.
-Validating with ciML.xsd
-Validated.
-Root is <catalog> (1)
-	 Child is <catalog> (1)
-...
-bash-3.2$ exit
-exit
-
-Script done on Mon Feb 22 23:17:15 2016

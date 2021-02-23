@@ -1,8 +1,0 @@
-firstvar = 1;
-secondvar = 2;
-repeat (10)
-thirdvar = 2 * (firstvar + secondvar)
-
-
-
-The first three and a half lines execute exactly as planned. But at the, ) / (, mark of the fourth line, I ran out of time to tweak that to be perfect. Code should work fine for the last 3 lines if the 4th line didn’t shift the tokens in the wrong direction. 

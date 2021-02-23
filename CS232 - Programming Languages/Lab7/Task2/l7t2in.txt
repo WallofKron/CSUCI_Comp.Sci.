@@ -1,9 +1,0 @@
-abc = 5;
-if (a = 2) then b = d;
-while (ghijk = def) do ghijk = abc;
-print(10);
-b = a * 3;
-c = b / 2;
-e = f % 7;
-f = foo + bar;
-food = steak - potato;

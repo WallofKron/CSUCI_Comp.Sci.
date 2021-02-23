@@ -1,8 +1,0 @@
-Script started on Thu Feb 25 14:32:23 2016
-[?1034hbash-3.2$ cleargcc scanner.c[C[C[C[C[C[C[C[C[C[C[8Pcleargcc scanner.c[C[C[C[C[C[C[C[C[C[C[8Pcleargcc scanner.c[C[C[C[C[C[C[C[C[C[C[8Pclear[Kcleargcc scanner.c[C[C[C[C[C[C[C[C[C[C[8Pcleargcc scanner.c[C[C[C[C[C[C[C[C[C[Ctouch input.txt[C[C[C[C[C[C[C[C[C[C[2Pgcc scanner.c[C[C[C[C[C[C[C[C[C[Ctouch input.txt[C[C[C[C[C[C[C[C[C[C[2Pgcc scanner.c[C[C[C[C[C[C[C[C[C[C[8Pcleargcc scanner.c[C[C[C[C[C[C[C[C[C[C[8Pclear[Kgcc *c[K.c[Kc
-bash-3.2$ gcc *.c[2Pcleargcc *.c[K./a.ot[Kut <input.tt[Kxt
-{IDTOKEN<firstvar>}	{<ASSIGNMENT>}	{NumberTOKEN<1>}	{<SEMICOLON>}	{IDTOKEN<secondvar>}	{<ASSIGNMENT>}	{NumberTOKEN<2>}	{<SEMICOLON>}	{<REPEAT>}	{<LPAREN>}	{NumberTOKEN<10>}	{<RPAREN>}	{IDTOKEN<thirdvar>}	{<ASSIGNMENT>}	{NumberTOKEN<2>}	{<MULT>}	{<LPAREN>}	{IDTOKEN<firstvar>}	{<PLUS>}	{IDTOKEN<secondvar>}	{<RPAREN>}	{<DIV>}	{<LPAREN>}	{IDTOKEN<firstvar>}	{<PLUS>}	{NumberTOKEN<2>}	{<RPAREN>}	{<SEMICOLON>}	{<REPEAT>}	{<LPAREN>}	{IDTOKEN<firstvar>}	{<PLUS>}	{NumberTOKEN<2>}	{<MULT>}	{IDTOKEN<secondvar>}	{<RPAREN>}	{<REPEAT>}	{<LPAREN>}	{IDTOKEN<thirdvar>}	{<RPAREN>}	{<PRINT>}	{IDTOKEN<firstvar>}	{<SEMICOLON>}	bash-3.2$ ./a.out <input.txt >output.txt
-bash-3.2$ exit
-exit
-
-Script done on Thu Feb 25 14:35:20 2016
